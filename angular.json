@@ -24,7 +24,8 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "src/styles.css",
+              "node_modules/bootstrap/dist/css/bootstrap.css"
             ],
             "scripts": []
           },
@@ -119,6 +120,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "sac-website"
+    }
+  },
+  "defaultProject": "sac-website",
+  "cli": {
+    "analytics": "6a9f0961-8a49-408f-8faf-608a77fb4018"
+  }
 }
