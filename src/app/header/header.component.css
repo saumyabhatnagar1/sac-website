@@ -1,3 +1,26 @@
+.navbar {
+    box-shadow: 0 0.2rem 1rem 0.2rem grey;
+    margin-bottom: 1rem;
+}
+
+.nav-item:hover, .dropdown-toggle:hover {
+    /* background-color: rgb(110, 107, 121); */
+    background-color: #2a90fd;
+}
+
+.dropdown-toggle:active {
+    background-color:  #004cff;
+}
+
+.dropdown-item {
+    padding-left: 0.5rem;
+}
+
+.dropdown-item:hover {
+    background-color: rgb(192, 192, 194);
+}
+
 .nav-item {
-    padding-left: 1.5rem;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
 }
