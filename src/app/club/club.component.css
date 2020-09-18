@@ -1,0 +1,51 @@
+.navbar {
+    margin-top: -1rem;
+    background-image: linear-gradient(rgba(131, 156, 163, 0), rgba(114, 123, 126, 0.5));
+    padding: 0.1rem 0;
+}
+
+li {
+    margin: 0 0;
+    padding: 0.1rem 0;
+}
+
+.items li {
+    transition: all 0.2s ease-out;
+}
+
+hr {
+    margin-top: 0;
+}
+
+.card {
+    background-image: linear-gradient(#f88939, #f5ff69);
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem;
+    border: 1px solid grey;
+    /* box-shadow: 0rem 0.5rem 1rem #5d47db; */
+    box-shadow: 0 20px 40px -14px rgba(146, 144, 144, 0.767);
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 6px 6px 0px 0px;
+    transition: transform .5s;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-header {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.row1 {
+    height: 4rem;
+}
