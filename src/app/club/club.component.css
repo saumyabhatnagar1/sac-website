@@ -1,3 +1,9 @@
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    #pills-tab {
+        flex-direction: column;
+    }
+}
+
 .navbar {
     margin-top: -1rem;
     background-image: linear-gradient(rgba(131, 156, 163, 0), rgba(114, 123, 126, 0.5));
@@ -13,6 +19,11 @@ li {
     transition: all 0.2s ease-out;
 }
 
+.nav-link.active {
+    background-color: rgb(133, 2, 2);
+    /* background-image: linear-gradient(#8e8f94, #474746); */
+}
+
 hr {
     margin-top: 0;
 }
@@ -22,7 +33,7 @@ hr {
 }
 
 .card {
-    margin: 0.5rem;
+    margin: 1rem;
 }
 
 .card1 {
@@ -30,7 +41,7 @@ hr {
 }
 
 .card2 {
-    background-image: linear-gradient(#aff839, #c4b7ff);
+    background-image: linear-gradient(#aff839, #8ea2fd);
 }
 
 .card-flip > div {
