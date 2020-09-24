@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import{ ClubService} from './club.service'
+import{ ClubService } from './club.service'
 
 @Component({
   selector: 'app-club',
@@ -8,7 +8,7 @@ import{ ClubService} from './club.service'
 })
 export class ClubComponent implements OnInit {
 
-  constructor(private clubservice:ClubService) { }
+  constructor(private clubservice: ClubService) { }
 
   ngOnInit(): void {
     this.getAllclubs()
@@ -20,14 +20,14 @@ export class ClubComponent implements OnInit {
     this.clubservice.clubDetails().subscribe(res=>{
       this.appendClubs(res)
       // console.log(res)
-    },err=>{
+    }, err=>{
       console.log(err)
     })  
   }
   clubsdata=[];
   appendClubs(res){
     let data=Object.entries(res)
-    for(let i=0;i<data.length;i++){
+    for(let i=0; i<data.length; i++){
       this.clubsdata.push(data[i][1])
     }
     console.log(this.clubsdata)
