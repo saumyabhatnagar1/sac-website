@@ -20,7 +20,9 @@ li {
 }
 
 .nav-link.active {
-    background-color: rgb(133, 2, 2);
+    background-color: rgb(117, 106, 144);
+    box-shadow: 1px 1px 8px 1px #686767;
+    border: 1px solid rgb(58, 57, 57);
     /* background-image: linear-gradient(#8e8f94, #474746); */
 }
 
