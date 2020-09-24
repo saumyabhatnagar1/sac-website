@@ -30,10 +30,10 @@ app.get('/getall',async(req,res)=>{
         res.status(400).send(e)
     }
 })
-app.get('/getclub/:id',async(req,res)=>{
+app.get('/getclub/:name',async(req,res)=>{
     const id=req.params.id;
     try{
-        const club=await Club.findById(id)
+        const club=await Club.findOne({name:req.params.name})
         res.status(201).send(club)
     }
     catch(e){
@@ -89,13 +89,11 @@ app.delete('/club/:name/deleteevent/:id',async (req,res)=>{
         const club=await Club.findOne({name:req.params.name})
         const events=club.events;
         let index;
-        console.log(events)
         for(let i=0;i<events.length;i++)
         {
 
             if(events[i].id===req.params.id)
             {
-                console.log(index)
                 index=i;
                 break;
             }
