@@ -8,6 +8,7 @@ import { TeamsComponent } from './teams/teams.component';
 import { ClubComponent } from './club/club.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HeaderComponent } from './header/header.component';
+import { ClubPageComponent } from './club-page/club-page.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { HeaderComponent } from './header/header.component';
     TeamsComponent,
     ClubComponent,
     GalleryComponent,
-    HeaderComponent
+    HeaderComponent,
+    ClubPageComponent
   ],
   imports: [
     BrowserModule,
