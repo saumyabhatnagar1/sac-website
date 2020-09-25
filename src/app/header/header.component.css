@@ -3,6 +3,10 @@
     margin-bottom: 1rem;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.89);
+}
+
 .nav-item:hover, .dropdown-toggle:hover {
     /* background-color: rgb(110, 107, 121); */
     background-color: #2a90fd;
