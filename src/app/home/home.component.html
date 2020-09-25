@@ -1,186 +1,128 @@
-
-<!doctype html>
-<html lang="en">
-  <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="sac(sidcss).css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.14.0/css/all.css" integrity="sha384-HzLeBuhoNPvSl5KYnjx0BT+WB0QEEqLprO+NBkkk5gbc67FTaL7XIGa2w1L0Xbgc" crossorigin="anonymous">
-    <title>SAC IIITNR</title>
-  </head>
-  <body>
-    <nav class="navbar navbar-expand-lg sticky-top navbar-dark bg-dark">
-    <a class="navbar-brand" routerLink="">
-        <b class="text-white">SAC, IIIT Naya Raipur</b>
-    </a>
-    
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarMobile">
-        <ul class="navbar-nav nav-pills ml-auto">
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link text-white" routerLink="/team">Team</a>
-            </li>
-            <li class="nav-item text-white" routerLinkActive="active">
-                <a class="nav-link text-white" routerLink="/clubs">Clubs</a>
-            </li>
-            <!-- <li class="nav-item dropdown" routerLinkActive="active">
-                <a class="nav-link dropdown-toggle" id="navbardrop" data-toggle="dropdown" routerLink="/clubs">Clubs</a>
-                <div class="dropdown-menu">
-                    <a class="dropdown-item" href="#">Technical</a>
-                    <a class="dropdown-item" href="#">Cultural</a>
-                    <a class="dropdown-item" href="#">Others</a>
-                  </div>
-            </li> -->
-            <li class="nav-item" routerLinkActive="active">
-                <a class="nav-link text-white" routerLink="/gallery">Gallery</a>
-            </li>
-        </ul>
-    </div>
-</nav>
 <!-- jumbotron-->
 <div class="jumbotron jumbotron-fluid" id="iiit">
   <div>
-    <h1 class="display-4 font-weight-bold" id="sac"><i class="fas fa-hands"></i> Student's Activity Center</h1>
+    <h1 class="display-4 font-weight-bold" id="sac">Student's Activity Center</h1>
   </div>
-<div>
-<!--card row-->
-<div>
-  <div class="row font-weight-bold text-center" id="grp1">
-  <div class="card col-md ml-lg-5" style="width: 18rem;">
-  <img src="https://images.unsplash.com/photo-1571008592377-e362723e8998?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Activities and Achievements</h5>
-    <p class="card-text"><i>let's have a look at how the things are turning out in each club and some achievements to flex a little ;)<hr></i></p>
-    <a href="#" class="btn btn-info"><i class="fas fa-trophy"></i> Explore More</a>
-</div>
-</div>
-  <div class="card col-md" style="width: 18rem;">
-  <img src="https://images.unsplash.com/photo-1518997350705-0379564558ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Gallery</h5>
-    <p class="card-text"><i>A little sneak peek for all the fun.<hr></i></p>
-    <a href="#" class="btn btn-warning"><i class="fas fa-camera"></i> Explore More</a>
+  
+  <!--card row-->
+  <div>
+    <div class="row font-weight-bold text-center" id="grp1">
+      <div class="card col-md ml-lg-5" style="width: 18rem;">
+        <img src="https://images.unsplash.com/photo-1571008592377-e362723e8998?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Activities and Achievements">
+        <div class="card-body d-flex flex-column align-items-center">
+          <h3 class="card-title"><u>Activities and Achievements</u></h3>
+          <p class="card-text"><i>Let's have a look at how the things are turning out in each club and some achievements to flex a little.</i><br>
+            <a href="#" class="btn btn-info mt-auto"><i class="fa fa-trophy"></i> Explore More</a>
+          </p>
+        </div>
+      </div>
+      <div class="card col-md" style="width: 18rem;">
+        <img src="https://images.unsplash.com/photo-1518997350705-0379564558ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Gallery">
+        <div class="card-body d-flex flex-column align-items-center">
+          <h3 class="card-title"><u>Gallery</u></h3>
+          <p class="card-text"><i>A little sneak peek for all the fun.</i><br>
+            <a href="#" class="btn btn-warning mt-auto"><i class="fa fa-camera"></i> Explore More</a>
+          </p>
+        </div>
+      </div>
+      <div class="card col-md" style="width: 18rem;">
+        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Clubs">
+        <div class="card-body d-flex flex-column align-items-center">
+          <h3 class="card-title"><u>Clubs</u></h3>
+          <p class="card-text"><i>A guide to walk you through all we have to offer through different clubs.</i><br>
+            <a href="#" class="btn btn-secondary mt-auto"><i class="fa fa-users"></i> Explore More</a>
+          </p>
+        </div>
+      </div>
+      <div class="card col-md mr-lg-5" style="width: 18rem;">
+        <img src="https://images.unsplash.com/photo-1583403608659-e87733b432aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Newsletter">
+        <div class="card-body d-flex flex-column align-items-center">
+          <h3 class="card-title"><u>Newsletter</u></h3>
+          <p class="card-text"><i>A way to keep people updated about the recent happening in that area, if you're busy to not keep updated regularly, this will get you covered.</i><br>
+            <a href="#" class="btn btn-dark mt-auto"><i class="fa fa-newspaper-o"></i> Explore More</a>
+          </p>
+        </div>
+      </div>
+    </div>
   </div>
-</div>
-  <div class="card col-md" style="width: 18rem;">
-  <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Clubs</h5>
-    <p class="card-text"><i>A guide to walk you through all we have to offer through different clubs.<hr></i></p>
-    <a href="#" class="btn btn-secondary"><i class="fas fa-users"></i> Explore More</a>
-  </div>
-</div>
-  <div class="card col-md mr-lg-5" style="width: 18rem;">
-  <img src="https://images.unsplash.com/photo-1583403608659-e87733b432aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="...">
-  <div class="card-body">
-    <h5 class="card-title">Newsletter</h5>
-    <p class="card-text"><i>A way to keep people updated about the recent happening in that area, if you're busy to not keep updated regularly, this will get you covered.<hr></i></p>
-    <a href="#" class="btn btn-dark"><i class="far fa-newspaper"></i> Explore More</a>
-  </div>
-</div>
-</div>
-</div>
-</div>
 
 <div class="row">
   <div class="col-md-6 footer-info" style="color: rgba(0, 0, 0,1)">
-                        <h3 style="padding-top: 30px;">&nbsp Calendar<hr></h3>
-                        <!--calender-->
-                    </div>
+    <h3 style="padding-top: 30px;">&nbsp; Calendar<hr></h3>
+  </div>
+  
+  <!-- Calendar-->
   <div class="col-md-6 footer-info" style="color: rgba(0, 0, 0,1)">
-                        <h3 style="padding-top: 30px;">About SAC&nbsp<i class="fas fa-hand-point-down"></i><hr></h3>
-                        <p><b>SAC (Students' Activity Center)</b> was established in the year <b>2018</b> and it aims to promote and
-                            support student activities in <b>IIIT Naya Raipur</b>. Under SAC, all sorts of activities including
-                            technical, cultural, sports, arts, science, student affairs, etc. are managed. Currently,
-                            SAC has
-                            two UG Representatives;
-                            two Science and Technology Representatives;
-                            two Arts, Cultural and Literary Respresentative;
-                            and two Sports Representatives.
-                            All working under the President of SAC, who is a faculty mentor.</p>
-                    </div>
- </div> 
-
-
+    <h3 style="padding-top: 30px;">About SAC<hr></h3>
+    <p>
+      <b>SAC (Students' Activity Center)</b> was established in the year <b>2018</b> and it aims to promote and
+      support student activities in <b>IIIT Naya Raipur</b>. Under SAC, all sorts of activities including
+      technical, cultural, sports, arts, science, student affairs, etc. are managed. Currently,
+      SAC has
+      two UG Representatives;
+      two Science and Technology Representatives;
+      two Arts, Cultural and Literary Respresentative;
+      and two Sports Representatives.
+      All working under the President of SAC, who is a faculty mentor.
+    </p>
+  </div>
+</div> 
 
 <!--footer-->
 <section style="background: #171a21">
-        <div class="footer-top">
-            <div class="text-center">
-                <div class="row row-md-12">
-                    <div class="col-md-5 footer-info" style="color: #fff">
-                        <h3 style="padding-top: 30px;">Feedback</h3>
-                        
-                    </div>
-
-                    <div class="col-md-3 footer-contact" style="padding-top: 30px;">
-                        <h4 style="color: #fff;">Queries</h4>
-                        <div class="card text-center">
-                          <div class="card-header">
-                              <i class="fas fa-mail-bulk fa-3x"></i>
-                          </div>
-                          <div class="card-body">
-  <form>
-  <div class="form-group">
-      <label for="validationCustom01">Name</label>
-      <input type="text" class="form-control" id="validationCustom01" placeholder="Name" required>
-    </div>
-  <div class="form-group">
-    <label for="exampleInputEmail1">Email Address</label>
-    <input type="email" class="form-control" placeholder="name@example.com" id="exampleInputEmail1" aria-describedby="emailHelp" required="">
-    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-  </div>
-  <div class="form-group">
-    <label for="exampleFormControlTextarea1">Your Query</label>
-    <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="write here...." rows="3"></textarea>
-  </div>
-  <button type="submit" class="btn btn-primary ">Submit</button>
-</form>
-                          </div>
-                          </div>
-                  
-                        
-
-                    </div>
-
-                    <div class="col-md-4 footer-newsletter" style="color: #fff;">
-                        <h4 style="padding-top: 30px;">Contact Us</h4>
-                        <p style="color: #fff;">
-                            SAC Office, IIIT Naya Raipur<br>
-                            Sector-24, Near Muktangan<br>
-                            Chhattisgarh<br>
-                            <strong>Phone:</strong> +91 8827106331<br>
-                            <strong>Email:</strong> sac@iiitnr.edu.in<br>
-
-                        </p>
-                        <div class="social-links" style="color: #fff;">
-                            <a href="https://twitter.com/IIIT_NR" class="twitter" style="color: #fff"><i class="fab fa-twitter"></i>&nbsp &nbsp</a>
-                            <a href="https://www.facebook.com/IIITNROfficial" class="facebook" style="color: #fff"><i class="fab fa-facebook"></i>&nbsp &nbsp</a>
-                            <a href="https://www.instagram.com/iiitnrofficial/" class="instagram" style="color: #fff"><i class="fab fa-instagram"></i>&nbsp &nbsp</a>
-                            <a href="https://www.linkedin.com/school/iiitnrofficial/" class="linkedin" style="color: #fff"><i class="fab fa-linkedin">&nbsp &nbsp</i></a>
-                    </div>
-                </div>
+  <div class="footer-top">
+    <div class="text-center">
+        <div class="row row-md-12">
+            <div class="col-md-5 footer-info" style="color: #fff">
+                <h3 style="padding-top: 30px;">Feedback</h3>
             </div>
-        </div>
-    </section>
 
+            <div class="col-md-3 footer-contact" style="padding-top: 30px;">
+              <h4 style="color: #fff;">Queries</h4>
+              <div class="card text-center">
+                <!-- <div class="card-header">
+                    <i class="fa fa-mail-bulk fa-3x"></i>
+                </div> -->
+                <div class="card-body">
+                <!-- Form -->
+                  <form>
+                    <div class="form-group">
+                      <label for="validationCustom01">Name</label>
+                      <input type="text" class="form-control" id="validationCustom01" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleInputEmail1">Email Address</label>
+                      <input type="email" class="form-control" placeholder="name@example.com" id="exampleInputEmail1" aria-describedby="emailHelp" required="">
+                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                    </div>
+                    <div class="form-group">
+                      <label for="exampleFormControlTextarea1">Your Query</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" placeholder="write here...." rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary ">Submit</button>
+                  </form>
+                </div>
+              </div>
+            </div>
 
+            <div class="col-md-4 footer-newsletter" style="color: #fff;">
+              <h4 style="padding-top: 30px;">Contact Us</h4>
+              <p style="color: #fff;">
+                  SAC Office, IIIT Naya Raipur<br>
+                  Sector-24, Near Muktangan<br>
+                  Chhattisgarh<br>
+                  <strong>Phone:</strong> +91 8827106331<br>
+                  <strong>E-Mail:</strong> sac@iiitnr.edu.in<br>
+              </p>
 
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-
-  </body>
-</html>
-
-    
-    
+              <div class="social-links" style="color: #fff;">
+                <a href="https://twitter.com/IIIT_NR" class="twitter" style="color: #fff"><i class="fa fa-twitter"></i>&nbsp; &nbsp;</a>
+                <a href="https://www.facebook.com/IIITNROfficial" class="facebook" style="color: #fff"><i class="fa fa-facebook"></i>&nbsp; &nbsp;</a>
+                <a href="https://www.instagram.com/iiitnrofficial/" class="instagram" style="color: #fff"><i class="fa fa-instagram"></i>&nbsp; &nbsp;</a>
+                <a href="https://www.linkedin.com/school/iiitnrofficial/" class="linkedin" style="color: #fff"><i class="fa fa-linkedin">&nbsp; &nbsp;</i></a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</section>

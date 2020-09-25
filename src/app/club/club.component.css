@@ -38,13 +38,18 @@ hr {
     margin: 1rem;
 }
 
+.card-img-top {
+    background-image: linear-gradient(#7bc9fa, #7f85a1);
+    border-radius: 20px;
+}
+
 .card1 {
-    background-image: linear-gradient(#f88939, #f5ff69);
+    background-image: linear-gradient(#aff839, #8ea2fd);
     width: 15rem;
 }
 
 .card2 {
-    background-image: linear-gradient(#aff839, #8ea2fd);
+    background-image: linear-gradient(#f88939, #f5ff69);
     width: 15rem;
 }
 
