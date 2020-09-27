@@ -9,6 +9,18 @@ import { ClubComponent } from './club/club.component';
 import { GalleryComponent } from './gallery/gallery.component';
 import { HeaderComponent } from './header/header.component';
 import { ClubPageComponent } from './club-page/club-page.component';
+import { TsocComponent } from './club/tsoc/tsoc.component';
+import { AimlComponent } from './club/aiml/aiml.component';
+import { CiphercellComponent } from './club/ciphercell/ciphercell.component';
+import { CometComponent } from './club/comet/comet.component';
+import { Tech4gudComponent } from './club/tech4gud/tech4gud.component';
+import { InquizitiveComponent } from './club/inquizitive/inquizitive.component';
+import { IndradhanushComponent } from './club/indradhanush/indradhanush.component';
+import { CapriccioComponent } from './club/capriccio/capriccio.component';
+import { IgnitersComponent } from './club/igniters/igniters.component';
+import { C2cComponent } from './club/c2c/c2c.component';
+import { TakeDaBaitComponent } from './club/take-da-bait/take-da-bait.component';
+import { ClubDeTheatreComponent } from './club/club-de-theatre/club-de-theatre.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +30,19 @@ import { ClubPageComponent } from './club-page/club-page.component';
     ClubComponent,
     GalleryComponent,
     HeaderComponent,
-    ClubPageComponent
+    ClubPageComponent,
+    TsocComponent,
+    AimlComponent,
+    CiphercellComponent,
+    CometComponent,
+    Tech4gudComponent,
+    InquizitiveComponent,
+    IndradhanushComponent,
+    CapriccioComponent,
+    IgnitersComponent,
+    C2cComponent,
+    TakeDaBaitComponent,
+    ClubDeTheatreComponent
   ],
   imports: [
     BrowserModule,
