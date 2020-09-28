@@ -20,6 +20,7 @@
         <td>{{c.name}}</td>
         <td>{{c.about}}</td>
         <td>{{c.team}}</td>
+        <td>{{c._id}}</td>
         
       </tr>
     </tbody>
@@ -37,4 +38,12 @@
       </tr>
     </tbody>
   </table>
+</div>
+
+<div class="container">
+  <form [formGroup]="newClubForm" name="newClubForm">
+    <input type="text" id="clubName" formControlName="name"  placeholder="club name">
+    <input type="text" id="clubAbout" formControlName="about"  placeholder="about the club">
+    <button type="button" (click)="newClub()">Submit</button> 
+  </form>
 </div>

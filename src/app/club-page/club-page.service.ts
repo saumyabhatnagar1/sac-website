@@ -13,4 +13,7 @@ export class ClubPageService {
   getClubDetail(name){
     return this.http.get(this.baseApiUrl+`getclub/${name}`,{})
   }
+  newClub(data){
+    return this.http.post(this.baseApiUrl+'newclub',data,{})
+  }
 }

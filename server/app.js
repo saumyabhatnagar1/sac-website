@@ -10,6 +10,7 @@ app.get('',(req,res)=>{
     res.send('Hello World!')
 })
 app.post('/newclub',async (req,res)=>{
+    //console.log(req.body)
     const club=new Club(req.body)
    try{
        await club.save()

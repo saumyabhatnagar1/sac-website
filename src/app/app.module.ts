@@ -21,6 +21,7 @@ import { IgnitersComponent } from './club/igniters/igniters.component';
 import { C2cComponent } from './club/c2c/c2c.component';
 import { TakeDaBaitComponent } from './club/take-da-bait/take-da-bait.component';
 import { ClubDeTheatreComponent } from './club/club-de-theatre/club-de-theatre.component';
+import {ReactiveFormsModule} from '@angular/forms'
 
 @NgModule({
   declarations: [
@@ -47,7 +48,8 @@ import { ClubDeTheatreComponent } from './club/club-de-theatre/club-de-theatre.c
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

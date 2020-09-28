@@ -1,4 +1,6 @@
+import { JsonPipe } from '@angular/common';
 import { Component, OnInit } from '@angular/core';
+import { FormControl, FormGroup } from '@angular/forms';
 import {ClubPageService} from './club-page.service'
 @Component({
   selector: 'app-club-page',
@@ -7,8 +9,14 @@ import {ClubPageService} from './club-page.service'
 })
 export class ClubPageComponent implements OnInit {
 
+public newClubForm=new FormGroup({
+  name:new FormControl(''),
+  about:new FormControl('')
+})
+
+
+  pageName;
   constructor(private clubPage:ClubPageService) { }
-   pageName;
   ngOnInit(): void {
     this.pageName='CipherCell'
     this.getclubDetails()
@@ -66,6 +74,23 @@ export class ClubPageComponent implements OnInit {
       this.newEvent.push(data[i][1])
     }
     console.log(this.newEvent)
+  }
+
+  newClub(){
+    let name=this.newClubForm.get('name').value
+    let about=this.newClubForm.get('about').value
+    let data={
+      "name":name,
+      "about":about
+    }
+
+    this.clubPage.newClub(data).subscribe((res)=>{
+      console.log(res)
+      this.getClub()
+    },
+    err=>{
+      console.log(err)
+    })
   }
   
 
