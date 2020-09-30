@@ -51,7 +51,12 @@
 .ten,
 .eleven,
 .twelve,
-.thirteen {
+.thirteen,
+.fourteen,
+.fifteen,
+.sixteen,
+.seventeen,
+.eighteen {
   margin: 10px 20px;
   background-color: gray;
 }
@@ -73,7 +78,12 @@
   .ten,
   .eleven,
   .twelve,
-  .thirteen {
+  .thirteen,
+  .fourteen,
+  .fifteen,
+  .sixteen,
+  .seventeen,
+  .eighteen {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -97,7 +107,12 @@
   .ten,
   .eleven,
   .twelve,
-  .thirteen {
+  .thirteen,
+  .fourteen,
+  .fifteen,
+  .sixteen,
+  .seventeen,
+  .eighteen {
     margin: 20px 10px;
   }
 }
