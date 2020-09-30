@@ -1,6 +1,11 @@
 .navbar {
+    background:repeating-linear-gradient(45deg, rgb(27, 27, 27) 0px, rgb(27, 27, 27) 97px,rgb(24, 24, 24) 97px, rgb(24, 24, 24) 194px,rgb(20, 20, 20) 194px, rgb(20, 20, 20) 291px);
     box-shadow: 0 0.1rem 1rem 0.1rem grey;
     margin-bottom: 1rem;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    color: rgba(255, 255, 255, 0.89);
 }
 
 .nav-item:hover, .dropdown-toggle:hover {

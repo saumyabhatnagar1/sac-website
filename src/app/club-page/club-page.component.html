@@ -1,0 +1,49 @@
+<div class="container">
+  <h2>All Clubs</h2>
+  <p *ngFor="let club of clubs;index">
+    {{club.name}}
+  </p>
+</div>
+
+
+<div class="container">
+
+  <table style="border:5,dotted, black;">
+    <th *ngFor="let column of header">
+      {{column}}
+    </th>
+    <tbody>
+      <tr *ngFor="let c of clubs;index as i">
+        <td>
+          {{i+1}}
+        </td>
+        <td>{{c.name}}</td>
+        <td>{{c.about}}</td>
+        <td>{{c.team}}</td>
+        <td>{{c._id}}</td>
+        
+      </tr>
+    </tbody>
+  </table>
+
+
+
+  <table style="margin-top: 50px;border: 1px,dotted,blue;">
+    <tbody>
+      <tr *ngFor="let event of newEvent[0];index as i">
+        <td>{{i+1}}</td>
+        <td>{{event.date}}</td>
+        <td>{{event.eventName}}</td>
+
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<div class="container">
+  <form [formGroup]="newClubForm" name="newClubForm">
+    <input type="text" id="clubName" formControlName="name"  placeholder="club name">
+    <input type="text" id="clubAbout" formControlName="about"  placeholder="about the club">
+    <button type="button" (click)="newClub()">Submit</button> 
+  </form>
+</div>

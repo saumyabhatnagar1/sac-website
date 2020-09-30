@@ -4,8 +4,11 @@ const myschema=new mongoose.Schema({
         type:String,
     },
     about:{type:String},
-    events:{type:String},
-    team:{type:String}
+    events:[{
+        date:{type:String},
+        eventName:{type:String},
+        day:{type:String}
+    }],
 
 })
 const Club=mongoose.model('Club',myschema)

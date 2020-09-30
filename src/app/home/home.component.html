@@ -1,1 +1,162 @@
-<p>home page</p>
+<!-- Jumbotron-->
+<div class="jumbotron jumbotron-fluid" id="iiit">
+  <!-- <div class="text-block"> -->
+  <div>
+    <h1 class="display-4 font-weight-bold" id="sac">
+      Student's Activity Center
+    </h1>
+  </div>
+  
+  <!-- Card Row-->
+  <div class="row">
+    <div class="card-deck text-center" id="grp1">
+       <!-- Clubs -->
+       <div class="card">
+        <img src="https://images.unsplash.com/photo-1517048676732-d65bc937f952?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Clubs">
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h3 class="card-title font-weight-bold"><u>Clubs</u></h3>
+          <p class="card-text">
+            <i>A guide to walk you through all we have to offer through our different clubs.</i>
+            <br>
+          </p>
+          <a href="#" class="btn btn-secondary mt-auto">Explore More <i class="fa fa-users"></i></a>
+        </div>
+      </div>
+      <!-- Gallery -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1518997350705-0379564558ac?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Gallery">
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h3 class="card-title font-weight-bold"><u>Gallery</u></h3>
+          <p class="card-text">
+            <i>A little sneak peek for all the fun.</i>
+            <br>
+          </p>
+          <a href="#" class="btn btn-warning mt-auto">Explore More <i class="fa fa-camera"></i></a>
+        </div>
+      </div>
+      <!-- Activities and Achievements -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1571008592377-e362723e8998?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Activities and Achievements">
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h3 class="card-title font-weight-bold"><u>Activities and Achievements</u></h3>
+          <p class="card-text">
+            <i>Let's have a look at how the things are turning out in each club and some achievements to flex a little.</i>
+            <br>
+          </p>
+          <a href="#" class="btn btn-info mt-auto">Explore More <i class="fa fa-trophy"></i></a>
+        </div>
+      </div>      
+      <!-- Newsletters -->
+      <div class="card">
+        <img src="https://images.unsplash.com/photo-1583403608659-e87733b432aa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60" class="card-img-top" alt="Newsletter">
+        <div class="card-body d-flex flex-column justify-content-center">
+          <h3 class="card-title font-weight-bold"><u>Newsletters</u></h3>
+          <p class="card-text">
+            <i>A way to keep people updated about the recent happening in that area, if you're busy to not keep updated regularly, this will get you covered.</i>
+            <br>
+          </p>
+          <a href="#" class="btn btn-success mt-auto">Explore More <i class="fa fa-newspaper-o"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<div class="container">
+  <div class="row">
+    <!-- Calendar-->
+    <div class="col-md-6" style="color: rgba(0, 0, 0,1)">
+      <h3 class="font-weight-bold" style="padding-top: 30px;">Calendar</h3><hr>
+    </div>
+    
+    <!-- About SAC -->
+    <div class="col-md-6" style="color: rgba(0, 0, 0,1)">
+      <h3 class="font-weight-bold" style="padding-top: 30px;">About SAC</h3><hr>
+      <p class="text-justify">
+        <b>SAC (Students' Activity Center)</b> was established in the year <b>2018</b> and it aims to promote and
+        support student activities in <b>IIIT Naya Raipur</b>.
+        Under SAC, all sorts of activities including technical, cultural, sports, arts, science, student affairs, etc. are managed.<br>
+        Currently, SAC has
+        2 UG Representatives;
+        2 Science and Technology Representatives;
+        2 Arts, Cultural and Literary Respresentative;
+        and 2 Sports Representatives.<br>
+        All working under the President of SAC, who is a faculty mentor.
+      </p>
+    </div>
+  </div> 
+</div>
+
+<!--Footer-->
+<section style="background: #171a21">
+  <div class="footer-top">
+    <div class="text-center">
+        <div class="row">
+            <div class="col-md-8 footer-writeus">
+              <h4 style="color: #fff;"><u>Write Us</u></h4>
+              <section id="write_us">
+                <div class="container" style="padding: 0;">
+                    <div class="row">
+                      <div class="col col-md-10 offset-md-1">
+                          <div id="writeUsCard" class="card">
+                              <div class="card-body" style="width: 100%; background-color: #171a21;">
+                                <!-- Form -->
+                                <form method="POST" action="/">
+                                    <input type="hidden" name="csrfmiddlewaretoken" value="3BXlfCxvPCHS2b3BNx9t6ifGaEMpDQPzCqnszdceVkxFEE4NpkTZyx0c08JaFtw9">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <div class="form-group p-1">
+                                              <!-- <label for="name">Name</label> -->
+                                              <input type="text" class="form-control" id="name" name="name" placeholder="Name" required>
+                                            </div>
+                                            <div class="form-group p-1">
+                                              <!-- <label for="email">E-Mail Address</label> -->
+                                              <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail" required>
+                                              <small id="emailHelp" class="form-text text-muted" style="font-size:0.5em;">
+                                                We'll never share your e-mail with anyone else.
+                                              </small>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-8">
+                                            <div class="form-group">
+                                              <!-- <label for="message">Message</label> -->
+                                              <textarea class="form-control" id="message" name="msg" rows="4" placeholder="Message" required></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-2 offset-md-5" style="width: 100%;">
+                                            <div class="margin: 0 auto;">
+                                                <button type="submit" class="btn btn-primary btn-sm text-right" style="font-size: 20px;">Submit</button>
+                                            </div>
+                                            <!-- <button class="btn btn-primary" type="submit">Button</button> -->
+                                        </div>
+                                    </div>
+                                </form>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                </div>
+              </section>
+            </div>
+
+            <div class="col-md-4 footer-contact" style="color: #fff;">
+              <h4><u>Contact Us</u></h4>
+              <p style="color: #fff;">
+                  SAC Office, IIIT Naya Raipur<br>
+                  Plot No. 7, Sector-24<br>
+                  Near Purkhoti Muktangan<br>
+                  Chhattisgarh<br>
+                  <strong>Phone:</strong> +91 8827106331<br>
+                  <strong>E-Mail:</strong> sac@iiitnr.edu.in<br>
+              </p>
+
+              <div class="social-links" style="color: #fff;">
+                <a href="https://twitter.com/IIIT_NR" class="twitter" style="color: #fff"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/IIITNROfficial" class="facebook" style="color: #fff"><i class="fa fa-facebook"></i></a>
+                <a href="https://www.instagram.com/iiitnrofficial/" class="instagram" style="color: #fff"><i class="fa fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/school/iiitnrofficial/" class="linkedin" style="color: #fff"><i class="fa fa-linkedin"></i></a>
+              </div>
+            </div>
+          </div>
+      </div>
+    </div>
+</section>
