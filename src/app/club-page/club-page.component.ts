@@ -1,17 +1,57 @@
 import { JsonPipe } from '@angular/common';
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit,ChangeDetectionStrategy } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import {ClubPageService} from './club-page.service'
+import { CalendarView,CalendarEvent} from 'angular-calendar'
+import {
+  startOfDay,
+  endOfDay,
+  subDays,
+  addDays,
+  endOfMonth,
+  isSameDay,
+  isSameMonth,
+  addHours,
+} from 'date-fns';
+
 @Component({
   selector: 'app-club-page',
   templateUrl: './club-page.component.html',
+  changeDetection:ChangeDetectionStrategy.OnPush,
   styleUrls: ['./club-page.component.css']
 })
 export class ClubPageComponent implements OnInit {
 
+view:CalendarView=CalendarView.Month;
+viewDate:Date=new Date();
+events: CalendarEvent[] = [
+  {
+    title: 'Painting Competition',
+   
+    start: new Date(),
+  },
+  {
+    title: 'Or click me',
+    
+    start: new Date(),
+  },
+];
+
+eventClicked({ event }: { event: CalendarEvent }): void {
+  console.log('Event clicked', event);
+}
+
+
+  value:Date
+
 public newClubForm=new FormGroup({
   name:new FormControl(''),
   about:new FormControl('')
+})
+public newEventForm=new FormGroup({
+  date:new FormControl(''),
+  day:new FormControl(''),
+  eventName: new FormControl('')
 })
 
 
@@ -51,7 +91,7 @@ public newClubForm=new FormGroup({
       console.log(err)
     })
   }
-  events=[]
+  
   club=[]
   appendClub(res){
     let data=Object.entries(res)
@@ -92,6 +132,7 @@ public newClubForm=new FormGroup({
       console.log(err)
     })
   }
+  
   
 
 

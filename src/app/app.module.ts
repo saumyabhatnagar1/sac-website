@@ -1,4 +1,5 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { NgModule } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { AppRoutingModule } from './app-routing.module';
@@ -22,6 +23,14 @@ import { C2cComponent } from './club/c2c/c2c.component';
 import { TakeDaBaitComponent } from './club/take-da-bait/take-da-bait.component';
 import { ClubDeTheatreComponent } from './club/club-de-theatre/club-de-theatre.component';
 import {ReactiveFormsModule} from '@angular/forms'
+import {FormsModule }from '@angular/forms';
+import { CalendarModule, DateAdapter } from 'angular-calendar';
+import { adapterFactory } from 'angular-calendar/date-adapters/moment';
+import * as moment from 'moment';
+
+export function momentAdapterFactory() {
+  return adapterFactory(moment);
+}
 
 @NgModule({
   declarations: [
@@ -48,8 +57,12 @@ import {ReactiveFormsModule} from '@angular/forms'
   imports: [
     BrowserModule,
     AppRoutingModule,
+    BrowserAnimationsModule,
     HttpClientModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    CalendarModule,
+    FormsModule,
+    CalendarModule.forRoot({ provide: DateAdapter, useFactory: momentAdapterFactory })
   ],
   providers: [],
   bootstrap: [AppComponent]

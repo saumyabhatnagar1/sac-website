@@ -47,3 +47,18 @@
     <button type="button" (click)="newClub()">Submit</button> 
   </form>
 </div>
+
+
+
+<div [ngSwitch]="view">
+  <mwl-calendar-month-view
+    *ngSwitchCase="'month'"
+    [viewDate]="viewDate"
+    [events]="events"
+    [activeDayIsOpen]="true"
+    (eventClicked)="eventClicked($event)"
+  >
+  </mwl-calendar-month-view>
+
+</div>
+
