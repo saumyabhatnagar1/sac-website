@@ -47,7 +47,7 @@ hr {
 
 .card1, .card2 {
     /* background: rgb(228, 226, 226); */
-    background: rgba(228, 226, 226, 0.89);
+    background: transparent;
     /* background-image: linear-gradient(#f88939, #f5ff69); */
     width: 15rem;
     display: flex;
