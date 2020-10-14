@@ -27,7 +27,7 @@ html {
 }
 
 #grp1 {
-	margin-top: 35em;
+	margin-top: 41em;
 }
 
 #grp2 {
@@ -76,4 +76,7 @@ h4 {
 	font-size: 20px;
 	/* box-shadow: 0 0 #171a21; */
 	box-shadow: 1px 1px 10px 5px #5f6c8b;
+}
+#about{
+	font-size: 23px;
 }
