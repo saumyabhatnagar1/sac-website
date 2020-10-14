@@ -1,10 +1,7 @@
-import { JsonPipe } from '@angular/common';
-import { Component, OnInit,ChangeDetectionStrategy } from '@angular/core';
+import { ChangeDetectionStrategy, Component, OnInit } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
-import {ClubPageService} from './club-page.service'
 import { CalendarView,CalendarEvent,CalendarEventTimesChangedEvent,CalendarEventAction} from 'angular-calendar';
 import {Subject} from 'rxjs';
-
 import {
   startOfDay,
   endOfDay,
@@ -15,8 +12,6 @@ import {
   isSameMonth,
   addHours,
 } from 'date-fns';
-
-
 const colors: any = {
   red: {
     primary: '#ad2121',
@@ -33,14 +28,18 @@ const colors: any = {
 };
 
 @Component({
-  selector: 'app-club-page',
-  templateUrl: './club-page.component.html',
-  changeDetection:ChangeDetectionStrategy.OnPush,
-  styleUrls: ['./club-page.component.css']
+  selector: 'app-calendar',
+  templateUrl: './calendar.component.html',
+  styleUrls: ['./calendar.component.css'],
+  changeDetection:ChangeDetectionStrategy.OnPush
 })
-export class ClubPageComponent implements OnInit {
+export class CalendarComponent implements OnInit {
 
-view:CalendarView=CalendarView.Month;
+  constructor() { }
+
+  ngOnInit(): void {
+  }
+  view:CalendarView=CalendarView.Month;
 viewDate:Date=new Date();
 
 modalData:{
@@ -126,87 +125,6 @@ setView(view: CalendarView) {
 closeOpenMonthViewDay() {
   this.activeDayIsOpen = false;
 }
-
-  pageName;
-  constructor(private clubPage:ClubPageService) { }
-  ngOnInit(): void {
-    this.pageName='CipherCell'
-    this.getclubDetails()
-    this.getClub()
-  }
-  header=["s no.","name","about","team"]
-
-  getclubDetails(){
-    this.clubPage.getClubDetails().subscribe((res)=>{
-      // console.log(res)
-      this.appendClubs(res)
-    },
-    err=>{
-      console.log(err)
-    })
-  }
-  clubs=[]
-  appendClubs(res){
-    let data=Object.entries(res)
-    // console.log(data)
-    for(let i=0;i<data.length;i++){
-      this.clubs.push(data[i][1])
-    }
-    console.log(this.clubs)
-  }
-  getClub(){
-    this.clubPage.getClubDetail(this.pageName).subscribe((res)=>{
-      // console.log(res)
-      this.appendClub(res)
-    },
-    err=>{
-      console.log(err)
-    })
-  }
-  
-  club=[]
-  appendClub(res){
-    let data=Object.entries(res)
-    console.log(data)
-    for(let i=0;i<data.length;i++){
-      let value=data[i][0]
-      this.club.push({[value]:data[i][1]})
-    }
-    // this.events=[...(this.club[3])]
-    this.appendEvents()
-    console.log(this.club)
-  }
-
-  newEvent=[]
-  appendEvents(){
-   // console.log(this.events)
-    let data=Object.entries(this.club[3])
-    console.log(data)
-    for(let i=0;i<data.length;i++){
-      this.newEvent.push(data[i][1])
-    }
-    console.log(this.newEvent)
-  }
-
-  newClub(){
-    let name=this.newClubForm.get('name').value
-    let about=this.newClubForm.get('about').value
-    let data={
-      "name":name,
-      "about":about
-    }
-
-    this.clubPage.newClub(data).subscribe((res)=>{
-      console.log(res)
-      this.getClub()
-    },
-    err=>{
-      console.log(err)
-    })
-  }
-  
-  
-
 
 
 }
