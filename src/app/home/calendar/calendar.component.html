@@ -1,9 +1,12 @@
 
 <div class="row mb-5">
-    <div class="col-md-6">
+  <div class="row mb-2">
+
+  
+    <div class="col-md-6 text-right">
       <div class="btn-group">
         <div
-          class="btn btn-primary"
+          class="btn btn-info"
           mwlCalendarPreviousView
           [view]="view"
           [(viewDate)]="viewDate"
@@ -12,14 +15,14 @@
           Previous
         </div>
         <div
-          class="btn btn-outline-secondary"
+          class="btn btn-outline-primary"
           mwlCalendarToday
           [(viewDate)]="viewDate"
         >
           Today
         </div>
         <div
-          class="btn btn-primary"
+          class="btn btn-info"
           mwlCalendarNextView
           [view]="view"
           [(viewDate)]="viewDate"
@@ -32,9 +35,10 @@
     <div class="col-md-6">
       <h3>{{ viewDate | calendarDate:(view + 'ViewTitle'):'en' }}</h3>
     </div>
+    </div>
    
     <br />
-    <div class="col-md-12" >
+    <div class="col-md-12"  style="padding: 0px;">
         <mwl-calendar-month-view
         [viewDate]="viewDate"
         [events]="events"
@@ -44,7 +48,7 @@
         >
     </mwl-calendar-month-view>
     
-</div>
+    </div>
 </div>
 
   

@@ -108,15 +108,6 @@ eventClicked({ event }: { event: CalendarEvent }): void {
 
   value:Date
 
-public newClubForm=new FormGroup({
-  name:new FormControl(''),
-  about:new FormControl('')
-})
-public newEventForm=new FormGroup({
-  date:new FormControl(''),
-  day:new FormControl(''),
-  eventName: new FormControl('')
-})
 
 setView(view: CalendarView) {
   this.view = view;
