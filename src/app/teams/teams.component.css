@@ -57,7 +57,7 @@
 .sixteen,
 .seventeen,
 .eighteen {
-  margin: 10px 20px;
+  margin: 10px 30px;
   background-color: gray;
 }
 @media screen and (max-width: 1050px) {
