@@ -1,0 +1,199 @@
+.jumbotron {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-size: 100% 100%;
+    height: 500px;
+    width: 100%;
+    color:#ededed;
+    text-align: right;
+    margin-top: -1rem;
+    margin-bottom: -1rem;
+}
+
+.container-fluid {
+    /* background-color: rgb(251, 249, 219); */
+    /* background: linear-gradient(45deg, #dfdfdf, #f5f0ff);; */
+    background: linear-gradient(90deg, rgb(229, 250, 206) 5%, rgba(228,228,245) 20%, rgba(199, 240, 248) 120%);
+    padding: 1.5rem;
+}
+
+.heading {
+    padding-top: 100px;
+}
+
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.img_logo, .img_others {
+    -webkit-filter: drop-shadow(3px 5px 3px #474747);
+    filter: drop-shadow(3px 5px 3px #474747);
+    border-radius: 20px;
+    border: 1px solid rgb(128, 127, 127);
+}
+
+#title {
+    font-family: 'Pontano Sans', sans-serif;
+    font-size: 60px;
+    margin-bottom: 0px;
+    padding-bottom: 0px;
+}
+
+#tagline {
+    margin-top: 0px;
+    padding-top: 0px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+}
+
+.aboutUsContainer {
+    padding-bottom: 30px;
+}
+
+#club_logo {
+    width: 350px;
+    height: 350px;
+    float: right;
+}
+
+#mynav {
+    background-color:#03060B;
+    opacity: 0.92;
+}
+
+.nav-item {
+    padding-left: 10px;
+}
+
+.past {
+    background: linear-gradient(rgba(131, 156, 163, 0), rgba(114, 123, 126, 0.49));
+    color:#ededed;
+    text-align: center;
+    text-shadow: 2px 2px 4px #000000;
+    /* border: 1px solid black; */
+    border-style: outset;
+    padding: 0.5rem 0 1rem 0;
+}
+
+#past_events {
+    background-color: #ff7705;
+    /* box-shadow: 15px 10px 10px rgb(221, 177, 74); */
+}
+
+#updates {
+    background-color: rgb(134, 173, 134);
+    /* box-shadow: 15px 10px 10px rgb(92, 248, 126); */
+}
+
+#team {
+    text-align: center;
+    background-color:#2551ca ;
+    /* box-shadow: 15px 10px 10px rgb(74, 121, 221); */
+}
+
+.events {
+    width: 100%;
+    height: 550px;
+}
+
+.font-weight-light {
+    font-size: 2rem;
+    margin: 0px;
+    padding: 0px;
+}
+
+.mycar:hover .overlay {
+    opacity: 0.35;
+    margin-bottom: 1rem;
+}
+
+.carousel-inner {
+    font-family: 'Nunito', sans-serif;
+}
+
+.overlay {
+    position: absolute; 
+    bottom: 0; 
+    color: #f1f1f1; 
+    transition: .5s ease;
+    opacity: 0;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    /* height: 100px; */
+    border-radius: 22px;
+}
+
+.carousel-caption {
+    background-color:rgba(0,0,0,0.8);
+}
+
+.card {
+    border: 2px solid transparent;
+    margin: 1rem;
+}
+
+.card-img-top {
+    background-image: linear-gradient(#7bc9fa, #7f85a1);
+    -webkit-filter: drop-shadow(3px 5px 3px #474747);
+    filter: drop-shadow(3px 5px 3px #474747);
+    border-radius: 20px;
+    border: 1px solid rgb(128, 127, 127);
+}
+
+.card_team {
+    background: hsla(40, 63%, 85%, 1);
+    width: 15rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid grey;
+    border-radius: 6px 6px 0px 0px;
+    box-shadow: 0 10px 20px 2px rgba(119, 118, 118, 0.767);
+}
+
+.card-header {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    font-weight: bold;
+}
+
+.card-subtitle {
+    padding: 1rem 0 0 0;
+    font-weight: 900;
+    font-family: 'Piazzolla', serif;
+}
+
+#next, #prev {
+  height: 100px;
+  width: 100px;
+  outline: black;
+  border-radius: 50%;
+  background-image: none;
+  background-size: 100%, 100%;
+}
+
+#next:after {
+  content: '>';
+  font-size: 40px;
+  font-weight: bold;
+  color:#FF7705;
+}
+
+#prev:after {
+  content: '<';
+  font-size: 40px;
+  font-weight: bold;
+  color:#FF7705;
+}
+
+button {
+    font-size: 25px;
+    margin: 0 -0.2rem;
+}

@@ -13,7 +13,7 @@
     /* background-color: rgb(251, 249, 219); */
     /* background: linear-gradient(45deg, #dfdfdf, #f5f0ff);; */
     background: rgb(234,249,219);
-    background: linear-gradient(90deg, rgba(234,249,219,1) 0%, rgba(228,228,245,1) 32%, rgba(211,236,241,1) 100%);
+    background: linear-gradient(90deg, rgb(229, 250, 206) 5%, rgba(228,228,245) 20%, rgba(199, 240, 248) 120%);
     padding: 1.5rem;
 }
 
@@ -21,11 +21,17 @@
     padding-top: 100px;
 }
 
-/* #ele-divider {
-    border: 15px solid rgb(134, 173, 134);
-    border-radius: 5px;
-    margin: 0;
-} */
+img {
+    height: 200px;
+    width: 200px;
+}
+
+.img_logo, .img_others {
+    -webkit-filter: drop-shadow(3px 5px 3px #474747);
+    filter: drop-shadow(3px 5px 3px #474747);
+    border-radius: 20px;
+    border: 1px solid rgb(128, 127, 127);
+}
 
 #title {
     font-family: 'Pontano Sans', sans-serif;
@@ -45,7 +51,7 @@
     padding-bottom: 30px;
 }
 
-#tsoc_logo {
+#club_logo {
     width: 350px;
     height: 350px;
     float: right;
@@ -92,7 +98,7 @@
 }
 
 .font-weight-light {
-    font-size: 50px;
+    font-size: 2rem;
     margin: 0px;
     padding: 0px;
 }
@@ -123,54 +129,68 @@
     background-color:rgba(0,0,0,0.8);
 }
 
-.card-deck {
-    padding-top: 30px;
-    padding-bottom: 30px;
-}
-
 .card {
     border: 2px solid transparent;
     margin: 1rem;
+}
+
+.card-img-top {
+    background-image: linear-gradient(#7bc9fa, #7f85a1);
+    -webkit-filter: drop-shadow(3px 5px 3px #474747);
+    filter: drop-shadow(3px 5px 3px #474747);
+    border-radius: 20px;
+    border: 1px solid rgb(128, 127, 127);
+}
+
+.card_team {
+    background: hsla(40, 63%, 85%, 1);
     width: 15rem;
     display: flex;
     text-align: center;
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    border: 1px solid grey;
+    border-radius: 6px 6px 0px 0px;
+    box-shadow: 0 10px 20px 2px rgba(119, 118, 118, 0.767);
 }
 
-.card-img-top {
-    width: 200px;
-    height: 200px;
+.card-header {
+    width: 100%;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    font-weight: bold;
 }
 
-.card-body {
-    background-color:#FF7705;
-    color:white;  
-}
-
-.card-footer {
-    font-style: italic;
+.card-subtitle {
+    padding: 1rem 0 0 0;
+    font-weight: 900;
+    font-family: 'Piazzolla', serif;
 }
 
 #next, #prev {
   height: 100px;
   width: 100px;
   outline: black;
-  background-size: 100%, 100%;
   border-radius: 50%;
   background-image: none;
+  background-size: 100%, 100%;
 }
 
 #next:after {
   content: '>';
-  font-size: 55px;
+  font-size: 40px;
+  font-weight: bold;
   color:#FF7705;
 }
 
 #prev:after {
   content: '<';
-  font-size: 55px;
+  font-size: 40px;
+  font-weight: bold;
   color:#FF7705;
 }
 

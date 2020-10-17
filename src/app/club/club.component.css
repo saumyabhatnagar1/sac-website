@@ -52,8 +52,12 @@ hr {
 }
 
 .card-img-top {
-    background-image: linear-gradient(#7bc9fa, #7f85a1);
+    /* background-image: linear-gradient(#7bc9fa, #7f85a1); */
+    background: #b8b7b7;
+    -webkit-filter: drop-shadow(5px 5px 5px #474747);
+    filter: drop-shadow(5px 5px 5px #474747);
     border-radius: 20px;
+    border: 1px solid rgb(128, 127, 127);
 }
 
 .card1, .card2 {
