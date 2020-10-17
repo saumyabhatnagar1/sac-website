@@ -1,14 +1,18 @@
 #iiit {
-	background-image: url("../../assets/home1.jpg");
-	height: fit-content;
+	background-image: url("../../assets/SAC_WEB_2.jpg");
 	width: 100%;
-	max-height: 95vh;
+	height: 140vh;
 	/* max-height: 90vh; */
 	margin-top: -1rem;
     background-size: cover;
 	background-position: center;
+	background-repeat: no-repeat;
 }
-
+#mainbody
+{
+	overflow-x: hidden;
+	margin-top:-1rem;
+}
 /* .text-block {
 	position: absolute;
   	top: 3.5rem;
@@ -16,7 +20,6 @@
 	padding: 0.5rem;
 	filter: grayscale(70%);
 } */
-
 #sac {
 	font-family: Georgia, serif;
 	color:rgb(255, 47, 47);
@@ -27,12 +30,10 @@ html {
 }
 
 #grp1 {
-	margin-top: 35em;
+	margin-top: 0.5em;
 }
 
-#grp2 {
-	margin-top: 0em;
-}
+
 
 #footer {
 	margin-top: 0em;
@@ -40,6 +41,7 @@ html {
 
 body {
 	background-image: linear-gradient(to left,#93a5cf,#e4efe9);
+	overflow-x: hidden;
 }
 
 .card-deck {
@@ -76,4 +78,7 @@ h4 {
 	font-size: 20px;
 	/* box-shadow: 0 0 #171a21; */
 	box-shadow: 1px 1px 10px 5px #5f6c8b;
+}
+#about{
+	font-size: 23px;
 }

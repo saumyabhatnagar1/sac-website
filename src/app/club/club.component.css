@@ -6,8 +6,8 @@
 
 .navbar {
     margin-top: -1rem;
-    background-image: linear-gradient(rgba(131, 156, 163, 0), rgba(114, 123, 126, 0.5));
     padding: 0.1rem 0;
+    background-image: linear-gradient(rgba(131, 156, 163, 0), rgba(114, 123, 126, 0.76));
 }
 
 li {
@@ -31,8 +31,19 @@ hr {
     margin-top: 0;
 }
 
-.container {
-    margin-bottom: 3rem;
+.container-fluid {
+    background: linear-gradient(45deg, #efffff6e, #cfdef3);
+
+    /* background: rgb(234,249,219);
+    background: linear-gradient(90deg, rgba(234,249,219,1) 0%, rgba(228,228,245,1) 32%, rgba(211,236,241,1) 100%);  */
+    
+    /* background: #ebf4f5; */    
+    /* background-image: linear-gradient(rgba(253, 245, 230, 0.24), rgba(213, 243, 253, 0.603)); */
+    /* background: linear-gradient(45deg, #dfdfdf, #f5f0ff); */
+
+    padding: 1.5rem;
+    margin-top: -1rem;
+    padding-bottom: 6rem;
 }
 
 .card {
@@ -46,8 +57,8 @@ hr {
 }
 
 .card1, .card2 {
-    /* background: rgb(228, 226, 226); */
-    background: rgba(228, 226, 226, 0.89);
+    /* background: rgba(228, 226, 226, 0.89); */
+    background: transparent;
     /* background-image: linear-gradient(#f88939, #f5ff69); */
     width: 15rem;
     display: flex;
@@ -55,6 +66,21 @@ hr {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+}
+
+.card3 {
+    background: hsla(40, 63%, 85%, 1);
+    /* background: transparent; */
+    /* background-image: linear-gradient(#f88939, #f5ff69); */
+    width: 15rem;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid grey;
+    border-radius: 6px 6px 0px 0px;
+    box-shadow: 0 10px 20px 2px rgba(119, 118, 118, 0.767);
 }
 
 .card-flip > div {

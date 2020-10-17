@@ -1,12 +1,13 @@
+<div id="mainbody">
 <!-- Jumbotron-->
 <div class="jumbotron jumbotron-fluid" id="iiit">
   <!-- <div class="text-block"> -->
+</div>
   <div>
     <h1 class="display-4 font-weight-bold" id="sac">
-      Student's Activity Center
+      
     </h1>
   </div>
-  
   <!-- Card Row-->
   <div class="row">
     <div class="card-deck text-center" id="grp1">
@@ -61,31 +62,34 @@
     </div>
   </div>
 
-<div class="container">
+<div class="container ml-9 mt-5">
   <div class="row">
     <!-- Calendar-->
-    <div class="col-md-6" style="color: rgba(0, 0, 0,1)">
-      <h3 class="font-weight-bold" style="padding-top: 30px;">Calendar</h3><hr>
-      <div class="p-field p-col-12 p-md-4">
-        <label for="template">Date Template</label>
-        
-      </div>
+    <div class="col-md-6" style="color: rgba(0, 0, 0,1)" style="margin: 0px;">
+      <h2 class="font-weight-bold" style="padding-top: 30px;">Calendar</h2><hr>
+      <app-calendar></app-calendar>
 
     </div>
     
+    <div class="col-md-1"></div>
     <!-- About SAC -->
-    <div class="col-md-6" style="color: rgba(0, 0, 0,1)">
-      <h3 class="font-weight-bold" style="padding-top: 30px;">About SAC</h3><hr>
-      <p class="text-justify">
+    <div class="col-md-5" style="color: rgba(0, 0, 0,1)">
+      <h2 class="font-weight-bold" style="padding-top: 30px;">About SAC</h2><hr>
+      <p class="text-justify" id="about">
         <b>SAC (Students' Activity Center)</b> was established in the year <b>2018</b> and it aims to promote and
         support student activities in <b>IIIT Naya Raipur</b>.
         Under SAC, all sorts of activities including technical, cultural, sports, arts, science, student affairs, etc. are managed.<br>
-        Currently, SAC has
-        2 UG Representatives;
-        2 Science and Technology Representatives;
-        2 Arts, Cultural and Literary Respresentative;
-        and 2 Sports Representatives.<br>
-        All working under the President of SAC, who is a faculty mentor.
+        Currently, SAC has <i class="fa fa-arrow-right"></i><br></p>
+      <ul id="about">
+       <li>Two UG Representatives.</li>
+       <li>Two Science and Technology Representatives.</li>
+       <li>Two Arts Representatives.</li>
+       <li>Two Cultural Representatives.</li>
+       <li>Two Literary Respresentatives.</li>
+       <li>Two Sports Representatives.</li>
+     </ul>
+       <p id="about">
+       All working under the President of SAC, who is a faculty mentor.
       </p>
     </div>
   </div> 
@@ -165,3 +169,4 @@
       </div>
     </div>
 </section>
+</div>

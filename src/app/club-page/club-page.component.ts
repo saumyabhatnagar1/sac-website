@@ -2,7 +2,9 @@ import { JsonPipe } from '@angular/common';
 import { Component, OnInit,ChangeDetectionStrategy } from '@angular/core';
 import { FormControl, FormGroup } from '@angular/forms';
 import {ClubPageService} from './club-page.service'
-import { CalendarView,CalendarEvent} from 'angular-calendar'
+import { CalendarView,CalendarEvent,CalendarEventTimesChangedEvent,CalendarEventAction} from 'angular-calendar';
+import {Subject} from 'rxjs';
+
 import {
   startOfDay,
   endOfDay,
@@ -14,6 +16,22 @@ import {
   addHours,
 } from 'date-fns';
 
+
+const colors: any = {
+  red: {
+    primary: '#ad2121',
+    secondary: '#FAE3E3',
+  },
+  blue: {
+    primary: '#1e90ff',
+    secondary: '#D1E8FF',
+  },
+  yellow: {
+    primary: '#e3bc08',
+    secondary: '#FDF1BA',
+  },
+};
+
 @Component({
   selector: 'app-club-page',
   templateUrl: './club-page.component.html',
@@ -24,18 +42,65 @@ export class ClubPageComponent implements OnInit {
 
 view:CalendarView=CalendarView.Month;
 viewDate:Date=new Date();
+
+modalData:{
+  action:String,
+  event:CalendarEvent;
+}
+
 events: CalendarEvent[] = [
   {
-    title: 'Painting Competition',
-   
-    start: new Date(),
+    start: subDays(startOfDay(new Date()), 1),
+    end: addDays(new Date(), 1),
+    title: 'A 3 day event',
+    color: colors.red,
+    allDay: true,
+    resizable: {
+      beforeStart: true,
+      afterEnd: true,
+    },
+    draggable: true,
   },
   {
-    title: 'Or click me',
-    
-    start: new Date(),
+    start: startOfDay(new Date()),
+    title: 'An event with no end date',
+    color: colors.yellow,
+  },
+  {
+    start: subDays(endOfMonth(new Date()), 3),
+    end: addDays(endOfMonth(new Date()), 3),
+    title: 'A long event that spans 2 months',
+    color: colors.blue,
+    allDay: true,
+  },
+  {
+    start: addHours(startOfDay(new Date()), 2),
+    end: addHours(new Date(), 2),
+    title: 'A draggable and resizable event',
+    color: colors.yellow,
+    resizable: {
+      beforeStart: true,
+      afterEnd: true,
+    },
+    draggable: true,
   },
 ];
+
+refresh:Subject<any>=new Subject()
+activeDayIsOpen:boolean=true;
+dayClicked({ date, events }: { date: Date; events: CalendarEvent[] }): void {
+  if (isSameMonth(date, this.viewDate)) {
+    if (
+      (isSameDay(this.viewDate, date) && this.activeDayIsOpen === true) ||
+      events.length === 0
+    ) {
+      this.activeDayIsOpen = false;
+    } else {
+      this.activeDayIsOpen = true;
+    }
+    this.viewDate = date;
+  }
+}
 
 eventClicked({ event }: { event: CalendarEvent }): void {
   console.log('Event clicked', event);
@@ -54,6 +119,13 @@ public newEventForm=new FormGroup({
   eventName: new FormControl('')
 })
 
+setView(view: CalendarView) {
+  this.view = view;
+}
+
+closeOpenMonthViewDay() {
+  this.activeDayIsOpen = false;
+}
 
   pageName;
   constructor(private clubPage:ClubPageService) { }

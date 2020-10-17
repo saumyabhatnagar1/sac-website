@@ -28,6 +28,7 @@ import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/moment';
 import * as moment from 'moment';
 import { ShutterbugComponent } from './club/shutterbug/shutterbug.component';
+import { CalendarComponent } from './home/calendar/calendar.component';
 
 export function momentAdapterFactory() {
   return adapterFactory(moment);
@@ -54,7 +55,8 @@ export function momentAdapterFactory() {
     C2cComponent,
     TakeDaBaitComponent,
     ClubDeTheatreComponent,
-    ShutterbugComponent
+    ShutterbugComponent,
+    CalendarComponent
   ],
   imports: [
     BrowserModule,

@@ -116,3 +116,9 @@
     margin: 20px 10px;
   }
 }
+
+.card-img-top {
+  width: 100%;
+  height: 80%;
+  object-fit: cover;
+}
