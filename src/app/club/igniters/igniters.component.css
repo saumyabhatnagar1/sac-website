@@ -109,6 +109,7 @@ img {
 
 .carousel-inner {
     font-family: 'Nunito', sans-serif;
+    /* padding-bottom: 2rem; */
 }
 
 .overlay {
