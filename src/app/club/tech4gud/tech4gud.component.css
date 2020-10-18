@@ -114,6 +114,7 @@ img {
 
 .carousel-inner {
     font-family: 'Nunito', sans-serif;
+    /* padding-bottom: 2rem; */
 }
 
 .overlay {
@@ -163,6 +164,7 @@ img {
     width: 100%;
     padding: 1rem;
     display: flex;
+    font-size: 0.9rem;
     align-items: center;
     justify-content: center;
     background: transparent;
