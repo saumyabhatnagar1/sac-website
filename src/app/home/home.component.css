@@ -34,8 +34,6 @@ html {
 	margin-top: 0.5em;
 }
 
-
-
 #footer {
 	margin-top: 0em;
 }
@@ -81,5 +79,5 @@ h4 {
 	box-shadow: 1px 1px 10px 5px #5f6c8b;
 }
 #about{
-	font-size: 23px;
+	font-size: 1.03rem;
 }
