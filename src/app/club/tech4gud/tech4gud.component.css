@@ -90,7 +90,7 @@ img {
 
 .events {
     width: 100%;
-    height: 570px;
+    height: 350px;
 }
 
 .font-weight-light {
@@ -195,4 +195,11 @@ img {
 button {
     font-size: 25px;
     margin: 0 -0.2rem;
+}
+
+@media screen and (min-width: 600px) {
+    .events {
+        width: 100%;
+        height: 800px;
+    }
 }
