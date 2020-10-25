@@ -1,6 +1,6 @@
 import { JsonPipe } from '@angular/common';
 import { Component, OnInit,ChangeDetectionStrategy } from '@angular/core';
-import { FormControl, FormGroup } from '@angular/forms';
+import { EmailValidator, FormControl, FormGroup } from '@angular/forms';
 import {ClubPageService} from './club-page.service'
 import { CalendarView,CalendarEvent,CalendarEventTimesChangedEvent,CalendarEventAction} from 'angular-calendar';
 import {Subject} from 'rxjs';
@@ -118,6 +118,29 @@ public newEventForm=new FormGroup({
   day:new FormControl(''),
   eventName: new FormControl('')
 })
+
+public feedbackForm=new FormGroup({
+  name:new FormControl(''),
+  email:new FormControl(''),
+  query:new FormControl('')
+})
+
+newFeedback(){
+  let name=this.feedbackForm.get('name').value
+  let email=this.feedbackForm.get('email').value
+  let query=this.feedbackForm.get('query').value
+  let data={
+    "name":name,
+    "email":email,
+    "query":query
+  }
+  this.clubPage.newFeedback(data).subscribe((res)=>{
+    console.log(res)
+  },err=>{
+    console.log(err)
+  })
+  console.log(data)
+}
 
 setView(view: CalendarView) {
   this.view = view;

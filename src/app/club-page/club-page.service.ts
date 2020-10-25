@@ -16,4 +16,7 @@ export class ClubPageService {
   newClub(data){
     return this.http.post(this.baseApiUrl+'newclub',data,{})
   }
+  newFeedback(data){
+    return this.http.post('https://formspree.io/f/mqkgqozv',data,{})
+  }
 }

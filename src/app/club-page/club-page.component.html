@@ -48,55 +48,22 @@
   </form>
 </div>
 
-
-
-
-
-<div class="row text-center">
-  <div class="col-md-4">
-    <div class="btn-group">
-      <div
-        class="btn btn-primary"
-        mwlCalendarPreviousView
-        [view]="view"
-        [(viewDate)]="viewDate"
-        (viewDateChange)="closeOpenMonthViewDay()"
-      >
-        Previous
-      </div>
-      <div
-        class="btn btn-outline-secondary"
-        mwlCalendarToday
-        [(viewDate)]="viewDate"
-      >
-        Today
-      </div>
-      <div
-        class="btn btn-primary"
-        mwlCalendarNextView
-        [view]="view"
-        [(viewDate)]="viewDate"
-        (viewDateChange)="closeOpenMonthViewDay()"
-      >
-        Next
-      </div>
-    </div>
-  </div>
-  <div class="col-md-4">
-    <h3>{{ viewDate | calendarDate:(view + 'ViewTitle'):'en' }}</h3>
-  </div>
- 
+<div class="container">
+  <form [formGroup]="feedbackForm" name="feedbackForm">
+    <input type="text" id="name" formControlName="name">
+    <input type="email" id="email" formControlName="_replyto">
+    <input type="text" id="query" formControlName="query">
+    <button type="submit" (click)="newFeedback()">Submit</button>
+  </form>
 </div>
-<br />
-<div [ngSwitch]="view" class="col-md-5">
-  <mwl-calendar-month-view
-    [viewDate]="viewDate"
-    [events]="events"
-    [refresh]="refresh"
-    [activeDayIsOpen]="activeDayIsOpen"
-    (dayClicked)="dayClicked($event.day)"
-  >
-  </mwl-calendar-month-view>
+
+
+
+
+
+
+
   
-</div>
+
+
 

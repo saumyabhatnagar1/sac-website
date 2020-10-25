@@ -1,0 +1,74 @@
+
+#mainbody
+{
+	overflow-x: hidden;
+	margin-top:-1rem;
+}
+/* .text-block {
+	position: absolute;
+  	top: 3.5rem;
+	opacity: 0.8;
+	padding: 0.5rem;
+	filter: grayscale(70%);
+} */
+#sac {
+	font-family: Georgia, serif;
+	color:rgb(255, 47, 47);
+}
+
+html {
+	height: 100%;
+}
+
+#grp1 {
+
+	margin-top: 0.5em;
+}
+
+#footer {
+	margin-top: 0em;
+}
+
+body {
+	background-image: linear-gradient(to left,#93a5cf,#e4efe9);
+	overflow-x: hidden;
+}
+
+.card-deck {
+	margin: 0 2rem;
+}
+
+.card {
+	margin: 0 0.2rem 0.4rem 0.2rem;
+	box-shadow: 5px 20px 20px rgba(75, 72, 72, 0.767);
+}
+
+.card-text {
+	padding: 0.5rem;
+}
+
+.facebook, .twitter, .instagram, .linkedin {
+	padding: 0 5px;
+}
+
+.footer-writeus, .footer-contact {
+	padding: 1rem 2rem 2rem 2rem;
+}
+
+br {
+	margin-bottom: 0.5rem;
+}
+
+h4 {
+	margin-bottom: 1rem;
+}
+
+#writeUsCard {
+	width: 100%;
+	font-size: 20px;
+	/* box-shadow: 0 0 #171a21; */
+	box-shadow: 1px 1px 10px 5px #5f6c8b;
+}
+#about{
+	font-size: 1.03rem;
+}

@@ -1,0 +1,52 @@
+<div id="writeUsCard" class="card">
+    <div class="card-body" style="width: 100%; background-color: #171a21;">
+      <!-- Form -->
+      <form [formGroup]="feedbackForm" name="feedbackFrom">
+          <div class="row">
+              <div class="col-md-4">
+                  <div class="form-group p-1">
+                    <!-- <label for="name">Name</label> -->
+                    <input type="text" class="form-control" id="name" formControlName="name" name="name" placeholder="Name" required>
+                  </div>
+                  <div class="form-group p-1">
+                    <!-- <label for="email">E-Mail Address</label> -->
+                    <input type="email" class="form-control" id="email" name="email" formControlName="email" placeholder="E-Mail" required>
+                    <small id="emailHelp" class="form-text text-muted" style="font-size:0.5em;">
+                      We'll never share your e-mail with anyone else.
+                    </small>
+                  </div>
+              </div>
+              <div class="col-md-8">
+                  <div class="form-group">
+                    <!-- <label for="message">Message</label> -->
+                    <textarea formControlName="query" class="form-control" id="message" name="msg" rows="4" placeholder="Message" required></textarea>
+                  </div>
+              </div>
+              <div class="col-md-2 offset-md-5" style="width: 100%;">
+                  <div class="margin: 0 auto;">
+                      <button type="submit" data-toggle="modal" data-target="#exampleModal" class="btn btn-primary btn-sm text-right" style="font-size: 20px;" (click)="newFeedback()">Submit</button>
+                  </div>
+                  <!-- <button class="btn btn-primary" type="submit">Button</button> -->
+              </div>
+          </div>
+      </form>
+    </div>
+</div>
+
+
+<!-- modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Thank You!</h5>
+        </div>
+        <div class="modal-body">
+          Your Query has been sent!!
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+  </div>
