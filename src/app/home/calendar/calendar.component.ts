@@ -79,7 +79,7 @@ export class CalendarComponent implements OnInit {
   ngOnInit(): void {
   }
   view:CalendarView=CalendarView.Month;
-  viewDate:Date=new Date(2020,9,28);
+  viewDate:Date=new Date();
 
   modalData: {
     action:String,
