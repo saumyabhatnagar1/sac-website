@@ -30,6 +30,8 @@ import * as moment from 'moment';
 import { ShutterbugComponent } from './club/shutterbug/shutterbug.component';
 import { CalendarComponent } from './home/calendar/calendar.component';
 import { WriteusComponent } from './home/writeus/writeus.component';
+import { NewslettersComponent } from './newsletters/newsletters.component';
+import { AchievementsComponent } from './achievements/achievements.component';
 
 export function momentAdapterFactory() {
   return adapterFactory(moment);
@@ -58,7 +60,9 @@ export function momentAdapterFactory() {
     ClubDeTheatreComponent,
     ShutterbugComponent,
     CalendarComponent,
-    WriteusComponent
+    WriteusComponent,
+    NewslettersComponent,
+    AchievementsComponent
   ],
   imports: [
     BrowserModule,

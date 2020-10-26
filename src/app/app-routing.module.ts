@@ -18,6 +18,8 @@ import { TsocComponent } from './club/tsoc/tsoc.component';
 
 import { ClubPageComponent } from './club-page/club-page.component'
 import { GalleryComponent } from './gallery/gallery.component';
+import { AchievementsComponent } from './achievements/achievements.component';
+import { NewslettersComponent } from './newsletters/newsletters.component';
 import { HomeComponent } from './home/home.component'
 import { TeamsComponent } from './teams/teams.component';
 
@@ -40,6 +42,8 @@ const routes: Routes = [
   {path: 'clubs/tsoc', component: TsocComponent},
   {path: 'clubs/club-page', component: ClubPageComponent},
   {path: 'gallery', component: GalleryComponent},
+  {path: 'achievements', component: AchievementsComponent},
+  {path: 'newsletters', component: NewslettersComponent},
 ];
 
 @NgModule({
