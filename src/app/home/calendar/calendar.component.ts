@@ -79,7 +79,7 @@ export class CalendarComponent implements OnInit {
   ngOnInit(): void {
   }
   view:CalendarView=CalendarView.Month;
-  viewDate:Date=new Date();
+  viewDate:Date=new Date(2020,9,28);
 
   modalData: {
     action:String,
@@ -226,12 +226,12 @@ export class CalendarComponent implements OnInit {
   ];
 
   refresh:Subject<any>=new Subject()
-  activeDayIsOpen:boolean=true;
+  activeDayIsOpen:boolean=false;
   dayClicked({ date, events }: { date: Date; events: CalendarEvent[] }): void {
     if (isSameMonth(date, this.viewDate)) {
       if (
         (isSameDay(this.viewDate, date) && this.activeDayIsOpen === true) ||
-        events.length === 0
+        events.length ===0
       ) {
         this.activeDayIsOpen = false;
       } else {
