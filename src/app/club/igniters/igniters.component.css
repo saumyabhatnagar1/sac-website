@@ -161,8 +161,8 @@ img {
 
 .card-subtitle {
     padding: 1rem 0 0 0;
-    font-weight: 900;
-    font-family: 'Piazzolla', serif;
+    /* font-weight: 900;
+    font-family: 'Piazzolla', serif; */
 }
 
 #next, #prev {
