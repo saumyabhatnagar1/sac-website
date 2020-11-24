@@ -1,5 +1,5 @@
 .jumbotron {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+    background-image: url('../../../assets/background/ciphercell.jpg');
     background-size: 100% 100%;
     height: 500px;
     width: 100%;
@@ -34,6 +34,7 @@ img {
 
 #title {
     font-family: 'Pontano Sans', sans-serif;
+    color: white;
     font-size: 60px;
     margin-bottom: 0px;
     padding-bottom: 0px;
