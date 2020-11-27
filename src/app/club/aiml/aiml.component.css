@@ -197,3 +197,32 @@ button {
         height: 800px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .jumbotron {
+        height: 300px;
+    }
+
+    #title {
+        font-size: 2rem;
+    }
+
+    #tagline {
+        font-size: 1.5rem;
+    }
+}
+
+
+@media screen and (max-width: 600px) {
+    .jumbotron {
+        height: 300px;
+    }
+
+    #title {
+        font-size: 2rem;
+    }
+
+    #tagline {
+        font-size: 1rem;
+    }
+}

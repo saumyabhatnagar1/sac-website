@@ -215,3 +215,17 @@ button {
         height: 800px;
     }
 }
+
+@media screen and (max-width: 600px) {
+    .jumbotron {
+        height: 300px;
+    }
+
+    #title {
+        font-size: 1.4rem;
+    }
+
+    #tagline {
+        font-size: 0.7rem;
+    }
+}

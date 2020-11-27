@@ -17,7 +17,7 @@
 }
 
 .heading {
-    padding-top: 100px;
+    padding-top: 70px;
 }
 
 img {
@@ -195,5 +195,19 @@ button {
     .events {
         width: 100%;
         height: 800px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .jumbotron {
+        height: 300px;
+    }
+
+    #title {
+        font-size: 1.5rem;
+    }
+    
+    #tagline {
+        font-size: 1rem;
     }
 }
