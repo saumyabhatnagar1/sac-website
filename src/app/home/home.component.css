@@ -97,11 +97,50 @@ h4 {
 	font-size: 1.03rem;
 }
 
-@media screen and (max-width:600px){
+@media screen and (min-width: 574px) and (max-width: 678px) {
 	.caption-text{
 		font-size: 3.5rem;
 	}
+	
 	.caption-text .college{
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
+
+	.card-img-top {
+		height: 140px;
+	}
+
+	.card-title {
+        font-size: 0.7rem;
+    }
+
+    .card-text {
+        font-size: 0.6rem;
+	}
+	
+	.btn {
+		font-size: 0.6rem;
+	}
+}
+
+@media screen and (min-width: 678px) and (max-width: 1040px) {
+	.caption-text{
+		font-size: 3.5rem;
+	}
+	
+	.caption-text .college{
+		font-size: 2rem;
+	}
+
+	.card-img-top {
+		height: 200px;
+	}
+
+	.card-title {
+        font-size: 0.9rem;
+    }
+
+    .card-text {
+        font-size: 0.8rem;
+    }
 }
