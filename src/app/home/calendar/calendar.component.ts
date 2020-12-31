@@ -88,141 +88,227 @@ export class CalendarComponent implements OnInit {
 
   events: CalendarEvent[] = [
     {
-      start: startOfDay(new Date(2020,9,17)),
-      title: 'Intra-College Team based Coding Competition: TSoC',
-      
+      title: "Digital Art Workshop: Indradhanush",
+      start: startOfDay(new Date(2020,11,27)),
+      color: colors.yellow,
+      allDay: true,
+    },
+    {
+      title: "Digital Art Workshop: Indradhanush",
+      start: startOfDay(new Date(2020,11,28)),
+      color: colors.yellow,
+      allDay: true,
+    },
+    {
+      title: "Fresher Cookie Quiz: Inquizitive",
+      start: startOfDay(new Date(2021,0,3)),
+      color: colors.green,
+      allDay: true,
+    },
+    {
+      title: "Release of Fresher's Video: ShutterBug",
+      start: startOfDay(new Date(2021,0,10)),
+      color: colors.lblue,
+      allDay: true,
+    },
+    {
+      title: "Quiz: ComEt",
+      start: startOfDay(new Date(2021,0,15)),
+      color: colors.lyellow,
+      allDay: true,
+    },
+    {
+      title: "Online Chess: Atharv",
+      start: startOfDay(new Date(2021,0,23)),
+      color: colors.purple,
+      allDay: true,
+    },
+    {
+      title: "Glory in Art: Indradhanush",
+      start: startOfDay(new Date(2021,0,24)),
+      color: colors.yellow,
+      allDay: true,
+    },
+    {
+      title: "Intra Coding Competition: TSoC",
+      start: startOfDay(new Date(2021,0,30)),
       color: colors.red,
       allDay: true,
-      
     },
     {
-      start: startOfDay(new Date(2020,9,24)),
-      title: 'Spill the Paint + Craft Tastic: Indradhanush',
+      title: "Open Mic: Cover to Cover (C2C)",
+      start: startOfDay(new Date(2021,0,31)),
+      color: colors.dblue,
+      allDay: true,
+    },
+    {
+      title: "Best Foot Forward: Igniters",
+      start: startOfDay(new Date(2021,1,4)),
+      color: colors.lpurple,
+      allDay: true,
+    },
+    {
+      title: "NGO Guest Talk: Tech4Gud",
+      start: startOfDay(new Date(2021,1,5)),
+      color: colors.pink,
+      allDay: true,
+    },
+    {
+      title: "Antakshari: Capriccio",
+      start: startOfDay(new Date(2021,1,6)),
+      color: colors.orange,
+      allDay: true,
+    },
+    {
+      title: "Guest Talk: TSoC",
+      start: startOfDay(new Date(2021,1,7)),
+      color: colors.red,
+      allDay: true,
+    },
+    {
+      title: "Flex Your AI/ML Skills: AI/ML",
+      start: startOfDay(new Date(2021,1,13)),
+      color: colors.dgreen,
+      allDay: true,
+    },
+    {
+      title: "Entertainment Quiz: Inquizitive",
+      start: startOfDay(new Date(2021,1,14)),
+      color: colors.green,
+      allDay: true,
+    },
+    {
+      title: "Rocket League (2v2): Atharv",
+      start: startOfDay(new Date(2021,1,20)),
+      color: colors.purple,
+      allDay: true,
+    },
+    {
+      title: "TBD: CipherCell",
+      start: startOfDay(new Date(2021,1,21)),
+      color: colors.gray,
+      allDay: true,
+    },
+    {
+      title: "Online Debate: Take da bait",
+      start: startOfDay(new Date(2021,1,27)),
+      color: colors.lbrown,
+      allDay: true,
+    },
+    {
+      title: "Coding Contest: TSoC",
+      start: startOfDay(new Date(2021,1,28)),
+      color: colors.red,
+      allDay: true,
+    },
+    {
+      title: "8 Ball Pool: Atharv",
+      start: startOfDay(new Date(2021,2,6)),
+      color: colors.purple,
+      allDay: true,
+    },
+    {
+      title: "Workshop 2.0: Igniters",
+      start: startOfDay(new Date(2021,2,7)),
+      color: colors.lpurple,
+      allDay: true,
+    },
+    {
+      title: "Wild Card: Cover to Cover (C2C)",
+      start: startOfDay(new Date(2021,2,19)),
+      color: colors.dblue,
+      allDay: true,
+    },
+    {
+      title: "Jam Acoustic 2.0: Capriccio",
+      start: startOfDay(new Date(2021,2,27)),
+      color: colors.orange,
+      allDay: true,
+    },
+    {
+      title: "FUNtastic: Indradhanush",
+      start: startOfDay(new Date(2021,2,30)),
       color: colors.yellow,
+      allDay: true,
     },
     {
-      start:startOfDay(new Date(2020,9,24)),
-      title:'Event: Club De Theatre',
-      color:colors.blue,
-      allDay:true
+      title: "Hackathon: AI/ML",
+      start: startOfDay(new Date(2021,2,31)),
+      color: colors.dgreen,
+      allDay: true,
     },
     {
-      start:startOfDay(new Date(2020,9,27)),
-      title:'Quiz: Inquizitive',
-      color:colors.green,
-      allDay:true
+      title: "Workshop on Public Speaking: Take da bait",
+      start: startOfDay(new Date(2021,3,1)),
+      color: colors.lbrown,
+      allDay: true,
     },
     {
-      title:'E-Gaming: Atharv',
-      start:startOfDay(new Date(2020,9,31)),
-      color:colors.purple,
-      allDay:true
+      title: "Intra College CTF: CipherCell",
+      start: startOfDay(new Date(2021,3,2)),
+      color: colors.gray,
+      allDay: true,
     },
     {
-      title:'Ideathon: Tech4Gud',
-      start:startOfDay(new Date(2020,9,31)),
-      color:colors.pink,
-      allDay:true,
-    },{
-      title:'Circuit Quiz: ComEt',
-      start:startOfDay(new Date(2020,10,1)),
-      color:colors.lyellow
+      title: "TBD: ComET",
+      start: startOfDay(new Date(2021,3,4)),
+      color: colors.lyellow,
+      allDay: true,
     },
     {
-      title:'Click Flick: ShutterBug',
-      start:startOfDay(new Date(2020,10,2)),
-      color:colors.lblue,
-      allDay:true
+      title: "Development Event: TSoC",
+      start: startOfDay(new Date(2021,3,9)),
+      color: colors.red,
+      allDay: true,
     },
     {
-      title:'Story Writing: Cover to Cover (C2C)',
-      start:startOfDay(new Date(2020,10,8)),
-      color:colors.dblue,
-      allDay:true
-    },{
-      title:'Dance Workshop: Igniters',
-      start:startOfDay(new Date(2020,10,8)),
-      color:colors.lpurple,
-      allDay:true,
+      title: "Click for Good: ShutterBug",
+      start: startOfDay(new Date(2021,3,10)),
+      color: colors.lblue,
+      allDay: true,
     },
     {
-      title:'Intra-College Coding Competition: The Society of Coders (TSoC)',
-      start:startOfDay(new Date(2020,10,10)),
-      color:colors.red,
-      allDay:true
+      title: "Cultural Night: Cultural Coordinators",
+      start: startOfDay(new Date(2021,3,14)),
+      color: colors.misc,
+      allDay: true,
     },
     {
-      title:'Hackathon: AI/ML Club',
-      start:startOfDay(new Date(2020,10,21)),
-      color:colors.dgreen,
-      allDay:true
-    },{
-      title:'Just a Minute: Cover to Cover (C2C)',
-      start:startOfDay(new Date(2020,10,22)),
-      color:colors.dblue,
-      allDay:true,
-    },{
-      title:'Intra-College Coding Competition: The Society of Coders (TSoC)',
-      start:startOfDay(new Date(2020,8,2020)),
-      color:colors.red
+      title: "Dance It Out: Igniters",
+      start: startOfDay(new Date(2021,3,16)),
+      color: colors.lpurple,
+      allDay: true,
     },
     {
-      title:'Online Poetry Competition: Cover To Cover (C2C)',
-      start:startOfDay(new Date(2020,8,19)),
-      color:colors.dblue
+      title: "TBD: Tech4Gud",
+      start: startOfDay(new Date(2021,3,16)),
+      color: colors.pink,
+      allDay: true,
     },
     {
-      title:'Online Chess: Atharv',
-      start:startOfDay(new Date(2020,8,19)),
-      color:colors.purple
+      title: "Coding Contest: TSoC",
+      start: startOfDay(new Date(2021,3,17)),
+      color: colors.red,
+      allDay: true,
     },
     {
-      title:'Ideathon: ComEt',
-      start:startOfDay(new Date(2020,8,26)),
-      color:colors.lyellow
+      title: "Valorant Tournament: Atharv",
+      start: startOfDay(new Date(2021,3,18)),
+      color: colors.purple,
+      allDay: true,
     },
     {
-      title:'The Unwind Mix: Capriccio',
-      start:startOfDay(new Date(2020,9,2)),
-      color:colors.orange
+      title: "Drama Session: Club de theatre",
+      start: startOfDay(new Date(2021,3,24)),
+      color: colors.blue,
+      allDay: true,
     },
     {
-      title:'Quiz Competition: Inquizitive',
-      start:startOfDay(new Date(2020,9,2)),
-      color:colors.green
-
+      title: "CS:GO Tournament: Atharv",
+      start: startOfDay(new Date(2021,4,15)),
+      color: colors.purple,
+      allDay: true,
     },
-    {
-      title:'Debate: Take the bait',
-      start:startOfDay(new Date(2020,9,3)),
-      color:colors.lbrown,
-    },
-    {
-      title:'Online Gaming: Atharv',
-      start:startOfDay(new Date(2020,9,4)),
-      color:colors.purple
-    },
-    {
-      title:'Shutter Island: ShutterBug',
-      start:startOfDay(new Date(2020,9,10)),
-      color:colors.lblue
-    },
-    {
-      title:'How to make big in CyberSecurity: CipherCell',
-      start:startOfDay(new Date(2020,9,10)),
-      color:colors.gray
-    },
-    {
-      title:'T4G Outreach Program: Tech4Gud',
-      start:startOfDay(new Date(2020,9,11)),
-      color:colors.Pink
-    },
-    {
-      title:'Cultural Night: Cover to Cover (C2C)/Igniters/Capriccio',
-      start:startOfDay(new Date(2020,9,16)),
-      color:colors.misc
-    }
-    
   ];
 
   refresh:Subject<any>=new Subject()
