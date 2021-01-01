@@ -100,7 +100,7 @@ export class CalendarComponent implements OnInit {
       allDay: true,
     },
     {
-      title: "Fresher Cookie Quiz: Inquizitive",
+      title: "Fresher Cooker Quiz: Inquizitive",
       start: startOfDay(new Date(2021,0,3)),
       color: colors.green,
       allDay: true,
