@@ -22,6 +22,7 @@ import { AchievementsComponent } from './achievements/achievements.component';
 import { NewslettersComponent } from './newsletters/newsletters.component';
 import { HomeComponent } from './home/home.component'
 import { TeamsComponent } from './teams/teams.component';
+import { SpecialComponent } from './special/special.component';
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -44,6 +45,7 @@ const routes: Routes = [
   {path: 'gallery', component: GalleryComponent},
   {path: 'achievements', component: AchievementsComponent},
   {path: 'newsletters', component: NewslettersComponent},
+  {path: 'hack-a-sol', component: SpecialComponent},
 ];
 
 @NgModule({

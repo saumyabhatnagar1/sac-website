@@ -22,8 +22,8 @@ import { IgnitersComponent } from './club/igniters/igniters.component';
 import { C2cComponent } from './club/c2c/c2c.component';
 import { TakeDaBaitComponent } from './club/take-da-bait/take-da-bait.component';
 import { ClubDeTheatreComponent } from './club/club-de-theatre/club-de-theatre.component';
-import {ReactiveFormsModule} from '@angular/forms'
-import {FormsModule }from '@angular/forms';
+import { FormsModule  }from '@angular/forms';
+import { ReactiveFormsModule } from '@angular/forms'
 import { CalendarModule, DateAdapter } from 'angular-calendar';
 import { adapterFactory } from 'angular-calendar/date-adapters/moment';
 import * as moment from 'moment';
@@ -33,6 +33,7 @@ import { WriteusComponent } from './home/writeus/writeus.component';
 import { NewslettersComponent } from './newsletters/newsletters.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { AtharvComponent } from './club/atharv/atharv.component';
+import { SpecialComponent } from './special/special.component';
 
 export function momentAdapterFactory() {
   return adapterFactory(moment);
@@ -64,7 +65,8 @@ export function momentAdapterFactory() {
     WriteusComponent,
     NewslettersComponent,
     AchievementsComponent,
-    AtharvComponent
+    AtharvComponent,
+    SpecialComponent
   ],
   imports: [
     BrowserModule,
