@@ -1,7 +1,7 @@
 <!-- Header Area wrapper Starts -->
 <header id="home">
     <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar">
+    <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar bg-light">
       <div class="container">
         <!-- Brand and toggle get grouped for better mobile display -->
         <a href="https://www.iiitnr.ac.in" target="blank" class="navbar-brand"><img src="assets/hackathon/img/college_logo.png"></a>       
@@ -10,34 +10,34 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarCollapse">
           <ul class="navbar-nav mr-auto w-100 justify-content-end">
-            <li class="nav-item active">
-              <a class="nav-link" href="/hack-a-sol#home">
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="home">
                 Home
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/hack-a-sol#about">
+              <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="about">
                 About
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/hack-a-sol#schedules">
+              <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="schedules">
                 Schedules
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/hack-a-sol#speakers">
+              <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="speakers">
                 Speakers
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/hack-a-sol#sponsors">
+              <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="sponsors">
                 Sponsors
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/hack-a-sol#contact-map">
-                Contact
+              <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="contact-us">
+                Contact Us
               </a>
             </li>
           </ul>
@@ -56,7 +56,7 @@
               <div class="icon">
                 <!-- <i class="lni-mic"></i> -->
               </div>
-              <img src="assets/hackathon/img/logo.png" alt="logo">
+              <img src="assets/hackathon/img/logo.png" alt="Hack-a-Sol Logo">
               <h2 class="head-title">Hack-a-Sol</h2>
               <p class="banner-desc">I'm Codin' It</p>
               <div class="banner-btn">
@@ -80,39 +80,16 @@
           <div class="count-wrapper text-center">
             <div class="time-countdown wow fadeInUp" data-wow-delay="1s">
               <div id="clock" class="time-count">
-                <div class="time-entry days"><span></span> <b>:</b> Days</div>
-                <div class="time-entry hours"><span></span> <b>:</b> Hours</div>
-                <div class="time-entry minutes"><span></span> <b>:</b> Minutes</div>
-                <div class="time-entry seconds"><span></span> Seconds</div>
+                <div class="time-entry days"><span>{{ daysRemaining }}</span> <b>:</b> Day(s)</div>
+                <div class="time-entry hours"><span>{{ hoursRemaining }}</span> <b>:</b> Hours</div>
+                <div class="time-entry minutes"><span>{{ minutesRemaining }}</span> <b>:</b> Minutes</div>
+                <div class="time-entry seconds"><span>{{ secondsRemaining }}</span> Seconds</div>
               </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-    <script>
-      let counterUpdater = setInterval(() => {
-        // getting the time left
-        let finalDate = new Date("Feb 28, 2021 22:00:00").getTime();
-        let now = new Date().getTime();
-        let timeLeft = finalDate - now;
-
-        // getting time left in Days:Hours:Minutes:Seconds format
-        let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-        let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
-        let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
-
-        // setting countdown in HTML elements
-        let counter = document.getElementById('clock');
-
-        // hacky way, but hey it works
-        counter.children[0].children[0].innerHTML = days;
-        counter.children[1].children[0].innerHTML = hours;
-        counter.children[2].children[0].innerHTML = minutes;
-        counter.children[3].children[0].innerHTML = seconds;
-      }, 1000);
-    </script>
   </section>
   <!-- Count Bar End -->
 
@@ -130,13 +107,13 @@
             <div>
               <div class="about-text">  
                 <h2>About The Hackathon</h2>
-                <p>Hack-a-sol is the annual hackathon organised by The Society of Coders, IIIT Naya Raipur. The participants are given some problem statements and within 24 hours they have to come up with a solution</p>
+                <p>Hack-a-Sol is the annual hackathon organised by The Society of Coders, IIIT Naya Raipur. The participants are given some problem statements and within 24 hours they have to come up with a solution.</p>
               </div>
               <ul class="stylish-list mb-3">
                 <li><i class="lni-check-mark-circle"></i>Cash Prizes for Winners</li>
                 <li><i class="lni-check-mark-circle"></i>Participation Certificate</li>
                 <li><i class="lni-check-mark-circle"></i>Get Inspired by Amazing Speakers</li>
-                <li><i class="lni-check-mark-circle"></i>An exciting and fun way to learn and develop</li>
+                <li><i class="lni-check-mark-circle"></i>An Exciting and Fun Way to Learn and Develop</li>
               </ul>
               <a class="btn btn-common" href="https://iiitnr-tsoc.github.io/">About TSoC</a>
             </div>
@@ -156,7 +133,7 @@
             <li>
               <i class="lni-calendar"></i>
             </li>
-            <li><span><b>Date & Time</b> 10am, 27th Feb 2021</span></li>
+            <li><span><b>Date & Time</b> 10 AM, 27<sup>th</sup> Feb 2021</span></li>
           </ul>
         </div>
         <div class="col-lg-6 col-md-6 col-xs-12">
@@ -390,7 +367,7 @@
   <!-- Sponsors Section End -->
 
   <!-- Contact Us Section -->
-  <section id="contact-map" class="section-padding">
+  <section id="contact-us" class="section-padding">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -408,13 +385,13 @@
                 <div class="row">
                   <div class="col-md-6 form-line">
                     <div class="form-group">
-                      <input type="text" class="form-control" id="name" name="email" placeholder="First Name" required data-error="Please enter your name">
+                      <input type="text" class="form-control" id="name" name="email" placeholder="Name" required data-error="Please enter your name">
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
                   <div class="col-md-6 form-line">
                     <div class="form-group">
-                      <input type="email" class="form-control" id="email" name="email" placeholder="Email" required data-error="Please enter your Email">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail" required data-error="Please enter your Email">
                       <div class="help-block with-errors"></div>
                     </div> 
                   </div>
@@ -426,7 +403,7 @@
                   </div>
                   <div class="col-md-12">
                     <div class="form-group">
-                      <textarea class="form-control" rows="4" id="message" name="message" required data-error="Write your message"></textarea>
+                      <textarea class="form-control" rows="4" id="message" name="message" placeholder="Message" required data-error="Write your message"></textarea>
                     </div>
                     <div class="form-submit">
                       <button type="submit" class="btn btn-common" id="form-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
@@ -445,7 +422,7 @@
 
 <footer>
     <div class="footer-logo">
-        <img src="assets/hackathon/img/logo.png" alt="">
+        <img src="assets/hackathon/img/logo.png" alt="Hack-a-Sol">
     </div>
     <div class="site-info">
         <p>Follow TSoC on Social Media</p>
@@ -480,17 +457,3 @@
       <div class="sk-circle12 sk-child"></div>
     </div>
   </div> -->
-
-<!-- jQuery first, then Popper.js, then Bootstrap JS -->
-<script src="assets/hackathon/js/jquery-min.js"></script>
-<script src="assets/hackathon/js/popper.min.js"></script>
-<script src="assets/hackathon/js/bootstrap.min.js"></script>
-<script src="assets/hackathon/js/jquery.countdown.min.js"></script>
-<script src="assets/hackathon/js/waypoints.min.js"></script>
-<script src="assets/hackathon/js/jquery.counterup.min.js"></script>
-<script src="assets/hackathon/js/jquery.nav.js"></script>
-<script src="assets/hackathon/js/jquery.easing.min.js"></script>
-<script src="assets/hackathon/js/wow.js"></script>
-<script src="assets/hackathon/js/nivo-lightbox.js"></script>
-<script src="assets/hackathon/js/video.js"></script>
-<script src="assets/hackathon/js/main.js"></script>
