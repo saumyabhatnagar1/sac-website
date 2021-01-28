@@ -1539,11 +1539,11 @@ h1 {
   -o-transform: scale(1, 1);
 } */
 
-.team-item:hover {
+.speakers-item:hover {
   box-shadow: 0 16px 48px #E2E8ED;
 }
 
-.team-item {
+.speakers-item {
   margin: 15px 0;
   padding: 15px;
   border-radius: 4px;
@@ -1555,13 +1555,13 @@ h1 {
   -o-transition: all 0.3s ease-in-out 0s;
 }
 
-.team-item .team-img {
+.speakers-item .speakers-img {
   position: relative;
   cursor: pointer;
   overflow: hidden;
 }
 
-.team-item .team-overlay {
+.speakers-item .speakers-overlay {
   text-align: center;
   position: absolute;
   top: 0px;
@@ -1576,7 +1576,7 @@ h1 {
   transition: all 0.3s ease-in-out;
 }
 
-.team-item .overlay-social-icon {
+.speakers-item .overlay-social-icon {
   position: absolute;
   top: 50%;
   width: 100%;
@@ -1588,7 +1588,7 @@ h1 {
   transition: all 0.3s ease-in-out;
 }
 
-.team-item .overlay-social-icon .social-icons {
+.speakers-item .overlay-social-icon .social-icons {
   padding-left: 0;
   width: 120px;
   height: 120px;
@@ -1602,16 +1602,16 @@ h1 {
   -o-transition: all 0.3s ease-in-out 0s;
 }
 
-.team-item .overlay-social-icon .social-icons li {
+.speakers-item .overlay-social-icon .social-icons li {
   float: left;
 }
 
-.team-item .overlay-social-icon .social-icons li a {
+.speakers-item .overlay-social-icon .social-icons li a {
   letter-spacing: 0px;
   outline: 0 !important;
 }
 
-.team-item .overlay-social-icon .social-icons li a i {
+.speakers-item .overlay-social-icon .social-icons li a i {
   font-size: 20px;
   color: #fff;
   width: 60px;
@@ -1626,67 +1626,67 @@ h1 {
   -o-transition: all 0.3s ease-in-out 0s;
 }
 
-.team-item .overlay-social-icon .social-icons li .lni-facebook-filled {
+.speakers-item .overlay-social-icon .social-icons li .lni-facebook-filled {
   background: rgba(59, 89, 152, 0.7);
 }
 
-.team-item .overlay-social-icon .social-icons li .lni-facebook-filled:hover {
+.speakers-item .overlay-social-icon .social-icons li .lni-facebook-filled:hover {
   background: #3B5998;
 }
 
-.team-item .overlay-social-icon .social-icons li .lni-twitter-filled {
+.speakers-item .overlay-social-icon .social-icons li .lni-twitter-filled {
   background: rgba(29, 161, 242, 0.7);
 }
 
-.team-item .overlay-social-icon .social-icons li .lni-twitter-filled:hover {
+.speakers-item .overlay-social-icon .social-icons li .lni-twitter-filled:hover {
   background: #1da1f2;
 }
 
-.team-item .overlay-social-icon .social-icons li .lni-google-plus {
+.speakers-item .overlay-social-icon .social-icons li .lni-google-plus {
   background: rgba(234, 67, 53, 0.7);
 }
 
-.team-item .overlay-social-icon .social-icons li .lni-google-plus:hover {
+.speakers-item .overlay-social-icon .social-icons li .lni-google-plus:hover {
   background: #ea4335;
 }
 
-.team-item .overlay-social-icon .social-icons li .lni-pinterest {
+.speakers-item .overlay-social-icon .social-icons li .lni-pinterest {
   background: rgba(189, 8, 28, 0.7);
 }
 
-.team-item .overlay-social-icon .social-icons li .lni-pinterest:hover {
+.speakers-item .overlay-social-icon .social-icons li .lni-pinterest:hover {
   background: #bd081c;
 }
 
-.team-item .info-text {
+.speakers-item .info-text {
   padding: 20px 0px 5px;
 }
 
-.team-item .info-text h3 {
+.speakers-item .info-text h3 {
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 700;
   margin-bottom: 5px;
 }
 
-.team-item .info-text h3 a {
+.speakers-item .info-text h3 a {
   color: #212121;
 }
 
-.team-item .info-text h3 a:hover {
+.speakers-item .info-text h3 a:hover {
   color: #ff4a67;
 }
 
-.team-item .info-text p {
+.speakers-item .info-text p {
   margin: 0;
   color: #888;
 }
 
-.team-item:hover .team-overlay {
+.speakers-item:hover .speakers-overlay {
   opacity: 1;
 }
 
-.team-item:hover .social-icons {
+.speakers-item:hover .social-icons {
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
   transform: translateY(0px);
