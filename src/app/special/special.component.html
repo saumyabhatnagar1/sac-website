@@ -1,298 +1,496 @@
-<nav class="navbar navbar-expand-lg">
-    <a class="navbar-brand" routerLink="/hack-a-sol">
-        <b>Hack-a-Sol</b>
-    </a>
-    
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarMobile">
-        <span class="navbar-toggler-icon"></span>
-    </button>
-    
-    <div class="collapse navbar-collapse" id="navbarMobile">
-        <ul class="navbar-nav nav-pills ml-auto">
-            <li class="nav-item">
-                <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+<!-- Header Area wrapper Starts -->
+<header id="header-wrap">
+    <!-- Navbar Start -->
+    <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <a href="https://www.iiitnr.ac.in" class="navbar-brand"><img src="assets/hackathon/imgs/college_logo.png"></a>       
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="lni-menu"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav mr-auto w-100 justify-content-end">
+            <li class="nav-item active">
+              <a class="nav-link" href="/hack-a-sol#header-wrap">
+                Home
+              </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol">About</a>
+              <a class="nav-link" href="/hack-a-sol#about">
+                About
+              </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol">Our Sponsors</a>
+              <a class="nav-link" href="/hack-a-sol#schedules">
+                Schedules
+              </a>
             </li>
             <li class="nav-item">
-                <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol">Contact Us</a>
+              <a class="nav-link" href="/hack-a-sol#team">
+                Speakers
+              </a>
             </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#sponsors">
+                Sponsors
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact-map">
+                Contact
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Area Start -->
+    <div id="hero-area" class="hero-area-bg">
+      <div class="overlay"></div>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-9 col-sm-12">
+            <div class="contents text-center">
+              <div class="icon">
+                <!-- <i class="lni-mic"></i> -->
+              </div>
+              <img src="assets/hackathon/imgs/logo.png" alt="logo">
+              <h2 class="head-title">Hack-a-Sol</h2>
+              <p class="banner-desc">I'm Codin' It</p>
+              <div class="banner-btn">
+                <a href="#" class="btn btn-common">Register Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Hero Area End -->
+
+  </header>
+  <!-- Header Area wrapper End -->
+
+  <!-- Count Bar Start -->
+  <section id="count">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-10">
+          <div class="count-wrapper text-center">
+            <div class="time-countdown wow fadeInUp" data-wow-delay="1s">
+              <div id="clock" class="time-count">
+                <div class="time-entry days"><span></span> <b>:</b> Days</div>
+                <div class="time-entry hours"><span></span> <b>:</b> Hours</div>
+                <div class="time-entry minutes"><span></span> <b>:</b> Minutes</div>
+                <div class="time-entry seconds"><span></span> Seconds</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script>
+      let counterUpdater = setInterval(() => {
+        // getting the time left
+        let finalDate = new Date("Feb 28, 2021 22:00:00").getTime();
+        let now = new Date().getTime();
+        let timeLeft = finalDate - now;
+
+        // getting time left in Days:Hours:Minutes:Seconds format
+        let days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
+        let hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+        let minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
+        let seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
+
+        // setting countdown in HTML elements
+        let counter = document.getElementById('clock');
+
+        // hacky way, but hey it works
+        counter.children[0].children[0].innerHTML = days;
+        counter.children[1].children[0].innerHTML = hours;
+        counter.children[2].children[0].innerHTML = minutes;
+        counter.children[3].children[0].innerHTML = seconds;
+      }, 1000);
+    </script>
+  </section>
+  <!-- Count Bar End -->
+
+  <!-- About Section Start -->
+  <section id="about" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 col-md-12 col-xs-12">
+          <div class="img-thumb">
+            <img class="img-fluid" src="assets/hackathon/imgs/about/img1.png" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 col-md-12 col-xs-12">
+          <div class="about-content">
+            <div>
+              <div class="about-text">  
+                <h2>About The Hackathon</h2>
+                <p>Hack-a-sol is the annual hackathon organised by The Society of Coders, IIIT Naya Raipur. The participants are given some problem statements and within 24 hours they have to come up with a solution</p>
+              </div>
+              <ul class="stylish-list mb-3">
+                <li><i class="lni-check-mark-circle"></i>Cash Prizes for Winners</li>
+                <li><i class="lni-check-mark-circle"></i>Participation Certificate</li>
+                <li><i class="lni-check-mark-circle"></i>Get Inspired by Amazing Speakers</li>
+                <li><i class="lni-check-mark-circle"></i>An exciting and fun way to learn and develop</li>
+              </ul>
+              <a class="btn btn-common" href="https://iiitnr-tsoc.github.io/">About TSoC</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+  <!-- Information Bar Start -->
+  <section id="information-bar">
+    <div class="container">
+      <div class="row inforation-wrapper">
+        <div class="col-lg-6 col-md-6 col-xs-12">
+          <ul>
+            <li>
+              <i class="lni-calendar"></i>
+            </li>
+            <li><span><b>Date & Time</b> 10am, 27th Feb 2021</span></li>
+          </ul>
+        </div>
+        <div class="col-lg-6 col-md-6 col-xs-12">
+          <ul>
+            <li>
+              <i class="lni-mic"></i>
+            </li>
+            <li><span><b>Duration</b>24 Hours</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Information Bar End -->
+
+   <!-- intro Section Start -->
+  <section id="intro" class="intro section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title-header text-center">
+            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Why You Should Join?</h2>
+            <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row intro-wrapper">
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="single-intro-text mb-70">
+             <i class="lni-microphone"></i>
+             <h3>Great Speaker</h3>
+             <p>
+                Get inspired and motivated listening to a veteran speaker.
+                <br>
+                <br>
+             </p>
+             <span class="count-number">01</span>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="single-intro-text">
+             <i class="lni-users"></i>
+             <h3 class="ts-title">Meet New People</h3>
+             <p>
+                Learn from having a look at other's submission from a variety of colleges.
+             </p>
+             <span class="count-number">02</span>
+          </div>
+          <div class="border-shap left"></div>
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12">
+          <div class="single-intro-text mb-70">
+             <i class="lni-bullhorn"></i>
+             <h3>Compete</h3>
+             <p>
+                Work hard and innovate to prove yourself the best and win exciting prizes.
+             </p>
+             <span class="count-number">03</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- intro Section End -->
+
+  <!-- Counter Area Start-->
+  <section class="counter-section section-padding">
+    <div class="container">
+      <div class="row">
+        <!-- Counter Item -->
+        <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget">
+          <div class="counter">
+            <div class="icon">
+              <i class="lni-mic"></i>
+            </div>
+            <div class="counter-content">
+              <div class="counterUp">8</div>
+              <p>Problem Statements</p>
+            </div>
+          </div>
+        </div>
+        <!-- Counter Item -->
+        <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget">
+          <div class="counter">
+            <div class="icon">
+              <i class="lni-bulb"></i>
+            </div>
+            <div class="counter-content">
+              <div class="counterUp">100</div>
+              <p>Participants</p>
+            </div>
+          </div>
+        </div>
+        <!-- Counter Item -->
+        <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget">
+          <div class="counter">
+            <div class="icon">
+              <i class="lni-briefcase"></i>
+            </div>
+            <div class="counter-content">
+              <div class="counterUp">5</div>
+              <p>Sponsors</p>
+            </div>
+          </div>
+        </div>
+        <!-- Counter Item -->
+        <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget">
+          <div class="counter">
+            <div class="icon">
+              <i class="lni-coffee-cup"></i>
+            </div>
+            <div class="counter-content">
+              <div class="counterUp">4</div>
+              <p>Judges</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Counter Area End-->
+
+  <!-- Schedule Section Start -->
+  <section id="schedules" class="schedule section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title-header text-center">
+            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Event Schedules</h2>
+            <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-12 mb-5 text-center">
+          <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item">
+              <a class="nav-link active" id="monday-tab" data-toggle="tab" href="#monday" role="tab" aria-controls="monday" aria-expanded="true">
+                <div class="item-text">
+                  <h4>Day 01</h4>
+                  <h5>27 February 2021</h5>
+                  <p>Hackathon begins<br><br><br></p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="tuesday-tab" data-toggle="tab" href="#tuesday" role="tab" aria-controls="tuesday">
+                <div class="item-text">
+                  <h4>Day 02</h4>
+                  <h5>28 February 2020</h5>
+                  <p>Judging begins<br>Talk session <br>with the Speaker</p>
+                </div>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" id="wednesday-tab" data-toggle="tab" href="#wednesday" role="tab" aria-controls="wednesday">
+                <div class="item-text">
+                  <h4>Results</h4>
+                  <h5>28 February 2020</h5>
+                  <p>Announcement of <br>Winners<br><br></p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+       </div>
+    </div>
+  </section>
+  <!-- Schedule Section End -->
+
+  <!-- Team Section Start -->
+  <section id="team" class="section-padding text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title-header text-center">
+            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Our Speaker for this Year</h2>
+            <p class="wow fadeInDown" data-wow-delay="0.2s">This Year we have invited a person who has guided thousands<br>of students to acheive their dreams of working in Dream Companies.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content">
+        <div class="col-12 col-sm-12 col-sm-12">
+          <!-- Team Item Starts -->
+          <div class="team-item wow fadeInUp" data-wow-delay="0.2s">
+            <div class="team-img">
+              <img class="img-fluid" src="assets/hackathon/imgs/speaker/sandeep-jain.jpg" alt="Mr. Sandeep Jain">
+            </div>
+            <div class="info-text">
+              <h3><a href="#">Mr. Sandeep Jain</a></h3>
+              <p>Founder and CEO, GeeksForGeeks</p>
+            </div>
+          </div>
+          <!-- Team Item Ends -->
+      <a href="https://www.geeksforgeeks.org/" class="btn btn-common mt-30 wow fadeInUp" data-wow-delay="1.9s">Know More</a>
+    </div>
+    </div>
+    </div>
+  </section>
+  <!-- Team Section End -->
+
+  <!-- Sponsors Section Start -->
+  <section id="sponsors" class="section-padding">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title-header text-center">
+            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Sponsors</h2>
+            <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row mb-30 text-center wow fadeInDown" data-wow-delay="0.3s">
+        <div class="col-lg-12">
+          <div class="sponsors-logo text-center">
+             <a href=""><img src="assets/hackathon/imgs/sponsors/logo-1.png" alt=""></a>
+             <a href=""><img src="assets/hackathon/imgs/sponsors/logo-2.png" alt=""></a>
+             <a href=""><img src="assets/hackathon/imgs/sponsors/logo-3.png" alt=""></a>
+             <a href=""><img src="assets/hackathon/imgs/sponsors/logo-4.png" alt=""></a>
+             <a href=""><img src="assets/hackathon/imgs/sponsors/logo-5.png" alt=""></a>
+             <a href=""><img src="assets/hackathon/imgs/sponsors/logo-6.png" alt=""></a>
+             <a href=""><img src="assets/hackathon/imgs/sponsors/logo-7.png" alt=""></a>
+             <a href=""><img src="assets/hackathon/imgs/sponsors/logo-8.png" alt=""></a>
+             <a href=""><img src="assets/hackathon/imgs/sponsors/logo-9.png" alt=""></a>
+          </div><!-- sponsors logo end-->
+       </div>
+      </div>
+    </div>
+  </section>
+  <!-- Sponsors Section End -->
+
+  <!-- Contact Us Section -->
+  <section id="contact-map" class="section-padding">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title-header text-center">
+            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Contact Us</h2>
+            <p class="wow fadeInDown" data-wow-delay="0.2s">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent mediocritatem an <br> cule dicta iriure at phaedrum.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-lg-8 col-md-12 col-xs-12">
+          <div class="container-form wow fadeInLeft" data-wow-delay="0.2s">
+            <div class="form-wrapper">
+              <form role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+                <div class="row">
+                  <div class="col-md-6 form-line">
+                    <div class="form-group">
+                      <input type="text" class="form-control" id="name" name="email" placeholder="First Name" required data-error="Please enter your name">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-6 form-line">
+                    <div class="form-group">
+                      <input type="email" class="form-control" id="email" name="email" placeholder="Email" required data-error="Please enter your Email">
+                      <div class="help-block with-errors"></div>
+                    </div> 
+                  </div>
+                  <div class="col-md-12 form-line">
+                    <div class="form-group">
+                      <input type="tel" class="form-control" id="msg_subject" name="subject" placeholder="Subject" required data-error="Please enter your message subject">
+                      <div class="help-block with-errors"></div>
+                    </div>
+                  </div>
+                  <div class="col-md-12">
+                    <div class="form-group">
+                      <textarea class="form-control" rows="4" id="message" name="message" required data-error="Write your message"></textarea>
+                    </div>
+                    <div class="form-submit">
+                      <button type="submit" class="btn btn-common" id="form-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+                      <div id="msgSubmit" class="h3 text-center hidden"></div>
+                    </div>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Contact Us Section End -->
+
+<footer>
+    <div class="footer-logo">
+        <img src="assets/hackathon/imgs/logo.png" alt="">
+    </div>
+    <div class="site-info">
+        <p>Follow TSoC on Social Media</p>
+    </div>
+    <div class="social-icons-footer">
+        <ul>
+            <li class="facebook"><a target="_blank" href="3"><i class="lni-facebook-filled"></i></a></li>
+            <li class="twitter"><a target="_blank" href="3"><i class="lni-twitter-filled"></i></a></li>
+            <li class="pinterest"><a target="_blank" href="3"><i class="lni-pinterest"></i></a></li>
         </ul>
     </div>
-</nav>
-<hr>
+</footer>
 
-<div class="container-fluid text-center top-header">
-    <div class="row">
-        <div class="col-md-2"></div>
-        <div class="col-md-2 align-right">
-            <img class="img-responsive" src="assets/others/hack-a-sol.png" style="height: 250px; width: 250px;">
-        </div>
-        <div class="col-md-4 d-flex align-middle">
-            <h1>Hack-a-Sol</h1>
-            <p>A 24 hours Hackathon organised by IIIT Naya Raipur</p>
-            <a href=""><button>Apply Now</button></a>
-        </div>
-    </div>
-</div>
+  <!-- Go to Top Link -->
+  <a href="#" class="back-to-top">
+      <i class="lni-chevron-up"></i>
+  </a>
 
-<div class="row">
-    <div class="container-fluid overview">
-        <h2>Overview</h2>
-        <p>
-            The Hackathon will be a team-based competition, where participant teams will have to develop a solution based on a given problem statement. <u>The theme of the hackathon is yet to be decided.</u>
-            <br><br>
-            There will 10-12 tentative problem statements for the participants to choose from. The participants will be given 24 hours of time to develop and present their solutions before the judges.
-            <br><br>
-            Based on the level of participation, there can be a Preliminary Judgement and a Final Judgement.
-            <br><br>
-            The Hackathon is to be hosted on <b>DevFolio</b>, which is India’s largest Hackathon hosting platform.
-        </p>
+  <!-- <div id="preloader">
+    <div class="sk-circle">
+      <div class="sk-circle1 sk-child"></div>
+      <div class="sk-circle2 sk-child"></div>
+      <div class="sk-circle3 sk-child"></div>
+      <div class="sk-circle4 sk-child"></div>
+      <div class="sk-circle5 sk-child"></div>
+      <div class="sk-circle6 sk-child"></div>
+      <div class="sk-circle7 sk-child"></div>
+      <div class="sk-circle8 sk-child"></div>
+      <div class="sk-circle9 sk-child"></div>
+      <div class="sk-circle10 sk-child"></div>
+      <div class="sk-circle11 sk-child"></div>
+      <div class="sk-circle12 sk-child"></div>
     </div>
-</div>
+  </div> -->
 
-<div class="row">
-    <div class="container-fluid rules">
-        <h2>Rules</h2>
-        <table class="center">
-            <tr>
-                <td>(1)</td>
-                <td class="text-left align-text-top">
-                    Participant must be currently pursuing a Bacherlor's/Master's Degree in any discipline.
-                </td>
-            </tr>
-            <tr>
-                <td>(2)</td>
-                <td class="text-left align-text-top">
-                    Developers can take part in this hackathon by registering at the website and then forming a team of a maximum of four people.
-                </td>
-            </tr>
-            <tr>
-                <td>(3)</td>
-                <td class="text-left align-text-top">
-                    Choose any of the given problem statement and develop the product that meets our challenge.
-                </td>
-            </tr>
-            <tr>
-                <td>(4)</td>
-                <td class="text-left align-text-top">
-                    Developers can only use Open-source code, i.e whose license is available publically, restricted things can’t be used.
-                </td>
-            </tr>
-            <tr>
-                <td>(5)</td>
-                <td class="text-left align-text-top">
-                    Evaluation of the solutions would be done on the basis of the GitHub commits.
-                </td>
-            </tr>
-            <tr>
-                <td>(6)</td>
-                <td class="text-left align-text-top">
-                    Top teams would be presenting their solution in front of judges.
-                </td>
-            </tr>
-            <tr>
-                <td>(7)</td>
-                <td class="text-left align-text-top">
-                    In case of any dispute, the organizing team's decision would be final.
-                </td>
-            </tr>
-            <tr>
-                <td>(8)</td>
-                <td class="text-left align-text-top">
-                    The format and structure of events are subject to change before the actual beginning of the event.
-                </td>
-            </tr>
-            <!-- The developers would be selected on the basis of their Resume and Github profiles which they will be submitting at the time of registration. -->
-        </table>
-    </div>
-</div>
-
-<div class="row">
-    <div class="container-fluid prizes">
-        <h2>Prizes</h2>
-        <p>Will be announced later</p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="container-fluid registration">
-        <h2>How to Register</h2>
-        <p></p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="container-fluid">
-        <h2>Judging Criteria</h2>
-        <p>
-            <li>Quality of the Idea (includes creativity and originality of the idea)</li>
-            <li>Technical Implementation of the Idea (includes how well the idea was executed by the developer)</li>
-            <li>Potential Value (includes the extent to which the solution can help end users and businesses)</li>
-        </p>
-    </div>
-</div>
-
-<div class="row">
-    <div class="container-fluid">
-        <h2>Judges</h2>
-        <p>Will be announced later</p>
-    </div>
-</div>
-
-<!-- <div class="row">
-    <div class="container-fluid">
-        <h2>Themes</h2>
-        <p></p>
-    </div>
-</div> -->
-
-<div class="row">
-    <div class="container-fluid important_dates">
-        <h2>Important Dates</h2>
-        <table class="center">
-            <tr>
-                <td><b>Registration Closing Date</b></td>
-                <td>:</td>
-                <td>TBD</td>
-            </tr>
-            <tr>
-                <td><b>Hackathon Start Date</b></td>
-                <td>:</td>
-                <td>27<sup>th</sup> February 2021 (Saturday)</td>
-            </tr>
-            <tr>
-                <td><b>Hackathon End Date</b></td>
-                <td>:</td>
-                <td>28<sup>th</sup> February 2021 (Saturday)</td>
-            </tr>
-        </table>
-    </div>
-</div>
-
-<div class="row">
-    <div class="container-fluid faqs">
-        <h2>FAQs</h2>
-        <table class="center">
-            <tr>
-                <td class="text-left question">
-                    Who should attend?
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left">
-                    We need tech developers, makers, game programmers, rebels that code who are currently pursuing a Bachelor's/Master's degree in any discipline.
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left question">
-                    Do I need to pay any money to register for the Hackathon?
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left">
-                    No. You do not have to pay anything to register yourself for the Hackathon.
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left question">
-                    Can I register as an individual?
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left">
-                    Yes, you can register as a one member team. The team should have 1-4 members.
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left question">
-                    Can I change the theme my team is responding to?
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left">
-                    <!-- Can I change the theme my team is responding to? -->
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left question">
-                    Since there is no specific technology mentioned, are there any restrictions on using a number of pre-built libraries?
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left">
-                    There is no restriction to use any programming language, technology stack, or libraries. You can use any of them to create your solution. You would need to provide the licensing information with a list of software used, if applicable.
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left question">
-                    Can I get a head start on my hack?
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left">
-                    To ensure a level playing field for all participants, all code and assets must be created during the hackathon. Failure to comply with this rule may result in the offending team's disqualification. You are, however, free to make plans, create wireframes, and brainstorm prior to the event.
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left question">
-                    How do I submit what I have made for the Hackathon?
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left">
-                    You have to develop the application on your local system and submit it on GitHub (private repositories would be provided) in tar/zip file format along with instructions to run the application and source code.
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left question">
-                    Do we need to have the entire idea fully working?
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left">
-                    The entire idea need not be fully implemented however, the submission should be functional so that it can be reviewed by the judges.
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left question">
-                    What are the judges looking for?
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left">
-                    The judges will be looking at how unique and interesting your idea is, how close it is to being a product, how creative your solution is and how convincing your pitch presentation is.
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left question">
-                    Who will own the IP (Intellectual Property) Rights to the product that I have built?
-                </td>
-            </tr>
-            <tr>
-                <td class="text-left">
-                    The developer/developers of the web/mobile application will have all rights and own the IP of the product. However, all code needs to be in the public domain (open source) so that it can be evaluated by the judges.
-                </td>
-            </tr>
-            <!-- <tr>
-                <td class="text-left">
-                </td>
-            </tr> -->
-        </table>
-    </div>
-</div>
-
-<div class="row">
-    <div class="container-fluid contact_us">
-        <h2>Contact Us</h2>
-        <p>
-            <a href="" class="instagram" style="color: rgb(177, 66, 251)"><i class="fa fa-instagram"></i></a>
-            <a href="" class="facebook" style="color: rgb(4, 57, 231)"><i class="fa fa-facebook"></i></a>
-            <a href="" class="linkedin" style="color: rgb(2, 40, 165)"><i class="fa fa-linkedin"></i></a>
-        </p>
-    </div>
-</div>
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="assets/hackathon/js/jquery-min.js"></script>
+<script src="assets/hackathon/js/popper.min.js"></script>
+<script src="assets/hackathon/js/bootstrap.min.js"></script>
+<script src="assets/hackathon/js/jquery.countdown.min.js"></script>
+<script src="assets/hackathon/js/waypoints.min.js"></script>
+<script src="assets/hackathon/js/jquery.counterup.min.js"></script>
+<script src="assets/hackathon/js/jquery.nav.js"></script>
+<script src="assets/hackathon/js/jquery.easing.min.js"></script>
+<script src="assets/hackathon/js/wow.js"></script>
+<script src="assets/hackathon/js/nivo-lightbox.js"></script>
+<script src="assets/hackathon/js/video.js"></script>
+<script src="assets/hackathon/js/main.js"></script>
