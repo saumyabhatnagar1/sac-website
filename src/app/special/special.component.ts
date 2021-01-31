@@ -17,7 +17,7 @@ export class SpecialComponent implements OnInit {
 
   private subscription: Subscription;
   
-  public finalDate = new Date('Feb 28, 2021 22:00:00');
+  public finalDate = new Date('Feb 28, 2021 10:00:00');
 
   public timeDifference;
   public secondsRemaining;
