@@ -390,32 +390,35 @@
         <div class="col-lg-8 col-md-12 col-xs-12">
           <div class="container-form wow fadeInLeft" data-wow-delay="0.2s">
             <div class="form-wrapper">
-              <form role="form" method="post" id="contactForm" name="contact-form" data-toggle="validator">
+              <!-- Contact Us Form -->
+              <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" name="feedbackFrom" role="form" id="contactForm" name="contact-form" data-toggle="validator">
                 <div class="row">
                   <div class="col-md-6 form-line">
                     <div class="form-group">
-                      <input type="text" class="form-control" id="name" name="email" placeholder="Name" required data-error="Please enter your name">
+                      <input type="text" class="form-control" id="name" name="name" formControlName="name" placeholder="Name" required data-error="Please enter your name">
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
                   <div class="col-md-6 form-line">
                     <div class="form-group">
-                      <input type="email" class="form-control" id="email" name="email" placeholder="E-Mail" required data-error="Please enter your Email">
+                      <input type="email" class="form-control" id="email" name="email" formControlName="email" placeholder="E-Mail" required data-error="Please enter your Email">
                       <div class="help-block with-errors"></div>
                     </div> 
                   </div>
                   <div class="col-md-12 form-line">
                     <div class="form-group">
-                      <input type="tel" class="form-control" id="msg_subject" name="subject" placeholder="Subject" required data-error="Please enter your message subject">
+                      <input type="tel" class="form-control" id="msg_subject" name="subject" formControlName="subject" placeholder="Subject" required data-error="Please enter your message subject">
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>
                   <div class="col-md-12">
                     <div class="form-group">
-                      <textarea class="form-control" rows="4" id="message" name="message" placeholder="Message" required data-error="Write your message"></textarea>
+                      <textarea class="form-control" rows="4" id="message" name="message" formControlName="message" placeholder="Message" required data-error="Write your message"></textarea>
                     </div>
                     <div class="form-submit">
-                      <button type="submit" class="btn btn-common" id="form-submit"><i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message</button>
+                      <button type="submit" class="btn btn-common" id="form-submit" [disabled]="!contactForm.valid">
+                        <i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message
+                      </button>
                       <div id="msgSubmit" class="h3 text-center hidden"></div>
                     </div>
                   </div>
@@ -423,6 +426,23 @@
               </form>
             </div>
           </div>
+
+          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel">Thank You!</h5>
+                </div>
+                <div class="modal-body">
+                  Your message has been sent!!
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
         </div>
       </div>
     </div>
@@ -430,10 +450,12 @@
   <!-- Contact Us Section End -->
 
 <footer>
-    <div class="footer-logo">
+    <!-- <div class="footer-logo">
         <img src="assets/hackathon/img/logo.png" alt="Hack-a-Sol">
-    </div>
+    </div> -->
     <div class="site-info">
+        <br>
+        <p>Brought to you by TSoC, in association with SAC, IIIT Naya Raipur</p>
         <p>Follow TSoC on Social Media</p>
     </div>
     <div class="social-icons-footer">
@@ -442,7 +464,7 @@
             <li class="facebook"><a target="_blank" href="https://www.facebook.com/tsoc.iiitnr/"><i class="lni-facebook-filled"></i></a></li>
             <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/tsoc-iiitnr/"><i class="lni-linkedin-filled"></i></a></li>
             <li class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCW8FjxYiUnvuSqHbYEdseLQ/"><i class="fa fa-youtube"></i></a></li>
-            <li class="website"><a target="_blank" href="https://iiitnr-tsoc.github.io/"><i class="fa fa-desktop"></i></a></li>
+            <li class="website"><a target="_blank" href="https://iiitnr-tsoc.github.io/"><i class="fa fa-globe"></i></a></li>
         </ul>
     </div>
 </footer>

@@ -17,6 +17,7 @@ export class WriteusComponent implements OnInit {
     email:new FormControl(''),
     query:new FormControl('')
   })
+
   newFeedback(){
     let name=this.feedbackForm.get('name').value
     let email=this.feedbackForm.get('email').value
@@ -28,14 +29,14 @@ export class WriteusComponent implements OnInit {
     }
     //Uncomment to send mails to SAC
 
-    // this.writeusservice.newFeedback(data).subscribe((res)=>{
-    //   console.log(res)
-    // },err=>{
-    //   console.log(err)
-    // })
+    this.writeusservice.newFeedback(data).subscribe((res)=>{
+      console.log(res)
+    },err=>{
+      console.log(err)
+    })
 
 
-    //console.log(data)
+    // console.log(data)
   }
 
 }
