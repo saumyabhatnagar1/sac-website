@@ -21,18 +21,18 @@
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="schedules">
-                Schedules
+              <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="schedule">
+                Schedule
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="speakers">
-                Speakers
+                Speaker
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="sponsors">
-                Sponsors
+                Call for Sponsors
               </a>
             </li>
             <li class="nav-item">
@@ -60,7 +60,7 @@
               <h2 class="head-title">Hack-a-Sol</h2>
               <p class="banner-desc">I'm Codin' It</p>
               <div class="banner-btn">
-                <a href="#" class="btn btn-common">Register Now</a>
+                <a href="/hack-a-sol" class="btn btn-common">Register Now</a>
               </div>
             </div>
           </div>
@@ -139,7 +139,7 @@
         <div class="col-lg-6 col-md-6 col-xs-12">
           <ul>
             <li>
-              <i class="lni-mic"></i>
+              <i class="lni-timer"></i>
             </li>
             <li><span><b>Duration</b>24 Hours</span></li>
           </ul>
@@ -200,10 +200,9 @@
   <!-- intro Section End -->
 
   <!-- Counter Area Start-->
-  <section class="counter-section section-padding">
+  <!-- <section class="counter-section section-padding">
     <div class="container">
       <div class="row">
-        <!-- Counter Item -->
         <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget">
           <div class="counter">
             <div class="icon">
@@ -215,7 +214,6 @@
             </div>
           </div>
         </div>
-        <!-- Counter Item -->
         <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget">
           <div class="counter">
             <div class="icon">
@@ -227,7 +225,6 @@
             </div>
           </div>
         </div>
-        <!-- Counter Item -->
         <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget">
           <div class="counter">
             <div class="icon">
@@ -239,7 +236,6 @@
             </div>
           </div>
         </div>
-        <!-- Counter Item -->
         <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget">
           <div class="counter">
             <div class="icon">
@@ -253,16 +249,16 @@
         </div>
       </div>
     </div>
-  </section>
+  </section> -->
   <!-- Counter Area End-->
 
   <!-- Schedule Section Start -->
-  <section id="schedules" class="schedule section-padding">
+  <section id="schedule" class="schedule section-padding">
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="section-title-header text-center">
-            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Event Schedules</h2>
+            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Event Schedule</h2>
             <p class="wow fadeInDown" data-wow-delay="0.2s">List of important dates in the timeline of our hackathon.</p>
           </div>
         </div>
@@ -351,14 +347,19 @@
       <div class="row">
         <div class="col-12">
           <div class="section-title-header text-center">
-            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Sponsors</h2>
-            <p class="wow fadeInDown" data-wow-delay="0.2s">We are very grateful to our sponsors, who helped to make this hackathon the very best.</p>
+            <!-- <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Sponsors</h2>
+            <p class="wow fadeInDown" data-wow-delay="0.2s">We are very grateful to our sponsors, who helped to make this hackathon the very best.</p> -->
+            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Call for Sponsors</h2>
+            <p class="wow fadeInDown" data-wow-delay="0.2s">
+              If you are interested to sponsor us, please fill this form.<br>
+              Your team will reach out to you.
+            </p>
           </div>
         </div>
       </div>
       <div class="row mb-30 text-center wow fadeInDown" data-wow-delay="0.3s">
         <div class="col-lg-12">
-          <div class="sponsors-logo text-center">
+          <!-- <div class="sponsors-logo text-center">
              <a href=""><img src="assets/hackathon/img/sponsors/logo-1.png" alt=""></a>
              <a href=""><img src="assets/hackathon/img/sponsors/logo-2.png" alt=""></a>
              <a href=""><img src="assets/hackathon/img/sponsors/logo-3.png" alt=""></a>
@@ -368,8 +369,55 @@
              <a href=""><img src="assets/hackathon/img/sponsors/logo-7.png" alt=""></a>
              <a href=""><img src="assets/hackathon/img/sponsors/logo-8.png" alt=""></a>
              <a href=""><img src="assets/hackathon/img/sponsors/logo-9.png" alt=""></a>
-          </div><!-- sponsors logo end-->
-       </div>
+          </div> -->
+          <div class="form-wrapper">
+            <form [formGroup]="sponsorForm" (ngSubmit)="onSubmit1()" name="sponsorFrom" role="form" id="contactForm" name="contact-form" data-toggle="validator">
+              <div class="row">
+                <div class="col-md-6 form-line">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="sponsor_name" name="sponsor_name" formControlName="sponsor_name" placeholder="Your Name" required data-error="Please enter your name">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-6 form-line">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="sponsor_job_title" name="sponsor_job_title" formControlName="sponsor_job_title" placeholder="Your Job Title" required data-error="Please enter your job title">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12 form-line">
+                  <div class="form-group">
+                    <input type="email" class="form-control" id="sponsor_email" name="sponsor_email" formControlName="sponsor_email" placeholder="Your E-Mail Address" required data-error="Please enter your e-mail address">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>  
+                <div class="col-md-12 form-line">
+                  <div class="form-group">
+                    <input type="tel" class="form-control" id="sponsor_phone" name="sponsor_phone" formControlName="sponsor_phone" placeholder="Your Contact Number" required data-error="Please enter your contact number">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12 form-line">
+                  <div class="form-group">
+                    <input type="text" class="form-control" id="sponsor_org" name="sponsor_org" formControlName="sponsor_org" placeholder="Name of your Organization" required data-error="Please enter the name of your organization">
+                    <div class="help-block with-errors"></div>
+                  </div>
+                </div>
+                <div class="col-md-12">
+                  <div class="form-group">
+                    <textarea class="form-control" rows="4" id="sponsor_message" name="sponsor_message" formControlName="sponsor_message" placeholder="Message" required data-error="Write your message"></textarea>
+                  </div>
+                  <div class="form-submit mx-auto" style="width: 15rem;">
+                    <button type="submit" class="btn btn-common" id="form-submit" [disabled]="!sponsorForm.valid">
+                      <i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message
+                    </button>
+                    <div id="msgSubmit" class="h3 text-center hidden"></div>
+                  </div>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -391,7 +439,7 @@
           <div class="container-form wow fadeInLeft" data-wow-delay="0.2s">
             <div class="form-wrapper">
               <!-- Contact Us Form -->
-              <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" name="feedbackFrom" role="form" id="contactForm" name="contact-form" data-toggle="validator">
+              <form [formGroup]="contactForm" (ngSubmit)="onSubmit2()" name="feedbackFrom" role="form" id="contactForm" name="contact-form" data-toggle="validator">
                 <div class="row">
                   <div class="col-md-6 form-line">
                     <div class="form-group">
@@ -401,13 +449,13 @@
                   </div>
                   <div class="col-md-6 form-line">
                     <div class="form-group">
-                      <input type="email" class="form-control" id="email" name="email" formControlName="email" placeholder="E-Mail" required data-error="Please enter your Email">
+                      <input type="email" class="form-control" id="email" name="email" formControlName="email" placeholder="E-Mail" required data-error="Please enter your e-mail">
                       <div class="help-block with-errors"></div>
                     </div> 
                   </div>
                   <div class="col-md-12 form-line">
                     <div class="form-group">
-                      <input type="tel" class="form-control" id="msg_subject" name="subject" formControlName="subject" placeholder="Subject" required data-error="Please enter your message subject">
+                      <input type="text" class="form-control" id="msg_subject" name="subject" formControlName="subject" placeholder="Subject" required data-error="Please enter your message subject">
                       <div class="help-block with-errors"></div>
                     </div>
                   </div>

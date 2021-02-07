@@ -47,6 +47,43 @@ export class SpecialComponent implements OnInit {
          .subscribe(x => { this.getTimeDifference(); });
   }
 
+  public sponsorForm = new FormGroup({
+    sponsor_name : new FormControl('', Validators.required),
+    sponsor_job_title : new FormControl('', Validators.required),
+    sponsor_email : new FormControl('', [Validators.required, Validators.email]),
+    sponsor_org : new FormControl('', Validators.required),
+    sponsor_phone : new FormControl('', Validators.required),
+    sponsor_message : new FormControl('', Validators.required)
+  })
+  
+  onSubmit1() {
+    let sponsor_name = this.sponsorForm.get('sponsor_name').value
+    let sponsor_job_title = this.sponsorForm.get('sponsor_job_title').value
+    let sponsor_email = this.sponsorForm.get('sponsor_email').value
+    let sponsor_org = this.sponsorForm.get('sponsor_org').value
+    let sponsor_phone = this.sponsorForm.get('sponsor_phone').value
+    let sponsor_message = this.sponsorForm.get('sponsor_message').value
+    let data = {
+      "sponsor_name": sponsor_name,
+      "sponsor_job_title": sponsor_job_title,
+      "sponsor_email": sponsor_email,
+      "sponsor_phone": sponsor_phone,
+      "sponsor_org": sponsor_org,
+      "sponsor_message": sponsor_message
+    }
+    
+    console.log(data);
+    
+    if (this.sponsorForm.valid) {
+      this.specialService.newSponsorFeedback(data).subscribe((res) => {
+        console.log(res)
+      }, err => {
+        console.log(err)
+      });
+      this.sponsorForm.reset();
+    }
+  }
+
   public contactForm = new FormGroup({
     name : new FormControl('', Validators.required),
     email : new FormControl('', [Validators.required, Validators.email]),
@@ -54,7 +91,7 @@ export class SpecialComponent implements OnInit {
     message : new FormControl('', Validators.required)
   })
   
-  onSubmit() {
+  onSubmit2() {
     let name = this.contactForm.get('name').value
     let email = this.contactForm.get('email').value
     let subject = this.contactForm.get('subject').value
