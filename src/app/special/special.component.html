@@ -31,14 +31,32 @@
               </a>
             </li>
             <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="prizes">
+                Prizes
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="our-sponsors">
+                Sponsors
+              </a>
+            </li>
+            <li class="nav-item">
               <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="sponsors">
-                Call for Sponsors
+                Be A Sponsor
               </a>
             </li>
             <li class="nav-item">
               <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="contact-us">
                 Contact Us
               </a>
+            </li>
+            <li>
+              <div class="nav-link-icons">
+                <!-- Follow us at: -->
+                <a target="_blank" href="https://www.instagram.com/hack_a_sol_iiitnr/"><i class="nav-icon lni-instagram"></i></a>
+                <a target="_blank" href="https://twitter.com/Hack_a_Sol/"><i class="nav-icon lni-twitter"></i></a>
+                <a target="_blank" href="https://www.linkedin.com/company/hack-a-sol/"><i class="nav-icon lni-linkedin-filled"></i></a>
+              </div>
             </li>
           </ul>
         </div>
@@ -59,9 +77,15 @@
               <img src="assets/hackathon/img/logo.png" alt="Hack-a-Sol Logo">
               <h2 class="head-title">Hack-a-Sol</h2>
               <p class="banner-desc">I'm Codin' It</p>
-              <div class="banner-btn">
+              <!-- <div class="banner-btn">
                 <a href="/hack-a-sol" class="btn btn-common">Register Now</a>
-              </div>
+              </div> -->
+              <div 
+                class="apply-button" 
+                data-hackathon-slug="Hack-a-Sol" 
+                data-button-theme="light"
+                style="height: 44px; width: 312px"
+              ></div>
             </div>
           </div>
         </div>
@@ -150,7 +174,7 @@
   <!-- Information Bar End -->
 
    <!-- intro Section Start -->
-  <section id="intro" class="intro section-padding">
+  <section id="intro" class="intro section-padding" style="margin-top: -2rem;">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -253,7 +277,7 @@
   <!-- Counter Area End-->
 
   <!-- Schedule Section Start -->
-  <section id="schedule" class="schedule section-padding">
+  <section id="schedule" class="schedule section-padding" style="margin-top: -2rem;">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -310,7 +334,7 @@
   <!-- Schedule Section End -->
 
   <!-- Speakers Section Start -->
-  <section id="speakers" class="section-padding text-center">
+  <section id="speakers" class="section-padding text-center" style="margin-top: -2rem;">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -340,19 +364,128 @@
   </section>
   <!-- Speakers Section End -->
 
+  <!-- Prizes Section -->
+  <section id="prizes" class="intro section-padding" style="margin-top: -2rem;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title-header text-center">
+            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Prizes</h2>
+            <!-- <p class="wow fadeInDown" data-wow-delay="0.2s">The 3 main reasons why cannot ignore this opportunity to take part in our hackathon.</p> -->
+          </div>
+        </div>
+      </div>
+      <!-- <div class="row intro-wrapper"> -->
+        <div class="row justify-content-center">
+          <div class="card-deck text-center" style="padding: 5px;" id="grp1">
+            <div class="ml-3"></div>
+            <div class="card ml-3">
+              <img src="assets/hackathon/first.png" class="card-img-top" alt="First Prize" style="height: 250px; width: 250px;">
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h3 class="card-title">₹ 6,000<sup>*</sup></h3>
+              </div>
+            </div>
+            <div class="card ml-3">
+              <img src="assets/hackathon/second.png" class="card-img-top" alt="Second Prize" style="height: 250px; width: 250px;">
+              <div class="card-body d-flex flex-column justify-content-center">
+                <h3 class="card-title">₹ 3,000<sup>*</sup></h3>
+              </div>
+            </div>
+          </div>
+          <div class="card-deck text-center" style="padding: 5px;" id="grp1">
+            <div class="card ml-3">
+             <img src="assets/hackathon/sponsors/Matic_Logo-Blue.png" class="card-img-top" alt="Matic Logo">
+             <div class="card-body d-flex flex-column justify-content-center">
+               <!-- <h3 class="card-title font-weight-bold">Clubs</h3> -->
+               <p class="card-text">
+                 <i>
+                  ₹10,000 for the best hack built on Ethereum, or<br>
+                  ₹15,000 for the best hack built on Ethereum + Matic,<br>                  
+                  Eligibility to apply for internship/full-time roles and seed funding of up to 5,000 USD for winners!
+                 </i>
+                 <br>
+               </p>
+               <a href="https://www.notion.so/Matic-Network-Devfolio-Hackathon-Season-Bounty-2e8d92283cc9404cac78bf4b481b31c7" class="btn mt-auto prize-button">View Details</a>
+             </div>
+           </div>
+           <div class="card ml-3">
+             <img src="assets/hackathon/sponsors/Portis_Logo-Colored_Black.png" class="card-img-top" alt="Portis Logo">
+             <div class="card-body d-flex flex-column justify-content-center">
+               <!-- <h3 class="card-title font-weight-bold">Achievements</h3> -->
+               <p class="card-text">
+                 <i>200 USD (in crypto) for best Dapp built on Portis</i>
+                 <br>
+               </p>
+               <a href="https://www.notion.so/Portis-by-Shapeshift-Devfolio-Hackathon-Season-Bounty-8dd8495bff914b74b6a9ce51482163ee" class="btn mt-auto prize-button">View Details</a>
+             </div>
+           </div>      
+           <div class="card ml-3">
+             <img src="assets/hackathon/sponsors/Tezos_Logo-Colored.png" class="card-img-top" alt="Tezos Logo">
+             <div class="card-body d-flex flex-column justify-content-center">
+               <!-- <h3 class="card-title font-weight-bold">Newsletters</h3> -->
+               <p class="card-text">
+                 <i>
+                  ₹10,000 for best Dapp built on Tezos<br>
+                  ₹5000 for Runners-up<br>                  
+                  Continuity Grant opportunity for exceptional builders
+                 </i>
+                 <br>
+               </p>
+               <a href="https://www.notion.so/Tezos-Devfolio-Hackathon-Season-Bounty-331390dac93a44bda8e2bc90b9b42a38" class="btn mt-auto prize-button">View Details</a>
+             </div>
+           </div>
+         </div>
+         <div style="font-size: 15px; text-align: right; margin-top: 1.5rem;">
+          * Amount of 1<sup>st</sup> and 2<sup>nd</sup> prize may change in future.
+        </div>
+        </div>
+      <!-- </div> -->
+    </div>
+  </section>
+  <!-- Prizes Section End -->
+
   <!-- Sponsors Section Start -->
-  <section id="sponsors" class="section-padding">
+  <section id="our-sponsors" class="intro section-padding" style="margin-top: -2rem;">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <div class="section-title-header text-center">
+            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Our Sponsors</h2>
+            <p class="wow fadeInDown" data-wow-delay="0.2s">We are very grateful to our sponsors, who helped to make this hackathon the very best.</p>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center sponsors-list">
+        <img src="assets/hackathon/sponsors/Devfolio_Logo-Colored.png">
+      </div>
+      <div class="row justify-content-center sponsors-list">
+        <img src="assets/hackathon/sponsors/Matic_Logo-Blue.png">
+        <img src="assets/hackathon/sponsors/Portis_Logo-Colored_Black.png">
+        <img src="assets/hackathon/sponsors/Tezos_Logo-Colored.png">
+      </div>
+      <!-- <div class="row intro-wrapper">
+        <div class="col-lg-4 col-md-6 col-xs-12">
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12">
+        </div>
+        <div class="col-lg-4 col-md-6 col-xs-12">
+        </div>
+      </div> -->
+    </div>
+  </section>
+  <!-- Sponsors Section End -->
+
+  <!-- Be A Sponsor Section Start -->
+  <section id="sponsors" class="section-padding" style="margin-top: -2rem;">
     <div class="overlay"></div>
     <div class="container">
       <div class="row">
         <div class="col-12">
           <div class="section-title-header text-center">
-            <!-- <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Sponsors</h2>
-            <p class="wow fadeInDown" data-wow-delay="0.2s">We are very grateful to our sponsors, who helped to make this hackathon the very best.</p> -->
-            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Call for Sponsors</h2>
+            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Be A Sponsor</h2>
             <p class="wow fadeInDown" data-wow-delay="0.2s">
               If you are interested to sponsor us, please fill this form.<br>
-              Your team will reach out to you.
+              Your team will reach out to you, as soon as possible.
             </p>
           </div>
         </div>
@@ -421,10 +554,10 @@
       </div>
     </div>
   </section>
-  <!-- Sponsors Section End -->
+  <!-- Sponsors Section Section End -->
 
   <!-- Contact Us Section -->
-  <section id="contact-us" class="section-padding">
+  <section id="contact-us" class="section-padding" style="margin-top: -1.5rem;">
     <div class="container">
       <div class="row">
         <div class="col-12">
@@ -434,7 +567,7 @@
           </div>
         </div>
       </div>
-      <div class="row justify-content-center">
+      <div class="row justify-content-center" style="margin-top: -1.5rem;">
         <div class="col-lg-8 col-md-12 col-xs-12">
           <div class="container-form wow fadeInLeft" data-wow-delay="0.2s">
             <div class="form-wrapper">
@@ -538,3 +671,5 @@
       <div class="sk-circle12 sk-child"></div>
     </div>
   </div> -->
+
+  <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
