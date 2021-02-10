@@ -2372,10 +2372,10 @@ footer {
   color: #212121;
 }
 
-.hero-area-bg {
+/* .hero-area-bg {
   background: url("/assets/hackathon/img/hero-area.jpg") no-repeat;
   background-size: cover;
-}
+} */
 
 #hero-area {
   color: #fff;
