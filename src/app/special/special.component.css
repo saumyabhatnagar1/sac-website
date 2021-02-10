@@ -52,11 +52,11 @@ span {
 }
 
 .prize-button {
-  background-color: #ff4a67;
+  background-color: #9800f6;
 }
 
 .prize-button:hover {
-  background-color: #fc1037;
+  background-color: #fc105f;
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
