@@ -1,682 +1,856 @@
-<!-- Header Area wrapper Starts -->
-<header id="home">
-    <!-- Navbar Start -->
-    <nav class="navbar navbar-expand-lg bg-inverse fixed-top scrolling-navbar bg-light">
-      <div class="container">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <a href="https://www.iiitnr.ac.in" target="blank" class="navbar-brand"><img src="assets/hackathon/img/college_logo.png"></a>       
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
-          <i class="lni-menu"></i>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarCollapse">
-          <ul class="navbar-nav mr-auto w-100 justify-content-end">
-            <li class="nav-item">
-              <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="home">
-                Home
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="about">
-                About
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="schedule">
-                Schedule
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="speakers">
-                Speaker
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="prizes">
-                Prizes
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="our-sponsors">
-                Sponsors
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="sponsors">
-                Be A Sponsor
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLinkActive="active" routerLink="/hack-a-sol" fragment="contact-us">
-                Contact Us
-              </a>
-            </li>
-            <li>
-              <div class="nav-link-icons">
-                <!-- Follow us at: -->
-                <a target="_blank" href="https://www.instagram.com/hack_a_sol_iiitnr/"><i class="nav-icon lni-instagram"></i></a>
-                <a target="_blank" href="https://twitter.com/Hack_a_Sol/"><i class="nav-icon lni-twitter"></i></a>
-                <a target="_blank" href="https://www.linkedin.com/company/hack-a-sol/"><i class="nav-icon lni-linkedin-filled"></i></a>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- Navbar End -->
-
-    <!-- Hero Area Start -->
-    <div id="hero-area" class="hero-area-bg">
-      <video autoplay muted loop id="myVideo">
-        <source src="./assets/hackathon/bg.mp4" type="video/mp4">
-      </video>
-      <div class="overlay"></div>
-      <div class="container">
-        <div class="row justify-content-center">
-          <div class="col-lg-9 col-sm-12">
-            <div class="contents text-center">
-              <img src="assets/hackathon/img/logo.png" alt="Hack-a-Sol Logo">
-              <h2 class="head-title">Hack-a-Sol</h2>
-              <p class="banner-desc">I'm Codin' It</p>
-              <!-- <div class="banner-btn">
-                <a href="/hack-a-sol" class="btn btn-common">Register Now</a>
-              </div> -->
-              <div 
-                class="apply-button" 
-                data-hackathon-slug="Hack-a-Sol" 
-                data-button-theme="light"
-                style="height: 44px; width: 312px"
-              >
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+<div class="hackathon-body">
+  <div class="socket">
+    <div class="gel center-gel">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
     </div>
-    <!-- Hero Area End -->
-
-  </header>
-  <!-- Header Area wrapper End -->
-
-  <!-- Count Bar Start -->
-  <section id="count">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-10">
-          <div class="count-wrapper text-center">
-            <div class="time-countdown wow fadeInUp" data-wow-delay="1s">
-              <div id="clock" class="time-count">
-                <div class="time-entry days"><span>{{ daysRemaining }}</span> <b>:</b> Days</div>
-                <div class="time-entry hours"><span>{{ hoursRemaining }}</span> <b>:</b> Hours</div>
-                <div class="time-entry minutes"><span>{{ minutesRemaining }}</span> <b>:</b> Minutes</div>
-                <div class="time-entry seconds"><span>{{ secondsRemaining }}</span> Seconds</div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="gel c1 r1">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
     </div>
-  </section>
-  <!-- Count Bar End -->
-
-  <!-- About Section Start -->
-  <section id="about" class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-12 col-xs-12">
-          <div class="img-thumb">
-            <img class="img-fluid" src="assets/hackathon/img/about/img1.png" alt="">
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-12 col-xs-12">
-          <div class="about-content">
-            <div>
-              <div class="about-text">  
-                <h2>About The Hackathon</h2>
-                <p>Hack-a-Sol is the annual hackathon organised by The Society of Coders, IIIT Naya Raipur. The participants are given some problem statements and within 36 hours they have to come up with a solution.</p>
-              </div>
-              <ul class="stylish-list mb-3">
-                <li><i class="lni-check-mark-circle"></i>Cash Prizes for Winners</li>
-                <li><i class="lni-check-mark-circle"></i>Participation Certificate</li>
-                <li><i class="lni-check-mark-circle"></i>Get Inspired by Amazing Speakers</li>
-                <li><i class="lni-check-mark-circle"></i>An Exciting and Fun Way to Learn and Develop</li>
-              </ul>
-              <a class="btn btn-common" href="https://iiitnr-tsoc.github.io/">About TSoC</a>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="gel c2 r1">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
     </div>
-  </section>
-  <br>
-  <br>
-  <!-- Information Bar Start -->
-  <section id="information-bar">
-    <div class="container">
-      <div class="row inforation-wrapper">
-        <div class="col-lg-6 col-md-6 col-xs-12">
-          <ul>
-            <li>
-              <i class="lni-calendar"></i>
-            </li>
-            <li><span><b>Date & Time</b> 10 PM, 26<sup>th</sup> Feb 2021</span></li>
-          </ul>
-        </div>
-        <div class="col-lg-6 col-md-6 col-xs-12">
-          <ul>
-            <li>
-              <i class="lni-timer"></i>
-            </li>
-            <li><span><b>Duration</b>36 Hours</span></li>
-          </ul>
-        </div>
-      </div>
+    <div class="gel c3 r1">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
     </div>
-  </section>
-  <!-- Information Bar End -->
-
-   <!-- intro Section Start -->
-  <section id="intro" class="intro section-padding" style="margin-top: -2rem;">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title-header text-center">
-            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Why You Should Join?</h2>
-            <p class="wow fadeInDown" data-wow-delay="0.2s">The 3 main reasons why cannot ignore this opportunity to take part in our hackathon.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row intro-wrapper">
-        <div class="col-lg-4 col-md-6 col-xs-12">
-          <div class="single-intro-text mb-70">
-             <i class="lni-microphone"></i>
-             <h3>Great Speaker</h3>
-             <p>
-                Get inspired and motivated listening to a veteran speaker.
-                <br>
-                <br>
-             </p>
-             <span class="count-number">01</span>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-xs-12">
-          <div class="single-intro-text">
-             <i class="lni-users"></i>
-             <h3 class="ts-title">Meet New People</h3>
-             <p>
-                Learn from having a look at other's submission from a variety of colleges.
-             </p>
-             <span class="count-number">02</span>
-          </div>
-          <div class="border-shap left"></div>
-        </div>
-        <div class="col-lg-4 col-md-6 col-xs-12">
-          <div class="single-intro-text mb-70">
-             <i class="lni-bullhorn"></i>
-             <h3>Compete</h3>
-             <p>
-                Work hard and innovate to prove yourself the best and win exciting prizes.
-             </p>
-             <span class="count-number">03</span>
-          </div>
-        </div>
-      </div>
+    <div class="gel c4 r1">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
     </div>
-  </section>
-  <!-- intro Section End -->
-
-  <!-- Counter Area Start-->
-  <!-- <section class="counter-section section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget">
-          <div class="counter">
-            <div class="icon">
-              <i class="lni-mic"></i>
-            </div>
-            <div class="counter-content">
-              <div class="counterUp">8</div>
-              <p>Problem Statements</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget">
-          <div class="counter">
-            <div class="icon">
-              <i class="lni-bulb"></i>
-            </div>
-            <div class="counter-content">
-              <div class="counterUp">100</div>
-              <p>Participants</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget">
-          <div class="counter">
-            <div class="icon">
-              <i class="lni-briefcase"></i>
-            </div>
-            <div class="counter-content">
-              <div class="counterUp">5</div>
-              <p>Sponsors</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-3 col-md-6 col-xs-12 work-counter-widget">
-          <div class="counter">
-            <div class="icon">
-              <i class="lni-coffee-cup"></i>
-            </div>
-            <div class="counter-content">
-              <div class="counterUp">4</div>
-              <p>Judges</p>
-            </div>
-          </div>
-        </div>
-      </div>
+    <div class="gel c5 r1">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
     </div>
-  </section> -->
-  <!-- Counter Area End-->
-
-  <!-- Schedule Section Start -->
-  <section id="schedule" class="schedule section-padding" style="margin-top: -2rem;">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title-header text-center">
-            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Event Schedule</h2>
-            <p class="wow fadeInDown" data-wow-delay="0.2s">List of important dates in the timeline of our hackathon.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-12 mb-5 text-center">
-          <ul class="nav nav-tabs" id="myTab" role="tablist">
-            <li class="nav-item">
-              <a class="nav-link active" data-toggle="tab" role="tab" aria-expanded="true">
-                <div class="item-text">
-                  <h4>Registration</h4>
-                  <h5>February 2021</h5>
-                  <p style="font-weight: bold;">Registration Closes<br><br><br></p>
-                </div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" role="tab" aria-expanded="true">
-                <div class="item-text">
-                  <h4>Day 01</h4>
-                  <h5>26 February 2021</h5>
-                  <p style="font-weight: bold;">Hackathon Begins<br><br><br></p>
-                </div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" role="tab">
-                <div class="item-text">
-                  <h4>Day 02</h4>
-                  <h5>28 February 2021</h5>
-                  <p style="font-weight: bold;">Judging begins<br>Talk session <br>with the Speaker</p>
-                </div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" data-toggle="tab" role="tab">
-                <div class="item-text">
-                  <h4>Results</h4>
-                  <h5>28 February 2021</h5>
-                  <p style="font-weight: bold;">Announcement of <br>Winners<br><br></p>
-                </div>
-              </a>
-            </li>
-          </ul>
-        </div>
-       </div>
+    <div class="gel c6 r1">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
     </div>
-  </section>
-  <!-- Schedule Section End -->
-
-  <!-- Speakers Section Start -->
-  <section id="speakers" class="section-padding text-center" style="margin-top: -2rem;">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title-header text-center">
-            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Our Speaker for this Year</h2>
-            <p class="wow fadeInDown" data-wow-delay="0.2s">This year we have invited a person who has guided thousands<br>of students to achieve their dreams of working in Dream Companies.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content">
-        <div class="col-12 col-sm-12 col-sm-12">
-          <!-- Speakers Item Starts -->
-          <div class="speakers-item wow fadeInUp" data-wow-delay="0.2s">
-            <div class="speakers-img">
-              <img class="img-fluid" src="assets/hackathon/img/speaker/sandeep-jain.jpg" alt="Mr. Sandeep Jain">
-            </div>
-            <div class="info-text">
-              <h3><a href="#">Mr. Sandeep Jain</a></h3>
-              <p>Founder and CEO, GeeksForGeeks</p>
-            </div>
-          </div>
-          <!-- Speakers Item Ends -->
-      <a href="https://www.geeksforgeeks.org/" class="btn btn-common mt-30 wow fadeInUp" data-wow-delay="1.9s">Know More</a>
+  
+    <div class="gel c7 r2">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
     </div>
+  
+    <div class="gel c8 r2">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
     </div>
+    <div class="gel c9 r2">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
     </div>
-  </section>
-  <!-- Speakers Section End -->
-
-  <!-- Prizes Section -->
-  <section id="prizes" class="intro section-padding" style="margin-top: -2rem;">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title-header text-center">
-            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Prizes</h2>
-            <!-- <p class="wow fadeInDown" data-wow-delay="0.2s">The 3 main reasons why cannot ignore this opportunity to take part in our hackathon.</p> -->
-          </div>
-        </div>
-      </div>
-      <!-- <div class="row intro-wrapper"> -->
-        <div class="row justify-content-center">
-          <div class="card-deck text-center" style="padding: 5px;" id="grp1">
-            <div class="ml-3"></div>
-            <div class="card ml-3">
-              <img src="assets/hackathon/img/first.png" class="card-img-top" alt="First Prize" style="height: 250px; width: 250px;">
-              <div class="card-body d-flex flex-column justify-content-center">
-                <h3 class="card-title">₹ 10,000<sup>*</sup></h3>
-              </div>
-            </div>
-            <div class="card ml-3">
-              <img src="assets/hackathon/img/second.png" class="card-img-top" alt="Second Prize" style="height: 250px; width: 250px;">
-              <div class="card-body d-flex flex-column justify-content-center">
-                <h3 class="card-title">₹ 5,000<sup>*</sup></h3>
-              </div>
-            </div>
-          </div>
-          <div class="card-deck text-center" style="padding: 5px;" id="grp1">
-            <div class="card ml-3">
-             <img src="assets/hackathon/sponsors/Matic_Logo-Blue.png" class="card-img-top" alt="Matic Logo">
-             <div class="card-body d-flex flex-column justify-content-center">
-               <!-- <h3 class="card-title font-weight-bold">Clubs</h3> -->
-               <p class="card-text">
-                 <i>
-                  ₹10,000 for the best hack built on Ethereum, or<br>
-                  ₹15,000 for the best hack built on Ethereum + Matic,<br>                  
-                  Eligibility to apply for internship/full-time roles and seed funding of up to 5,000 USD for winners!
-                 </i>
-                 <br>
-               </p>
-               <a href="https://www.notion.so/Matic-Network-Devfolio-Hackathon-Season-Prize-de8961d5eeff4780963749da0b75037c" class="btn mt-auto prize-button">View Details</a>
-             </div>
-           </div>
-           <div class="card ml-3">
-             <img src="assets/hackathon/sponsors/Portis_Logo-Colored_Black.png" class="card-img-top" alt="Portis Logo">
-             <div class="card-body d-flex flex-column justify-content-center">
-               <!-- <h3 class="card-title font-weight-bold">Achievements</h3> -->
-               <p class="card-text">
-                 <i>₹15,000 for best Dapp built on Portis</i>
-                 <br>
-               </p>
-               <a href="https://www.notion.so/Portis-by-Shapeshift-Devfolio-Hackathon-Season-Prize-e198dfd094a9411b8cd0f80d76a04a90" class="btn mt-auto prize-button">View Details</a>
-             </div>
-           </div>      
-           <div class="card ml-3">
-             <img src="assets/hackathon/sponsors/Tezos_Logo-Colored.png" class="card-img-top" alt="Tezos Logo">
-             <div class="card-body d-flex flex-column justify-content-center">
-               <!-- <h3 class="card-title font-weight-bold">Newsletters</h3> -->
-               <p class="card-text">
-                 <i>
-                  ₹20,000 for best Dapp built on Tezos<br>
-                  Continuity Grant opportunity for exceptional builders
-                 </i>
-                 <br>
-               </p>
-               <a href="https://www.notion.so/Tezos-Devfolio-Hackathon-Season-Prize-e90b6811b0df43e5a7dadf534fc000ff" class="btn mt-auto prize-button">View Details</a>
-             </div>
-           </div>
-         </div>
-         <div style="font-size: 15px; text-align: right; margin-top: 1.5rem;">
-          * Amount of 1<sup>st</sup> and 2<sup>nd</sup> prize may change in future.
-        </div>
-        </div>
-      <!-- </div> -->
+    <div class="gel c10 r2">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
     </div>
-  </section>
-  <!-- Prizes Section End -->
-
-  <!-- Sponsors Section Start -->
-  <section id="our-sponsors" class="intro section-padding" style="margin-top: -2rem;">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title-header text-center">
-            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Our Sponsors</h2>
-            <p class="wow fadeInDown" data-wow-delay="0.2s">We are very grateful to our sponsors, who helped to make this hackathon the very best.</p>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-center sponsors-list">
-        <img src="assets/hackathon/sponsors/Devfolio_Logo-Colored.png">
-      </div>
-      <div class="row justify-content-center sponsors-list">
-        <img src="assets/hackathon/sponsors/Matic_Logo-Blue.png">
-        <img src="assets/hackathon/sponsors/Portis_Logo-Colored_Black.png">
-        <img src="assets/hackathon/sponsors/Tezos_Logo-Colored.png">
-      </div>
-      <div class="row justify-content-center sponsors-list">
-        <img src="assets/hackathon/sponsors/axure.png">
-        <img src="assets/hackathon/sponsors/coding_ninjas.png">
-      </div>
-      <!-- <div class="row intro-wrapper">
-        <div class="col-lg-4 col-md-6 col-xs-12">
-        </div>
-        <div class="col-lg-4 col-md-6 col-xs-12">
-        </div>
-        <div class="col-lg-4 col-md-6 col-xs-12">
-        </div>
-      </div> -->
+    <div class="gel c11 r2">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
     </div>
-  </section>
-  <!-- Sponsors Section End -->
-
-  <!-- Be A Sponsor Section Start -->
-  <section id="sponsors" class="section-padding" style="margin-top: -2rem;">
-    <div class="overlay"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title-header text-center">
-            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Be A Sponsor</h2>
-            <p class="wow fadeInDown" data-wow-delay="0.2s">
-              If you are interested to sponsor us, please fill this form.<br>
-              Our team will reach out to you, as soon as possible.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-30 text-center wow fadeInDown" data-wow-delay="0.3s">
-        <div class="col-lg-12">
-          <!-- <div class="sponsors-logo text-center">
-             <a href=""><img src="assets/hackathon/img/sponsors/logo-1.png" alt=""></a>
-             <a href=""><img src="assets/hackathon/img/sponsors/logo-2.png" alt=""></a>
-             <a href=""><img src="assets/hackathon/img/sponsors/logo-3.png" alt=""></a>
-             <a href=""><img src="assets/hackathon/img/sponsors/logo-4.png" alt=""></a>
-             <a href=""><img src="assets/hackathon/img/sponsors/logo-5.png" alt=""></a>
-             <a href=""><img src="assets/hackathon/img/sponsors/logo-6.png" alt=""></a>
-             <a href=""><img src="assets/hackathon/img/sponsors/logo-7.png" alt=""></a>
-             <a href=""><img src="assets/hackathon/img/sponsors/logo-8.png" alt=""></a>
-             <a href=""><img src="assets/hackathon/img/sponsors/logo-9.png" alt=""></a>
-          </div> -->
-          <div class="form-wrapper">
-            <form [formGroup]="sponsorForm" (ngSubmit)="onSubmit1()" name="sponsorFrom" role="form" id="contactForm" name="contact-form" data-toggle="validator">
-              <div class="row">
-                <div class="col-md-6 form-line">
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="sponsor_name" name="sponsor_name" formControlName="sponsor_name" placeholder="Your Name" required data-error="Please enter your name">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-md-6 form-line">
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="sponsor_job_title" name="sponsor_job_title" formControlName="sponsor_job_title" placeholder="Your Job Title" required data-error="Please enter your job title">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-md-12 form-line">
-                  <div class="form-group">
-                    <input type="email" class="form-control" id="sponsor_email" name="sponsor_email" formControlName="sponsor_email" placeholder="Your E-Mail Address" required data-error="Please enter your e-mail address">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>  
-                <div class="col-md-12 form-line">
-                  <div class="form-group">
-                    <input type="tel" class="form-control" id="sponsor_phone" name="sponsor_phone" formControlName="sponsor_phone" placeholder="Your Contact Number" required data-error="Please enter your contact number">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-md-12 form-line">
-                  <div class="form-group">
-                    <input type="text" class="form-control" id="sponsor_org" name="sponsor_org" formControlName="sponsor_org" placeholder="Name of your Organization" required data-error="Please enter the name of your organization">
-                    <div class="help-block with-errors"></div>
-                  </div>
-                </div>
-                <div class="col-md-12">
-                  <div class="form-group">
-                    <textarea class="form-control" rows="4" id="sponsor_message" name="sponsor_message" formControlName="sponsor_message" placeholder="Message" required data-error="Write your message"></textarea>
-                  </div>
-                  <div class="form-submit mx-auto" style="width: 15rem;">
-                    <button type="submit" class="btn btn-common" id="form-submit" [disabled]="!sponsorForm.valid">
-                      <i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message
-                    </button>
-                    <div id="msgSubmit" class="h3 text-center hidden"></div>
-                  </div>
-                </div>
-              </div>
-            </form>
-          </div>
-        </div>
-      </div>
+    <div class="gel c12 r2">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
     </div>
-  </section>
-  <!-- Sponsors Section Section End -->
-
-  <!-- Contact Us Section -->
-  <section id="contact-us" class="section-padding" style="margin-top: -1.5rem;">
-    <div class="container">
-      <div class="row">
-        <div class="col-12">
-          <div class="section-title-header text-center">
-            <h2 class="section-title wow fadeInUp" data-wow-delay="0.2s">Contact Us</h2>
-            <p class="wow fadeInDown" data-wow-delay="0.2s">
-              In case you have any query, feel free to drop a message below, or<br>
-              contact <b>Shyam Agarwal: <a href="tel:+918670513596">+91-8670513596</a></b>.
-            </p>
-          </div>
+    <div class="gel c13 r2">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c14 r2">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c15 r2">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c16 r2">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c17 r2">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c18 r2">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c19 r3">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c20 r3">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c21 r3">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c22 r3">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c23 r3">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c24 r3">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c25 r3">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c26 r3">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c28 r3">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c29 r3">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c30 r3">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c31 r3">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c32 r3">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c33 r3">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c34 r3">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c35 r3">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c36 r3">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+    <div class="gel c37 r3">
+        <div class="hex-brick h1"></div>
+        <div class="hex-brick h2"></div>
+        <div class="hex-brick h3"></div>
+    </div>
+  
+  </div>
+  
+  <!--Wrapper-->
+  <div class="wrapper">
+    <!--Hero section-->
+    <section class="hero overlay">
+        <!--Main slider-->
+        <div class="main-slider slider">
+            <ul class="slides">
+                <li>
+                    <div class="background-img">
+                        <img src="./assets/hackathon/img/page1-01.svg" alt="">
+                    </div>
+                </li>
+            </ul>
         </div>
-      </div>
-      <div class="row justify-content-center" style="margin-top: -1.5rem;">
-        <div class="col-lg-8 col-md-12 col-xs-12">
-          <div class="container-form wow fadeInLeft" data-wow-delay="0.2s">
-            <div class="form-wrapper">
-              <!-- Contact Us Form -->
-              <form [formGroup]="contactForm" (ngSubmit)="onSubmit2()" name="feedbackFrom" role="form" id="contactForm" name="contact-form" data-toggle="validator">
+        <!--End main slider-->
+        <!--Inner hero-->
+        <div class="inner-hero fade-out">
+            <!--Container-->
+            <div class="container hero-content">
+                <!--Row-->
                 <div class="row">
-                  <div class="col-md-6 form-line">
-                    <div class="form-group">
-                      <input type="text" class="form-control" id="name" name="name" formControlName="name" placeholder="Name" required data-error="Please enter your name">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-6 form-line">
-                    <div class="form-group">
-                      <input type="email" class="form-control" id="email" name="email" formControlName="email" placeholder="E-Mail" required data-error="Please enter your e-mail">
-                      <div class="help-block with-errors"></div>
-                    </div> 
-                  </div>
-                  <div class="col-md-12 form-line">
-                    <div class="form-group">
-                      <input type="text" class="form-control" id="msg_subject" name="subject" formControlName="subject" placeholder="Subject" required data-error="Please enter your message subject">
-                      <div class="help-block with-errors"></div>
-                    </div>
-                  </div>
-                  <div class="col-md-12">
-                    <div class="form-group">
-                      <textarea class="form-control" rows="4" id="message" name="message" formControlName="message" placeholder="Message" required data-error="Write your message"></textarea>
-                    </div>
-                    <div class="form-submit">
-                      <button type="submit" class="btn btn-common" id="form-submit" [disabled]="!contactForm.valid">
-                        <i class="fa fa-paper-plane" aria-hidden="true"></i>  Send Message
-                      </button>
-                      <div id="msgSubmit" class="h3 text-center hidden"></div>
-                    </div>
-                  </div>
+                    <img class="logo-default" src="./assets/hackathon/img/logo_thinoutline.png" alt="logo" width="640px" height="640px"/>
+                    <br>
+                    <img class="logo-sec" src="./assets/hackathon/img/logo_sec.png" alt="logo" width="320px" height="320px"/>
+                    <br>
+                    <br>
+                    <br>
+                    <p class="gradient-text"><strong> Registrations are Open</strong></p>
+                    <a routerLinkActive="active" routerLink="#" class="but scroll "> Register Now</a>
                 </div>
-              </form>
             </div>
-          </div>
-
-          <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-            <div class="modal-dialog" role="document">
-              <div class="modal-content">
-                <div class="modal-header">
-                  <h5 class="modal-title" id="exampleModalLabel">Thank You!</h5>
-                </div>
-                <div class="modal-body">
-                  Your message has been sent!!
-                </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                </div>
-              </div>
-            </div>
-          </div>
-
+            <!--End row-->
         </div>
+        <!--End container-->
+  
+        <!--End inner hero-->
+    </section>
+  
+    <!--End hero section-->
+    <!--About section-->
+    <section id="about" class="about pt-120 pb-120 brd-bottom">
+        <!--Container-->
+        <div class="container">
+            <!--Row-->
+            <div class="row">
+                <div class="col-sm-8 col-sm-offset-2 mb-100 text-center">
+                    <svg version="1.1" id="Layer_1" xmlns="http:/www.w3.org/2000/svg" xmlns:xlink="http:/www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="25px" viewBox="0 0 42 32" enable-background="new 0 0 42 32"
+                    xml:space="preserve">
+                      <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="5.1983" y1="28.1187" x2="43.4067" y2="11.702">
+                          <stop offset="0" style="stop-color:#399BFF" />
+                          <stop offset="1" style="stop-color:#EE71F9" />
+                      </linearGradient>
+                    </svg>
+                    <h1 class="title">About Hack-a-Sol</h1>
+                    <p class="title-lead mt-20">Hack-a-Sol is the annual pan-India hackathon organized by The Society of Coders, IIIT
+                        Naya Raipur. It is a virtual 36-hr event for innovatively fostering real-world problem-
+                        solving skills to the given problem statements
+                    </p>
+                    <p class="title-lead mt-20">
+                        <span class="gradient-text">The best way to predict the future is to create it</span>
+                    </p>
+                </div>
+            </div>
+            <!--End row-->
+        </div>
+  
+        <!--End container-->
+        <!--Container-->
+        <div class="container aboutdate">
+            <!--Row-->
+            <div class="row">
+                <div class="col-md-3 col-sm-3">
+                    <div class="block-info-1">
+                        <svg version="1.1" id="Layer_1" xmlns="http:/www.w3.org/2000/svg" xmlns:xlink="http:/www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="25px" viewBox="0 0 42 32" enable-background="new 0 0 42 32"
+                         xml:space="preserve">
+                            <linearGradient id="SVGID_1_" gradientUnits="userSpaceOnUse" x1="5.1983" y1="28.1187" x2="43.4067" y2="11.702">
+                                <stop offset="0" style="stop-color:#399BFF" />
+                                <stop offset="1" style="stop-color:#EE71F9" />
+                            </linearGradient>
+                            <path fill="url(#SVGID_1_)" d="M38,30.5v-19c0-0.276-0.224-0.5-0.5-0.5S37,11.224,37,11.5v19c0,0.276-0.224,0.5-0.5,0.5h-31
+                          C5.224,31,5,30.776,5,30.5v-19C5,11.224,4.776,11,4.5,11S4,11.224,4,11.5v19C4,31.327,4.673,32,5.5,32h31
+                          C37.327,32,38,31.327,38,30.5z" />
+                            <linearGradient id="SVGID_2_" gradientUnits="userSpaceOnUse" x1="4.7162" y1="26.9965" x2="42.9245" y2="10.5799">
+                                <stop offset="0" style="stop-color:#399BFF" />
+                                <stop offset="1" style="stop-color:#EE71F9" />
+                            </linearGradient>
+                            <path fill="url(#SVGID_2_)" d="M8.5,23C8.224,23,8,23.224,8,23.5S8.224,24,8.5,24H10v3.5c0,0.276,0.224,0.5,0.5,0.5
+                          s0.5-0.224,0.5-0.5V24h6v3.5c0,0.276,0.224,0.5,0.5,0.5s0.5-0.224,0.5-0.5V24h6v3.5c0,0.276,0.224,0.5,0.5,0.5s0.5-0.224,0.5-0.5V24
+                          h6v3.5c0,0.276,0.224,0.5,0.5,0.5s0.5-0.224,0.5-0.5V24h1.5c0.276,0,0.5-0.224,0.5-0.5S33.776,23,33.5,23H32v-5h1.5
+                          c0.276,0,0.5-0.224,0.5-0.5S33.776,17,33.5,17H32v-4.5c0-0.276-0.224-0.5-0.5-0.5S31,12.224,31,12.5V17h-6v-4.5
+                          c0-0.276-0.224-0.5-0.5-0.5S24,12.224,24,12.5V17h-6v-4.5c0-0.276-0.224-0.5-0.5-0.5S17,12.224,17,12.5V17h-6v-4.5
+                          c0-0.276-0.224-0.5-0.5-0.5S10,12.224,10,12.5V17H8.5C8.224,17,8,17.224,8,17.5S8.224,18,8.5,18H10v5H8.5z M31,18v5h-6v-5H31z
+                          M24,18v5h-6v-5H24z M11,18h6v5h-6V18z" />
+                            <linearGradient id="SVGID_3_" gradientUnits="userSpaceOnUse" x1="-0.4811" y1="14.9003" x2="37.7272" y2="-1.5164">
+                                <stop offset="0" style="stop-color:#399BFF" />
+                                <stop offset="1" style="stop-color:#EE71F9" />
+                            </linearGradient>
+                            <path fill="url(#SVGID_3_)" d="M32.5,3h4.25C36.837,3,37,3,37,3.5V8H5V3.5C5,3.224,5.224,3,5.5,3h4C9.776,3,10,2.776,10,2.5
+                          S9.776,2,9.5,2h-4C4.673,2,4,2.673,4,3.5v5C4,8.776,4.224,9,4.5,9h33C37.776,9,38,8.776,38,8.5v-5C38,2.394,37.354,2,36.75,2H32.5
+                          C32.224,2,32,2.224,32,2.5S32.224,3,32.5,3z" />
+                            <linearGradient id="SVGID_4_" gradientUnits="userSpaceOnUse" x1="-1.6311" y1="12.2237" x2="36.5772" y2="-4.1929">
+                                <stop offset="0" style="stop-color:#399BFF" />
+                                <stop offset="1" style="stop-color:#EE71F9" />
+                            </linearGradient>
+                            <path fill="url(#SVGID_4_)" d="M26.5,3C26.776,3,27,2.776,27,2.5S26.776,2,26.5,2h-11C15.224,2,15,2.224,15,2.5S15.224,3,15.5,3
+                          H26.5z" />
+                            <linearGradient id="SVGID_5_" gradientUnits="userSpaceOnUse" x1="-2.9557" y1="9.1407" x2="35.2526" y2="-7.2759">
+                                <stop offset="0" style="stop-color:#399BFF" />
+                                <stop offset="1" style="stop-color:#EE71F9" />
+                            </linearGradient>
+                            <path fill="url(#SVGID_5_)" d="M13,4.5v-4C13,0.224,12.776,0,12.5,0S12,0.224,12,0.5v4C12,4.776,12.224,5,12.5,5S13,4.776,13,4.5z" />
+                            <linearGradient id="SVGID_6_" gradientUnits="userSpaceOnUse" x1="-0.3065" y1="15.3067" x2="37.9019" y2="-1.11">
+                                <stop offset="0" style="stop-color:#399BFF" />
+                                <stop offset="1" style="stop-color:#EE71F7" />
+                            </linearGradient>
+                            <path fill="url(#SVGID_6_)" d="M29.5,5C29.776,5,30,4.776,30,4.5v-4C30,0.224,29.776,0,29.5,0S29,0.224,29,0.5v4
+                          C29,4.776,29.224,5,29.5,5z" />
+                        </svg>
+                        <p>
+                            <strong>DATE</strong>
+                            <span>February 26</span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="block-info-1">
+                        <svg version="1.1" id="Layer_7" xmlns="http:/www.w3.org/2000/svg" xmlns:xlink="http:/www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="25px" viewBox="0 0 42 32" enable-background="new 0 0 42 32"
+                         xml:space="preserve">
+                            <linearGradient id="SVGID_7_" gradientUnits="userSpaceOnUse" x1="4.511" y1="11.8158" x2="41.3229" y2="27.6695">
+                                <stop offset="0" style="stop-color:#399BFF" />
+                                <stop offset="1" style="stop-color:#EE71F9" />
+                            </linearGradient>
+                            <path fill="url(#SVGID_7_)" d="M10.239,31.926c0.009,0.006,0.021,0.003,0.03,0.009C10.341,31.973,10.418,32,10.499,32
+                          c0.044,0,0.088-0.006,0.132-0.018l10.868-2.966l10.868,2.966C32.411,31.994,32.455,32,32.499,32c0.082,0,0.158-0.027,0.23-0.065
+                          c0.01-0.005,0.021-0.003,0.03-0.009l9-5.5c0.191-0.117,0.281-0.348,0.22-0.563l-4.984-17.5c-0.041-0.147-0.148-0.267-0.29-0.326
+                          c-0.142-0.057-0.301-0.048-0.436,0.026l-4.962,2.784c-0.24,0.135-0.326,0.44-0.191,0.681c0.135,0.242,0.439,0.327,0.682,0.191
+                          l4.409-2.475l4.707,16.526l-8.015,4.898l-1.904-15.231c-0.034-0.275-0.293-0.466-0.559-0.434c-0.273,0.034-0.468,0.284-0.434,0.558
+                          l1.907,15.259L22,28.115v-2.73c0-0.276-0.224-0.5-0.5-0.5s-0.5,0.224-0.5,0.5v2.73l-9.911,2.705l1.907-15.259
+                          c0.034-0.274-0.16-0.524-0.434-0.558c-0.272-0.032-0.524,0.159-0.559,0.434l-1.904,15.231L2.084,25.77L6.791,9.244l4.409,2.475
+                          c0.242,0.134,0.546,0.049,0.682-0.191c0.135-0.241,0.049-0.545-0.191-0.681L6.729,8.063C6.595,7.988,6.436,7.979,6.293,8.037
+                          c-0.142,0.059-0.249,0.178-0.29,0.326l-4.984,17.5c-0.062,0.216,0.028,0.446,0.22,0.563L10.239,31.926z" />
+                            <linearGradient id="SVGID_8_" gradientUnits="userSpaceOnUse" x1="12.6241" y1="7.5582" x2="28.5468" y2="14.4156">
+                                <stop offset="0" style="stop-color:#399BFF" />
+                                <stop offset="1" style="stop-color:#EE71F9" />
+                            </linearGradient>
+                            <path fill="url(#SVGID_8_)" d="M21.161,23.367c0.096,0.088,0.217,0.132,0.339,0.132c0.12,0,0.24-0.043,0.336-0.129
+                          C22.169,23.067,30,15.882,30,8.499c0-4.767-3.733-8.5-8.5-8.5S13,3.732,13,8.499C13,15.753,20.828,23.059,21.161,23.367z
+                          M21.5,0.999c4.275,0,7.5,3.224,7.5,7.5c0,6.097-5.993,12.337-7.497,13.807C20.002,20.819,14,14.497,14,8.499
+                          C14,4.223,17.225,0.999,21.5,0.999z" />
+                            <linearGradient id="SVGID_9_" gradientUnits="userSpaceOnUse" x1="17.3671" y1="6.7191" x2="25.6329" y2="10.2789">
+                                <stop offset="0" style="stop-color:#399BFF" />
+                                <stop offset="1" style="stop-color:#EE71F9" />
+                            </linearGradient>
+                            <path fill="url(#SVGID_9_)" d="M26,8.499c0-2.481-2.019-4.5-4.5-4.5S17,6.018,17,8.499s2.019,4.5,4.5,4.5S26,10.98,26,8.499z
+                          M21.5,11.999c-1.93,0-3.5-1.57-3.5-3.5s1.57-3.5,3.5-3.5s3.5,1.57,3.5,3.5S23.43,11.999,21.5,11.999z" />
+                        </svg>
+                        <p>
+                            <strong></strong>
+                            <span>Online </span>
+                        </p>
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-3">
+                    <div class="block-info-1">
+                        <svg version="1.1" id="Layer_10" xmlns="http:/www.w3.org/2000/svg" xmlns:xlink="http:/www.w3.org/1999/xlink" x="0px" y="0px" width="35px" height="25px" viewBox="0 0 42 32" enable-background="new 0 0 42 32"
+                         xml:space="preserve">
+                            <linearGradient id="SVGID_10_" gradientUnits="userSpaceOnUse" x1="1.9027" y1="28.6566" x2="55.9027" y2="10.9483">
+                                <stop offset="0" style="stop-color:#399BFF" />
+                                <stop offset="1" style="stop-color:#EE71F9" />
+                            </linearGradient>
+                            <path fill="url(#SVGID_10_)" d="M40.498,0c-0.276,0-0.5,0.224-0.5,0.5v31c0,0.276,0.224,0.5,0.5,0.5s0.5-0.224,0.5-0.5v-31
+                          C40.998,0.224,40.774,0,40.498,0z" />
+                            <linearGradient id="SVGID_14_" gradientUnits="userSpaceOnUse" x1="1.1102" y1="26.2399" x2="55.1102" y2="8.5316">
+                                <stop offset="0" style="stop-color:#399BFF" />
+                                <stop offset="1" style="stop-color:#EE71F9" />
+                            </linearGradient>
+                            <path fill="url(#SVGID_10_)" d="M38.717,1.204c-0.17-0.083-0.376-0.062-0.526,0.055l-0.565,0.445C34.648,4.059,29.667,8,19.5,8H5.631
+                          C4.18,8,3,9.2,3,10.674v10.714C3,22.828,4.18,24,5.631,24h3.394c0.088,1.125,0.502,3.794,2.454,5.761
+                          C12.953,31.247,14.979,32,17.5,32c0.276,0,0.5-0.224,0.5-0.5S17.776,31,17.5,31c-2.242,0-4.026-0.652-5.306-1.938
+                          c-1.668-1.677-2.067-4.025-2.163-5.062h2.995c0.085,0.682,0.36,1.881,1.274,2.802C15.089,27.597,16.166,28,17.5,28
+                          c0.276,0,0.5-0.224,0.5-0.5S17.776,27,17.5,27c-1.055,0-1.891-0.302-2.484-0.896c-0.657-0.659-0.894-1.546-0.981-2.104h5.396
+                          c10.216,0,15.237,3.963,18.237,6.331l0.522,0.411c0.089,0.07,0.198,0.105,0.307,0.105c0.075,0,0.15-0.017,0.219-0.051
+                          c0.172-0.084,0.281-0.258,0.281-0.449V1.653C38.998,1.462,38.889,1.288,38.717,1.204z M4,21.388V10.674C4,9.751,4.731,9,5.631,9H9
+                          v14H5.631C4.716,23,4,22.292,4,21.388z M37.998,29.317C34.864,26.851,29.672,23,19.432,23h-5.797
+                          c-0.047-0.015-0.095-0.03-0.148-0.031c-0.001,0-0.001,0-0.002,0c-0.054,0-0.105,0.015-0.154,0.031H10V9h9.5
+                          c10.237,0,15.392-3.864,18.498-6.316V29.317z" />
+                            <linearGradient id="SVGID_11_" gradientUnits="userSpaceOnUse" x1="-1.8839" y1="17.1097" x2="52.1161" y2="-0.5987">
+                                <stop offset="0" style="stop-color:#399BFF" />
+                                <stop offset="1" style="stop-color:#EE71F9" />
+                            </linearGradient>
+                            <path fill="url(#SVGID_11_)" d="M1.5,21.857c0.276,0,0.5-0.224,0.5-0.5V10.643c0-0.276-0.224-0.5-0.5-0.5S1,10.367,1,10.643v10.714
+                          C1,21.633,1.224,21.857,1.5,21.857z" />
+                        </svg>
+                        <p>
+                            <strong>Multiple Themes</strong>
+                            <span>5 Problem Statements</span>
+                        </p>
+                    </div>
+                </div>
+  
+                <!-- <div class="col-md-3 col-sm-3 text-right">
+                 <div class="block-info-1">
+                    <a href="#tickets" class="scroll but"> Register Now</a>
+                 </div>
+              </div> -->
+            </div>
+            <!--End row-->
+        </div>
+        <!--End container-->
+        <!--Faq section-->
+        <section id="faq" class="faq pt-120 pb-120 brd-bottom">
+            <!--Container-->
+            <div class="container">
+                <!--Row-->
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 mb-100 text-center ">
+                        <h1 class="title">ABOUT IIIT</h1>
+                        <!-- <p class="title-lead mt-10 mb-20">Some frequently asked questions for you.</p> -->
+                    </div>
+                </div>
+                <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <div class="container">
+                <!--Row-->
+                <div class="row">
+                    <div class="col-sm-8 col-sm-offset-2 ">
+                        <div class="block-faq mb-50">
+                            <p class="title-lead mb-30">International Institute of Information Technology, Naya
+                                Raipur, established by the International Institute of Information
+                                Technology University Act, 2013 of the Government of Chhattisgarh,
+                                is a joint venture by Chhattisgarh State Government and
+                                National Thermal Power Corporation (NTPC). The institute is committed
+                                to pursue excellence in higher education, research and
+                                development in Information Technology (IT) and associated disciplines.
+                                It firmly believes in bestowing knowledge dissemination
+                                and imparting entrepreneurial skills to the students to enable
+                                them to address real world problems.
+                                To empower this vision, IIIT-NR fosters state-of-the-art research
+                                and product development laboratories to carry out interdisciplinary
+                                research and product development endeavors.
+                                Located in the heart of India’s first planned city, Naya Raipur, the
+                                institution boasts of students who not only excel in academia but
+                                also in domains like management, organization and entrepreneurship.
+                                IIIT-Naya Raipur has been ranked 6th among hundreds of technical institutions
+                                by DataQuest. The honourable Chief Minister of Chhattisgarh
+                                has applauded the institute for this achievement through his tweet. The
+                                achievement was covered by media houses such as Times of India,
+                                Dainik-Bhaskar, etc.</p>
+                        </div>
+                    </div>
+                </div>
+                <!--End row-->
+            </div>
+            <!--End container-->
+            <!--Container-->
+            <!--End container-->
+        </section>
+        <!--End faq section-->
+     <!--Container>
+        <div class="container">
+           <!--Row
+           <div class="row">
+              <div class="col-sm-8 col-sm-offset-2 mb-100 text-center">
+                 <h1 class="title">EVENT SHEDULE</h1>
+                 <p class="title-lead mt-10">The Complete shedule will be mailed after registration. <br>Register Now!! </p>
+              </div>
+           </div>
+       <!--End row-->
+  <!-- </div> -->
+  <!--End container-->
+  <!--Container-->
+    </section>
+  
+  <section id="prizes" class="tickets pt-120 pb-120">
+    <!--Container-->
+    <div class="container">
+        <!--Row-->
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 mb-130 text-center">
+                <h1 class="title">Prizes</h1>
+                <p class="title-lead mt-10">We have a Prize Pool of ₹50,000+<br> Come join the world’s influencers and get answers. </p>
+            </div>
+        </div>
+        <!--End row-->
+    </div>
+    <div class="container">
+      <div class="row">
+          <div class="col-sm-6">
+              <ul class="block-tickets">
+                  <ul class="block-ticket">
+                      <li class="block-price"><span class="price"><span class="cur">₹</span>10,000</span></li>
+                      <li>FIRST PRIZE</li>
+                  </ul>
+              </ul>
+          </div>
+          <div class="col-sm-6">
+              <ul class="block-tickets">
+                  <ul class="block-ticket">
+                      <li class="block-price"><span class="price"><span class="cur">₹</span>5,000</span></li>
+                      <li>SECOND PRIZE</li>
+                  </ul>
+              </ul>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-6">
+              <ul class="block-tickets">
+                  <ul class="block-ticket">
+                      <li><img src="./assets/hackathon/img/sponsors/Matic_Logo-White.png" width="50%"></li>
+                      <li class="block-price"><span class="price"><span class="cur">₹</span>15,000</span></li>
+                      <li>BEST MATIC HACK</li>
+                  </ul>
+              </ul>
+          </div>
+          <div class="col-sm-6">
+              <ul class="block-tickets">
+                  <ul class="block-ticket">
+                      <li><img src="./assets/hackathon/img/sponsors/Matic_Logo-White.png" width="50%"></li>
+                      <li class="block-price"><span class="price"><span class="cur">₹</span>10,000</span></li>
+                      <li>BEST ETHEREUM HACK</li>
+                  </ul>
+              </ul>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-12">
+              <ul class="block-tickets">
+                  <ul class="block-ticket">
+                      <li><img src="./assets/hackathon/img/sponsors/Tezos_Logo-White.png" width="25%"></li>
+                      <li class="block-price"><span class="price"><span class="cur">₹</span>15,000</span></li>
+                      <li>BEST D-APP USING TEZOS</li>
+                  </ul>
+              </ul>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-sm-12">
+              <ul class="block-tickets">
+                  <ul class="block-ticket">
+                      <li><img src="./assets/hackathon/img/sponsors/Portis_Logo-Colored_White.png" width="25%"></li>
+                      <li class="block-price"><span class="price"><span class="cur">₹</span>15,000</span></li>
+                      <li>BEST D-APP USING PORTIS</li>
+                  </ul>
+              </ul>
+          </div>
       </div>
     </div>
+    <!--End container-->
   </section>
-  <!-- Contact Us Section End -->
-
-<footer>
-    <!-- <div class="footer-logo">
-        <img src="assets/hackathon/img/logo.png" alt="Hack-a-Sol">
-    </div> -->
-    <div class="site-info">
-        <br>
-        <p>Brought to you by TSoC, in association with SAC, IIIT Naya Raipur</p>
-        <p>Follow TSoC on Social Media</p>
+  
+  <!--Sponsor section-->
+  <section class="sponser pt-90 pb-90 brd-bottom">
+    <!--Container-->
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-8 col-sm-offset-2 mb-50 text-center ">
+                <h1 class="title">Our Sponsors</h1>
+            </div>
+        </div>
     </div>
-    <div class="social-icons-footer">
-        <ul>
-            <li class="instagram"><a target="_blank" href="https://www.instagram.com/tsoc_iiitnr/"><i class="lni-instagram"></i></a></li>
-            <li class="facebook"><a target="_blank" href="https://www.facebook.com/tsoc.iiitnr/"><i class="lni-facebook-filled"></i></a></li>
-            <li class="linkedin"><a target="_blank" href="https://www.linkedin.com/company/tsoc-iiitnr/"><i class="lni-linkedin-filled"></i></a></li>
-            <li class="youtube"><a target="_blank" href="https://www.youtube.com/channel/UCW8FjxYiUnvuSqHbYEdseLQ/"><i class="fa fa-youtube"></i></a></li>
-            <li class="website"><a target="_blank" href="https://iiitnr-tsoc.github.io/"><i class="fa fa-globe"></i></a></li>
-        </ul>
+    <div id="sponsors" class="container">
+        <!--Row-->
+        <div class="row">
+            <div class="vertical-center">
+                <div class="block-sponsor">
+                    <img src="./assets/hackathon/img/sponsors/Devfolio_Logo-White.png" alt="Devfolio Logo">
+                </div>
+                <div class="block-sponsor">
+                    <img src="./assets/hackathon/img/sponsors/Matic_Logo-White.png" height="200" width="410" alt="Matic Logo">
+                </div>
+  
+                <div class="block-sponsor">
+                    <img src="./assets/hackathon/img/sponsors/Portis_Logo-Colored_White.png" height="200" width="410" alt="Portis Logo">
+                </div>
+                <div class="block-sponsor">
+                    <img src="./assets/hackathon/img/sponsors/Tezos_Logo-White.png" height="1000" width="410" alt="Tezos Logo">
+                </div>
+            </div>
+        </div>
+        <div id="sponsors2" class="container">
+            <div class="row">
+                <div class="vertical-center">
+                    <div class="block-sponsor">
+                      <img src="./assets/hackathon/img/sponsors/axure.png" height="600" width="300" alt="Axure Logo">
+                    </div>
+                    <div class="block-sponsor">
+                      <img src="./assets/hackathon/img/sponsors/coding_ninjas.png" height="1000" width="410" alt="Coding Ninjas Logo">
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
-</footer>
+  </section>
+  <!-- </section> -->
+  
+  
+  <!--End container-->
+  <!-- <Container> -->
+  <div class="container schedule">
+      <!--Row-->
+      <div class="row">
 
-  <!-- Go to Top Link -->
-  <a href="#" class="back-to-top">
-      <i class="lni-chevron-up"></i>
-  </a>
+          <div class="col-sm-8">
+              <ul class="block-tab">
+                  <!--Tab-->
+                  <li class="active ">
+                      <div class="block-date"><i class="et-line-calendar"></i><strong>SCHEDULE OUTLINE</strong> <span> 9 to 10 AUGUST 2019</span></div>
+                      <div class="block-detail">
+                          <span class="time">Nov 9th</span>
+                          <span class="topic">DAY 1</span>
+                          <div class="block-text">
+                              <p>1:00 PM - REGISTRATION</p>
+                              <p>2:00 PM - OPENING CEREMONY</p>
+                              <p>3:00 PM - HACKING BEGINS.....!!!!!</p>
+                              <p>4:30 PM - TEA and SNACKS</p>
+                              <p>7:00 PM - GAMES AND ACTIVITIES</p>
+                              <p>8:30 PM - DINNER </p>
+                              <p>12:15 AM - WORKSHOP</p>
+                              <p>2:00 AM - BREAK(IF AWAKE)</p>
+                          </div>
+                      </div>
+                      <div class="block-detail">
+                          <span class="time">November 10th</span> <span class="topic">DAY 2</span>
+                          <div class="block-text">
+                              <p>8:00 AM - BREAKFAST</p>
+                              <p>9:00 AM - SWAGS AND PHOTOS</p>
+                              <p>11:00 AM - WORKSHOP</p>
+                              <p>12:30 PM - LUNCH</p>
+                              <p>2:00 PM - PRESENTATIONS AND CLOSING CEREMONY</p>
+                          </div>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </div>
+      <!--End row -->
+  </div>
+  <!--End container -->
 
-  <!-- <div id="preloader">
-    <div class="sk-circle">
-      <div class="sk-circle1 sk-child"></div>
-      <div class="sk-circle2 sk-child"></div>
-      <div class="sk-circle3 sk-child"></div>
-      <div class="sk-circle4 sk-child"></div>
-      <div class="sk-circle5 sk-child"></div>
-      <div class="sk-circle6 sk-child"></div>
-      <div class="sk-circle7 sk-child"></div>
-      <div class="sk-circle8 sk-child"></div>
-      <div class="sk-circle9 sk-child"></div>
-      <div class="sk-circle10 sk-child"></div>
-      <div class="sk-circle11 sk-child"></div>
-      <div class="sk-circle12 sk-child"></div>
-    </div>
-  </div> -->
+  <section id="judges" class="speakers pt-120 brd-bottom">
+      <!--Container-->
+      <div class="container">
+          <!--Row-->
+          <div class="row">
+              <div class="col-sm-8 col-sm-offset-2 mb-100 text-center">
+                  <h1 class="title">JUDGES</h1>
+                  <p class="title-lead mt-10">We are bringing you the perfect combination of content and experience to ignite your <br>heart equip your mind and spark your skill.</p>
+              </div>
+          </div>
+          <!--End row-->
+      </div>
+      <!--End container-->
+      <div class="container block-content judges">
+          <div class="row">
+          <div class="col-sm-3 pd-0">
+              <div class="block-speaker">
+                  <div class="block-img overlay soft">
+                      <div class="backgroundimg">
+                          <img src="./assets/hackathon/img/abhishek_kripal.jpg" alt="CV">
+                      </div>
+                      <div class="block-info-2">
+                          <p>
+                              <strong>Mr. Abhishek Kripal</strong>
+                              <span>Founder and Director</span>
+                              <span>Codevector Labs</span>
+                          </p>
 
-  <script defer async src="https://apply.devfolio.co/v2/sdk.js"></script>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <div class="col-sm-3 pd-0">
+              <div class="block-speaker">
+                  <div class="block-img overlay soft">
+                      <div class="background-img">
+                          <img src="" alt="">
+                      </div>
+                      <div class="block-info-2">
+                          <p>
+                              <strong>To be Declared</strong>
+                              <span>TBD</span>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+  </section>
+
+  <section id="speakers" class="speakers pt-120 brd-bottom">
+      <!--Container-->
+      <div class="container">
+          <!--Row-->
+          <div class="row">
+              <div class="col-sm-8 col-sm-offset-2 mb-100 text-center">
+                  <h1 class="title">SPEAKERS</h1>
+                  <p class="title-lead mt-10">Get inspired by listening to industry experts on how to make it BIG</p>
+              </div>
+          </div>
+          <!--End row-->
+      </div>
+      <!--End container-->
+      <div class="container block-content judges">
+          <div class="row">
+          <div class="col-sm-3 pd-0">
+              <div class="block-speaker">
+                  <div class="block-img overlay soft">
+                      <div class="backgroundimg">
+                          <img src="./assets/hackathon/img/sandeep-jain.jpg" alt="Sandeep Jain">
+                      </div>
+                      <div class="block-info-2">
+                          <p>
+                              <strong>Mr. Sandeep Jain</strong>
+                              <span>Founder and CEO</span>
+                              <span>GeeksForGeeks</span>
+                          </p>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      </div>
+  </section>
+  <!--End register section-->
+  <!--Sponsor section-->
+  <section class="sponser pt-100 pb-100">
+      <!--Container-->
+      <div class="container">
+          <!--Row-->
+          <div class="row">
+              <div class="col-sm-8 col-sm-offset-2 mb-50 text-center ">
+                  <h3 class="title">Hack-a-Sol was made possible by </h3>
+              </div>
+          </div>
+          <!--End row-->
+      </div>
+      <!--End container-->
+      <!--Container-->
+      <div id="sponsors" class="container clubs">
+          <!--Row-->
+          <div style="text-align: center;">
+            <div class="row">
+                <div class="col-md-3"></div>
+                <div class="col-md-3">
+                    <ul>
+                        <li>
+                            <img src="./assets/logo/tsoc.jpg" width="100">
+                        </li>
+                        <li>
+                            <span>The Society of Coders</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-3">
+                    <ul>
+                        <li>
+                            <img src="./assets/logo/iiitnr.png" width="100">
+                        </li>
+                        <li>
+                            <span>IIIT Naya Raipur</span>
+                        </li>
+                    </ul>
+                </div>
+                <!-- <div class="col-md-4">
+                  <ul>
+                      <li>
+                          <span>Student Activity Centre</span>
+                      </li>
+                      <li>
+                        <span>(SAC)</span>
+                      </li>
+                  </ul>
+                </div> -->
+            </div>
+          </div>
+          <!--End row-->
+      </div>
+      <!--End container-->
+  </section>
+
+  <!--End accom section-->
+
+  <section>
+      <div class="container">
+          <!--Row-->
+          <div class="row">
+              <div class="col-sm-8 col-sm-offset-2 mb-50 text-center ">
+                  <h3 class="title">Contact Us</h3>
+              </div>
+          </div>
+          <!--End row-->
+      </div>
+      <div class="container">
+          <form [formGroup]="contactForm" (ngSubmit)="onSubmit()" id="contactForm" name="contact-form" data-toggle="validator">
+              <ul>
+                  <li>
+                      <label for="nameInput" style="margin-left: 25%; margin-top: 20px;">Name</label>
+                  </li>
+                  <li>
+                      <input type="text" id="nameInput" style="width: 50%; margin-left: 25%; margin-top: 10px; padding: 8px 12px; border-radius: 10px; background-color: #aaaaaa;">
+                  </li>
+              </ul>
+              <ul>
+                  <li>
+                      <label for="emailInput" style="margin-left: 25%; margin-top: 20px;">E-Mail</label>
+                  </li>
+                  <li>
+                      <input type="email" id="emailInput" style="width: 50%; margin-left: 25%; margin-top: 10px; padding: 8px 12px; border-radius: 10px; background-color: #aaaaaa;">
+                  </li>
+              </ul>
+              <ul>
+                <li>
+                    <label for="subjectInput" style="margin-left: 25%; margin-top: 20px;">Subject</label>
+                </li>
+                <li>
+                    <input type="email" id="subjectInput" style="width: 50%; margin-left: 25%; margin-top: 10px; padding: 8px 12px; border-radius: 10px; background-color: #aaaaaa;">
+                </li>
+            </ul>
+              <ul>
+                  <li>
+                      <label for="nameInput" style="margin-left: 25%; margin-top: 20px;">Message</label>
+                  </li>
+                  <li>
+                      <textarea id="nameInput" style="width: 50%; margin-left: 25%; margin-top: 10px; padding: 8px 12px; border-radius: 10px; background-color: #aaaaaa;" rows="5"></textarea>
+                  </li>
+              </ul>
+          </form>
+      </div>
+  </section>
+
+  <!--Faq section-->
+  <footer class="pt-120  bg-dark">
+  </footer>
+  </div>
+  <!-- End wrapper-->
+</div>
+
+    <!--Javascript-->
+    <script src="./assets/hackathon/js/jquery-1.12.4.min.js" type="text/javascript"></script>
+    <script src="./assets/hackathon/js/jquery.flexslider-min.js" type="text/javascript"></script>
+    <script src="./assets/hackathon/js/smooth-scroll.js" type="text/javascript"></script>
+    <script src="./assets/hackathon/js/jquery.validate.min.js" type="text/javascript"></script>
+    <script src="./assets/hackathon/js/placeholders.min.js" type="text/javascript"></script>
+    <script src="./assets/hackathon/js/venobox.min.js" type="text/javascript"></script>
+    <script src="./assets/hackathon/js/script.js" type="text/javascript"></script>
+  
+    <!-- Google analytics -->
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https:/www.googletagmanager.com/gtag/js?id=UA-136937845-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+  
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+  
+        gtag('config', 'UA-136937845-1');
+    </script>
+  
+    <!-- End google analytics -->

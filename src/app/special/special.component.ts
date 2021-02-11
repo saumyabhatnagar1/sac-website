@@ -1,5 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { FormControl, FormGroup, Validators } from '@angular/forms';
+import { DomSanitizer } from '@angular/platform-browser';
 import { Subscription, interval } from 'rxjs';
 
 import { SpecialService } from './special.service';
@@ -9,11 +10,12 @@ import { SpecialService } from './special.service';
   templateUrl: './special.component.html',
   styleUrls: [
     './special.component.css',
-    "../../assets/hackathon/fonts/line-icons.css",
-    "../../assets/hackathon/css/nivo-lightbox.css",
-    "../../assets/hackathon/css/animate.css",
+    "../../assets/hackathon/css/base.css",
+    "../../assets/hackathon/css/bootstrap.css",
+    "../../assets/hackathon/css/flexslider.css",
+    "../../assets/hackathon/css/fonts.css",
     "../../assets/hackathon/css/main.css",
-    "../../assets/hackathon/css/responsive.css"
+    "../../assets/hackathon/css/venobox.css"
   ]
 })
 export class SpecialComponent implements OnInit {
@@ -28,7 +30,11 @@ export class SpecialComponent implements OnInit {
   public hoursRemaining;
   public daysRemaining;
 
-  constructor(private specialService: SpecialService) { }
+  constructor(private specialService: SpecialService, private sanitizer: DomSanitizer) { }
+
+  transform(html) {
+    return this.sanitizer.bypassSecurityTrustHtml(html);
+  }
 
   private getTimeDifference () {
       this.timeDifference = this.finalDate.getTime() - new  Date().getTime();
@@ -47,42 +53,42 @@ export class SpecialComponent implements OnInit {
          .subscribe(x => { this.getTimeDifference(); });
   }
 
-  public sponsorForm = new FormGroup({
-    sponsor_name : new FormControl('', Validators.required),
-    sponsor_job_title : new FormControl('', Validators.required),
-    sponsor_email : new FormControl('', [Validators.required, Validators.email]),
-    sponsor_org : new FormControl('', Validators.required),
-    sponsor_phone : new FormControl('', Validators.required),
-    sponsor_message : new FormControl('', Validators.required)
-  })
+  // public sponsorForm = new FormGroup({
+  //   sponsor_name : new FormControl('', Validators.required),
+  //   sponsor_job_title : new FormControl('', Validators.required),
+  //   sponsor_email : new FormControl('', [Validators.required, Validators.email]),
+  //   sponsor_org : new FormControl('', Validators.required),
+  //   sponsor_phone : new FormControl('', Validators.required),
+  //   sponsor_message : new FormControl('', Validators.required)
+  // })
   
-  onSubmit1() {
-    let sponsor_name = this.sponsorForm.get('sponsor_name').value
-    let sponsor_job_title = this.sponsorForm.get('sponsor_job_title').value
-    let sponsor_email = this.sponsorForm.get('sponsor_email').value
-    let sponsor_org = this.sponsorForm.get('sponsor_org').value
-    let sponsor_phone = this.sponsorForm.get('sponsor_phone').value
-    let sponsor_message = this.sponsorForm.get('sponsor_message').value
-    let data = {
-      "sponsor_name": sponsor_name,
-      "sponsor_job_title": sponsor_job_title,
-      "sponsor_email": sponsor_email,
-      "sponsor_phone": sponsor_phone,
-      "sponsor_org": sponsor_org,
-      "sponsor_message": sponsor_message
-    }
+  // onSubmit1() {
+  //   let sponsor_name = this.sponsorForm.get('sponsor_name').value
+  //   let sponsor_job_title = this.sponsorForm.get('sponsor_job_title').value
+  //   let sponsor_email = this.sponsorForm.get('sponsor_email').value
+  //   let sponsor_org = this.sponsorForm.get('sponsor_org').value
+  //   let sponsor_phone = this.sponsorForm.get('sponsor_phone').value
+  //   let sponsor_message = this.sponsorForm.get('sponsor_message').value
+  //   let data = {
+  //     "sponsor_name": sponsor_name,
+  //     "sponsor_job_title": sponsor_job_title,
+  //     "sponsor_email": sponsor_email,
+  //     "sponsor_phone": sponsor_phone,
+  //     "sponsor_org": sponsor_org,
+  //     "sponsor_message": sponsor_message
+  //   }
     
-    console.log(data);
+  //   console.log(data);
     
-    if (this.sponsorForm.valid) {
-      this.specialService.newSponsorFeedback(data).subscribe((res) => {
-        console.log(res)
-      }, err => {
-        console.log(err)
-      });
-      this.sponsorForm.reset();
-    }
-  }
+  //   if (this.sponsorForm.valid) {
+  //     this.specialService.newSponsorFeedback(data).subscribe((res) => {
+  //       console.log(res)
+  //     }, err => {
+  //       console.log(err)
+  //     });
+  //     this.sponsorForm.reset();
+  //   }
+  // }
 
   public contactForm = new FormGroup({
     name : new FormControl('', Validators.required),
@@ -91,11 +97,11 @@ export class SpecialComponent implements OnInit {
     message : new FormControl('', Validators.required)
   })
   
-  onSubmit2() {
-    let name = this.contactForm.get('name').value
-    let email = this.contactForm.get('email').value
-    let subject = this.contactForm.get('subject').value
-    let message = this.contactForm.get('message').value
+  onSubmit() {
+    let name = this.contactForm.get('nameInput').value
+    let email = this.contactForm.get('emailInput').value
+    let subject = this.contactForm.get('subjectInput').value
+    let message = this.contactForm.get('messageInput').value
     let data = {
       "name": name,
       "email": email,
