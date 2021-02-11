@@ -21,7 +21,8 @@ import { SpecialService } from './special.service';
 export class SpecialComponent implements OnInit {
 
   private subscription: Subscription;
-  
+  public backgroundSVG = null;
+
   public finalDate = new Date('Feb 26, 2021 22:00:00');
 
   public timeDifference;
@@ -30,12 +31,14 @@ export class SpecialComponent implements OnInit {
   public hoursRemaining;
   public daysRemaining;
 
-  constructor(private specialService: SpecialService, private sanitizer: DomSanitizer) { }
-
-  transform(html) {
-    return this.sanitizer.bypassSecurityTrustHtml(html);
+  constructor(private specialService: SpecialService, private sanitizer: DomSanitizer) {
+    this.backgroundSVG = sanitizer.bypassSecurityTrustStyle("url('./assets/hackathon/img/page1-01.svg')");
   }
 
+  // transform(style) {
+  //   return this.sanitizer.bypassSecurityTrustStyle(style);
+  // }
+  
   private getTimeDifference () {
       this.timeDifference = this.finalDate.getTime() - new  Date().getTime();
       this.allocateTimeUnits(this.timeDifference);

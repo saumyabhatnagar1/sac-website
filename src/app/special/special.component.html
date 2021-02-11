@@ -199,7 +199,8 @@
             <ul class="slides">
                 <li>
                     <div class="background-img">
-                        <img src="./assets/hackathon/img/page1-01.svg" alt="">
+                        <!-- <img [src]="transform('./assets/hackathon/img/page1-01.svg')" alt=""> -->
+                        <img [src]="backgroundSVG" alt="Nothing">
                     </div>
                 </li>
             </ul>
@@ -554,20 +555,32 @@
     </div>
     <div id="sponsors" class="container">
         <!--Row-->
-        <div class="row">
+        <div class="row justify-content-center sponsors-list">
+            <img src="assets/hackathon/img/sponsors/Devfolio_Logo-White.png">
+          </div>
+          <div class="row justify-content-center sponsors-list">
+            <img src="assets/hackathon/img/sponsors/Matic_Logo-White.png">
+            <img src="assets/hackathon/img/sponsors/Portis_Logo-Colored_White.png">
+            <img src="assets/hackathon/img/sponsors/Tezos_Logo-White.png">
+          </div>
+          <div class="row justify-content-center sponsors-list">
+            <img src="assets/hackathon/img/sponsors/axure.png">
+            <img src="assets/hackathon/img/sponsors/coding_ninjas.png">
+          </div>
+        <!-- <div class="row">
             <div class="vertical-center">
                 <div class="block-sponsor">
                     <img src="./assets/hackathon/img/sponsors/Devfolio_Logo-White.png" alt="Devfolio Logo">
                 </div>
                 <div class="block-sponsor">
-                    <img src="./assets/hackathon/img/sponsors/Matic_Logo-White.png" height="200" width="410" alt="Matic Logo">
+                    <img src="./assets/hackathon/img/sponsors/Matic_Logo-White.png" alt="Matic Logo">
                 </div>
   
                 <div class="block-sponsor">
-                    <img src="./assets/hackathon/img/sponsors/Portis_Logo-Colored_White.png" height="200" width="410" alt="Portis Logo">
+                    <img src="./assets/hackathon/img/sponsors/Portis_Logo-Colored_White.png" alt="Portis Logo">
                 </div>
                 <div class="block-sponsor">
-                    <img src="./assets/hackathon/img/sponsors/Tezos_Logo-White.png" height="1000" width="410" alt="Tezos Logo">
+                    <img src="./assets/hackathon/img/sponsors/Tezos_Logo-White.png" alt="Tezos Logo">
                 </div>
             </div>
         </div>
@@ -575,14 +588,14 @@
             <div class="row">
                 <div class="vertical-center">
                     <div class="block-sponsor">
-                      <img src="./assets/hackathon/img/sponsors/axure.png" height="600" width="300" alt="Axure Logo">
+                      <img src="./assets/hackathon/img/sponsors/axure.png" alt="Axure Logo">
                     </div>
                     <div class="block-sponsor">
-                      <img src="./assets/hackathon/img/sponsors/coding_ninjas.png" height="1000" width="410" alt="Coding Ninjas Logo">
+                      <img src="./assets/hackathon/img/sponsors/coding_ninjas.png" alt="Coding Ninjas Logo">
                     </div>
                 </div>
             </div>
-        </div>
+        </div> -->
     </div>
   </section>
   <!-- </section> -->
@@ -650,7 +663,7 @@
               <div class="block-speaker">
                   <div class="block-img overlay soft">
                       <div class="backgroundimg">
-                          <img src="./assets/hackathon/img/abhishek_kripal.jpg" alt="CV">
+                          <img src="./assets/hackathon/img/abhishek_kripal.jpg" alt="Abhishek Kripal">
                       </div>
                       <div class="block-info-2">
                           <p>

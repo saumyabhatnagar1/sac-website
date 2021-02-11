@@ -2,3 +2,7 @@
   /* background: #1e1e1e; */
   background: #000;
 }
+
+.sponsors-list img {
+  padding: 1.5rem;
+}
