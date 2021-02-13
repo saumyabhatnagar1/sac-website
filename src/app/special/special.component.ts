@@ -38,22 +38,23 @@ export class SpecialComponent implements OnInit {
   // transform(style) {
   //   return this.sanitizer.bypassSecurityTrustStyle(style);
   // }
-  
-  private getTimeDifference () {
-      this.timeDifference = this.finalDate.getTime() - new  Date().getTime();
-      this.allocateTimeUnits(this.timeDifference);
+
+  private getTimeDifference() {
+    this.timeDifference = this.finalDate.getTime() - new Date().getTime();
+    this.allocateTimeUnits(this.timeDifference);
   }
 
-  private allocateTimeUnits (timeDifference) {
-        this.secondsRemaining = Math.floor((timeDifference) / (1000) % 60);
-        this.minutesRemaining = Math.floor((timeDifference) / (1000 * 60) % 60);
-        this.hoursRemaining = Math.floor((timeDifference) / (1000 * 60 * 60) % 24);
-        this.daysRemaining = Math.floor((timeDifference) / (1000 * 60 * 60 * 24));
+  private allocateTimeUnits(timeDifference) {
+    this.secondsRemaining = Math.floor((timeDifference) / (1000) % 60);
+    this.minutesRemaining = Math.floor((timeDifference) / (1000 * 60) % 60);
+    this.hoursRemaining = Math.floor((timeDifference) / (1000 * 60 * 60) % 24);
+    this.daysRemaining = Math.floor((timeDifference) / (1000 * 60 * 60 * 24));
   }
 
   ngOnInit() {
-     this.subscription = interval(1000)
-         .subscribe(x => { this.getTimeDifference(); });
+    window.location.href = "https://139.59.81.57/";
+
+    //  this.subscription = interval(1000).subscribe(x => { this.getTimeDifference(); });
   }
 
   // public sponsorForm = new FormGroup({
@@ -64,7 +65,7 @@ export class SpecialComponent implements OnInit {
   //   sponsor_phone : new FormControl('', Validators.required),
   //   sponsor_message : new FormControl('', Validators.required)
   // })
-  
+
   // onSubmit1() {
   //   let sponsor_name = this.sponsorForm.get('sponsor_name').value
   //   let sponsor_job_title = this.sponsorForm.get('sponsor_job_title').value
@@ -80,9 +81,9 @@ export class SpecialComponent implements OnInit {
   //     "sponsor_org": sponsor_org,
   //     "sponsor_message": sponsor_message
   //   }
-    
+
   //   console.log(data);
-    
+
   //   if (this.sponsorForm.valid) {
   //     this.specialService.newSponsorFeedback(data).subscribe((res) => {
   //       console.log(res)
@@ -94,12 +95,12 @@ export class SpecialComponent implements OnInit {
   // }
 
   public contactForm = new FormGroup({
-    name : new FormControl('', Validators.required),
-    email : new FormControl('', [Validators.required, Validators.email]),
-    subject : new FormControl('', Validators.required),
-    message : new FormControl('', Validators.required)
+    name: new FormControl('', Validators.required),
+    email: new FormControl('', [Validators.required, Validators.email]),
+    subject: new FormControl('', Validators.required),
+    message: new FormControl('', Validators.required)
   })
-  
+
   onSubmit() {
     let name = this.contactForm.get('nameInput').value
     let email = this.contactForm.get('emailInput').value
@@ -111,9 +112,9 @@ export class SpecialComponent implements OnInit {
       "subject": subject,
       "message": message
     }
-    
+
     // console.log(data);
-    
+
     if (this.contactForm.valid) {
       this.specialService.newFeedback(data).subscribe((res) => {
         console.log(res)
@@ -125,6 +126,6 @@ export class SpecialComponent implements OnInit {
   }
 
   ngOnDestroy() {
-      this.subscription.unsubscribe();
+    this.subscription.unsubscribe();
   }
 }
