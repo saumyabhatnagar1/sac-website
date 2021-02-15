@@ -44,7 +44,7 @@ export class SpecialComponent implements OnInit {
 
   ngOnInit() {
     // window.location.href = "https://139.59.81.57/";
-    // window.location.href = "https://hackasol.tech/";
+    window.location.href = "https://hackasol.tech/";
     
     this.subscription = interval(1000)
       .subscribe(x => { this.getTimeDifference(); });
