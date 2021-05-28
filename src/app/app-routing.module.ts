@@ -15,6 +15,7 @@ import { ShutterbugComponent } from './club/shutterbug/shutterbug.component';
 import { TakeDaBaitComponent } from './club/take-da-bait/take-da-bait.component';
 import { Tech4gudComponent } from './club/tech4gud/tech4gud.component';
 import { TsocComponent } from './club/tsoc/tsoc.component';
+import { MunComponent } from './club/mun/mun.component';
 
 import { ClubPageComponent } from './club-page/club-page.component'
 import { GalleryComponent } from './gallery/gallery.component';
@@ -40,6 +41,7 @@ const routes: Routes = [
   {path: 'clubs/take-da-bait', component: TakeDaBaitComponent},
   {path: 'clubs/tech4gud', component: Tech4gudComponent},
   {path: 'clubs/tsoc', component: TsocComponent},
+  {path: 'clubs/mun', component: MunComponent},
   {path: 'clubs/club-page', component: ClubPageComponent},
   {path: 'gallery', component: GalleryComponent},
   {path: 'achievements', component: AchievementsComponent},
