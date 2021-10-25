@@ -24,6 +24,8 @@ import { NewslettersComponent } from './newsletters/newsletters.component';
 import { HomeComponent } from './home/home.component'
 import { TeamsComponent } from './teams/teams.component';
 
+import { HackasolComponent } from './hackasol/hackasol.component';
+
 const routes: Routes = [
   {path: '', component: HomeComponent},
   {path: 'team', component: TeamsComponent},
@@ -46,6 +48,8 @@ const routes: Routes = [
   {path: 'gallery', component: GalleryComponent},
   {path: 'achievements', component: AchievementsComponent},
   {path: 'newsletters', component: NewslettersComponent},
+  {path: 'hackasol', component: HackasolComponent},
+  
 ];
 
 @NgModule({
@@ -55,3 +59,4 @@ const routes: Routes = [
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
+

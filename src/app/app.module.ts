@@ -33,6 +33,7 @@ import { WriteusComponent } from './home/writeus/writeus.component';
 import { NewslettersComponent } from './newsletters/newsletters.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { AtharvComponent } from './club/atharv/atharv.component';
+import { HackasolComponent } from './hackasol/hackasol.component';
 
 export function momentAdapterFactory() {
   return adapterFactory(moment);
@@ -65,6 +66,7 @@ export function momentAdapterFactory() {
     NewslettersComponent,
     AchievementsComponent,
     AtharvComponent,
+    HackasolComponent,
   ],
   imports: [
     BrowserModule,
