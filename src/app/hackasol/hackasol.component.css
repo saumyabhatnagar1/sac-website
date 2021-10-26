@@ -360,8 +360,9 @@ h6 {
   font-size: 1rem;
 }
 .lead {
-  font-size: 1.25rem;
-  font-weight: 300;
+  font-size: 2.00rem;
+  font-weight: 400;
+  color:white
 }
 .display-1 {
   font-size: 6rem;
@@ -9193,7 +9194,7 @@ body {
 .content-section {
   padding-top: 100px;
   padding-bottom: 100px;
-}
+  background-image: linear-gradient(to top, #30cfd0 0%, #330867 100%);}
 .content-section-heading h2 {
   font-size: 48px;
 }
@@ -9756,4 +9757,3 @@ footer.footer p.small a.focus {
 #Contact .address-block span {
   text-transform: none;
 }
-/* Styles Begins */
