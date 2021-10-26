@@ -34,6 +34,7 @@ import { NewslettersComponent } from './newsletters/newsletters.component';
 import { AchievementsComponent } from './achievements/achievements.component';
 import { AtharvComponent } from './club/atharv/atharv.component';
 import { HackasolComponent } from './hackasol/hackasol.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 export function momentAdapterFactory() {
   return adapterFactory(moment);
@@ -76,7 +77,8 @@ export function momentAdapterFactory() {
     ReactiveFormsModule,
     CalendarModule,
     FormsModule,
-    CalendarModule.forRoot({ provide: DateAdapter, useFactory: momentAdapterFactory })
+    CalendarModule.forRoot({ provide: DateAdapter, useFactory: momentAdapterFactory }),
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]
