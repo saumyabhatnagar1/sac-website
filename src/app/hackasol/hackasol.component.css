@@ -9196,7 +9196,8 @@ body {
 .content-section {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
+  background-image: linear-gradient( 
+135deg, #667eea 0%, #764ba2 100%);
 }
 .content-section-heading h2 {
   font-size: 48px;
@@ -9406,8 +9407,8 @@ span {
   padding: 0;
 }
 #Banner .btn-primary {
-  background-color: #02ccba;
-  color: #fff;
+  background-image: linear-gradient(180deg, #2af598 0%, #009efd 100%);  color: #fff;
+  font-size: smaller;
   border: none;
 }
 #Banner .btn-primary:hover {
@@ -9692,6 +9693,9 @@ span {
 .owl-next:focus {
   outline: 0;
   border: 0;
+}
+#Contact{
+  background-image: linear-gradient(to top, #330867 0%, #30cfd0 100%);
 }
 #Contact .block-heading {
   text-align: center;
