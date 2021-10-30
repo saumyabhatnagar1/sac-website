@@ -35,6 +35,10 @@ import { AchievementsComponent } from './achievements/achievements.component';
 import { AtharvComponent } from './club/atharv/atharv.component';
 import { HackasolComponent } from './hackasol/hackasol.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { EventsComponent } from './events/events.component';
+import { TechnovateComponent } from './events/technovate/technovate.component';
+import { ArambhComponent } from './events/arambh/arambh.component';
+import { ScientificComponent } from './events/scientific/scientific.component';
 
 export function momentAdapterFactory() {
   return adapterFactory(moment);
@@ -68,6 +72,10 @@ export function momentAdapterFactory() {
     AchievementsComponent,
     AtharvComponent,
     HackasolComponent,
+    EventsComponent,
+    TechnovateComponent,
+    ArambhComponent,
+    ScientificComponent,
   ],
   imports: [
     BrowserModule,

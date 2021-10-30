@@ -24,7 +24,10 @@ import { NewslettersComponent } from './newsletters/newsletters.component';
 import { HomeComponent } from './home/home.component'
 import { TeamsComponent } from './teams/teams.component';
 
+
 import { HackasolComponent } from './hackasol/hackasol.component';
+import { EventsComponent } from './events/events.component';
+
 
 const routes: Routes = [
   {path: '', component: HomeComponent},
@@ -49,6 +52,7 @@ const routes: Routes = [
   {path: 'achievements', component: AchievementsComponent},
   {path: 'newsletters', component: NewslettersComponent},
   {path: 'hackasol', component: HackasolComponent},
+  {path: 'events', component:   EventsComponent},
   
 ];
 

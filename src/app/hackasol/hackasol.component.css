@@ -9196,8 +9196,8 @@ body {
 .content-section {
   padding-top: 100px;
   padding-bottom: 100px;
-  background-image: linear-gradient( 
-135deg, #667eea 0%, #764ba2 100%);
+  /* background-image: linear-gradient(to top, #30cfd0  0%, #30cfd0 100%); */
+  background-color: #2e5353;
 }
 .content-section-heading h2 {
   font-size: 48px;
