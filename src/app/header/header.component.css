@@ -35,3 +35,24 @@
     margin-right: 0.5rem;
     border-radius: 12px;
 }
+
+.animate-character {
+    text-transform: uppercase;
+    background-image: linear-gradient(+225deg,
+        #231557 0%,
+        #44107a 29%,
+        #ff1361 67%,
+        #fff800 100%);
+    background-size: auto auto;
+    background-clip: border-box;
+    background-size: 200% auto;
+    color: #fff;
+    background-clip: text;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: textclip 5s cubic-bezier(0.68, -1.95, 0.57, 0.55);
+    animation-iteration-count: 5;
+    display: inline-block;
+  
+  }
