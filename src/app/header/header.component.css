@@ -38,6 +38,8 @@
 
 .animate-character {
     text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
     background-image: linear-gradient(+225deg,
         #231557 0%,
         #44107a 29%,
@@ -54,5 +56,6 @@
     animation: textclip 5s cubic-bezier(0.68, -1.95, 0.57, 0.55);
     animation-iteration-count: 5;
     display: inline-block;
+    background-color: white;
   
   }
